@@ -1,0 +1,48 @@
+{
+  "experiment": {
+    "id": "EXP-000002",
+    "name": "Left Twin Prime Continuation"
+  },
+  "paths": {
+    "experiment_root": "experiments/EXP-000002"
+  },
+  "repository": {
+    "prime_root": "E:/PrimeNet/Repository/ranges",
+    "gap_root": "E:/PrimeNet/Repository/gaps_u16"
+  },
+  "sequence": {
+    "plugin": "left_twin",
+    "dataset_file": "data/left_twin_primes.u64.npy",
+    "target_count": 100000001
+  },
+  "sampling": {
+    "endpoints": [
+      1000,
+      10000,
+      100000,
+      1000000,
+      10000000,
+      100000000
+    ],
+    "window_sizes": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128
+    ],
+    "representations": [
+      "absolute",
+      "gaps",
+      "combined"
+    ],
+    "definition_conditions": [
+      "hidden",
+      "disclosed"
+    ]
+  },
+  "prompt": {
+    "target_label": "left twin prime"
+  }
+}

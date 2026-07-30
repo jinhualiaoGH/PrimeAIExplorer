@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-000001",
+  "generated_at_utc": "2026-07-26T02:42:37.203669Z",
+  "generator": "experiments.exp000001.generate_prompts",
+  "generator_version": "0.1.0",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "prompts_sha256": "58e02a5a887abb7ac2629b2a8b15ed0a60b9cdcbcae42be6f30c50741d6b0efd"
+  },
+  "leakage_policy": {
+    "ground_truth_visible": false,
+    "target_prime_metadata_visible": false
+  },
+  "prompt_count": 100,
+  "prompt_set_id": "PROMPTSET-EXP000001-001",
+  "prompt_set_version": "0.1.0",
+  "response_contract": {
+    "required_fields": [
+      "prediction",
+      "confidence",
+      "explanation"
+    ],
+    "type": "json_object"
+  },
+  "source_cases": "C:\\PrimeAIExplorer\\datasets\\EXP-000001\\cases.json",
+  "window_counts": {
+    "16": 20,
+    "32": 20,
+    "4": 20,
+    "64": 20,
+    "8": 20
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.3.1",
+  "record_count": 2,
+  "ledger_entry_count": 5,
+  "completed_entry_count": 2,
+  "pending_entry_count": 3,
+  "pilot_completion": 0.4,
+  "dataset_case_count": 5,
+  "dataset_coverage": 0.4,
+  "correct_count": 1,
+  "incorrect_count": 1,
+  "accuracy": 0.5,
+  "mean_confidence": 39,
+  "median_confidence": 39.0,
+  "brier_score": 0.09620000000000001,
+  "ece": 0.29000000000000004,
+  "prediction_entropy_bits": 1.0,
+  "normalized_prediction_entropy": 1.0,
+  "distinct_predictions": 2,
+  "prediction_distribution": [
+    {
+      "prediction": 4,
+      "count": 1
+    },
+    {
+      "prediction": 6,
+      "count": 1
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.18
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 0.6,
+      "absolute_gap": 0.4
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 60,
+      "brier_score": 0.16000000000000003
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 9.5,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 1
+      },
+      {
+        "word": "gaps",
+        "count": 1
+      },
+      {
+        "word": "irregular",
+        "count": 1
+      },
+      {
+        "word": "common",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "gap",
+        "count": 1
+      },
+      {
+        "word": "after",
+        "count": 1
+      },
+      {
+        "word": "short",
+        "count": 1
+      },
+      {
+        "word": "pattern",
+        "count": 1
+      },
+      {
+        "word": "valid",
+        "count": 1
+      },
+      {
+        "word": "response",
+        "count": 1
+      },
+      {
+        "word": "committed",
+        "count": 1
+      },
+      {
+        "word": "by",
+        "count": 1
+      },
+      {
+        "word": "collection",
+        "count": 1
+      },
+      {
+        "word": "assistant",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 1,
+      "frequency_prior": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_3_1\\demo\\exp000001\\pilot_002\\responses.json#entry-1",
+      "collection_sha256": "dd5e48b8afa93acda7f3b9fce9f68dc90511e8822558e7794350d0cc02b0e1b0",
+      "entry_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "response_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 60,
+      "explanation": "A valid response committed by the Collection Assistant.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_3_1\\demo\\exp000001\\pilot_002\\responses.json#entry-2",
+      "collection_sha256": "dd5e48b8afa93acda7f3b9fce9f68dc90511e8822558e7794350d0cc02b0e1b0",
+      "entry_sha256": "9566de4e576ab15f57608c6aa120570214b118d14667b4799bc6dc8af10a83cb",
+      "response_sha256": "9566de4e576ab15f57608c6aa120570214b118d14667b4799bc6dc8af10a83cb",
+      "correct": true
+    }
+  ]
+}

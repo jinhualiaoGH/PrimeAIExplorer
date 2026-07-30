@@ -1,0 +1,3 @@
+﻿window,count,accuracy,mean_confidence,signed_calibration_bias,ece,brier_score
+4,2,0.5,0.85,0.35,0.55,0.42500000000000004
+8,2,0.5,0.825,0.32499999999999996,0.625,0.49624999999999997

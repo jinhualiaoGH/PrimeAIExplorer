@@ -1,0 +1,202 @@
+{
+  "case_count": 25,
+  "cases": [
+    {
+      "case_id": "CASE-W004-0002",
+      "pair_id": "PAIR-0002",
+      "prompt_file": "text/CASE-W004-0002.txt",
+      "prompt_sha256": "a7ee734b8e1d1469b2e28672721e8e0de86a4f5eb277948ea004e0a1d82dd666",
+      "window_size": 4
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "pair_id": "PAIR-0002",
+      "prompt_file": "text/CASE-W008-0002.txt",
+      "prompt_sha256": "d33302d5fc31e3d7b6c1fa5464e72bfa5064e99822aaf791a66a7b9e23c245da",
+      "window_size": 8
+    },
+    {
+      "case_id": "CASE-W016-0002",
+      "pair_id": "PAIR-0002",
+      "prompt_file": "text/CASE-W016-0002.txt",
+      "prompt_sha256": "0d3bf590b9608ae38d3d507a3b0a5da27fe7cfa693081b2579c64a2ecd2679b2",
+      "window_size": 16
+    },
+    {
+      "case_id": "CASE-W032-0002",
+      "pair_id": "PAIR-0002",
+      "prompt_file": "text/CASE-W032-0002.txt",
+      "prompt_sha256": "7d62d19bb2da735a626c7c7855c90fa9e227d88546346384bd4d48a8c62543cc",
+      "window_size": 32
+    },
+    {
+      "case_id": "CASE-W064-0002",
+      "pair_id": "PAIR-0002",
+      "prompt_file": "text/CASE-W064-0002.txt",
+      "prompt_sha256": "8215a3ae246d5422d54a87926c44f65d6debf8ab883355cc3d65ea40c806d5fd",
+      "window_size": 64
+    },
+    {
+      "case_id": "CASE-W004-0003",
+      "pair_id": "PAIR-0003",
+      "prompt_file": "text/CASE-W004-0003.txt",
+      "prompt_sha256": "fc2507b8e7517fde4b135910c449783c445d079f15988d61a14ec1e7a0ce8d0f",
+      "window_size": 4
+    },
+    {
+      "case_id": "CASE-W008-0003",
+      "pair_id": "PAIR-0003",
+      "prompt_file": "text/CASE-W008-0003.txt",
+      "prompt_sha256": "fff89c9450e1c2d5af00d4625e33f3c8ad74bef541550974e4228ee78a2bcc6d",
+      "window_size": 8
+    },
+    {
+      "case_id": "CASE-W016-0003",
+      "pair_id": "PAIR-0003",
+      "prompt_file": "text/CASE-W016-0003.txt",
+      "prompt_sha256": "4f111a7d31499804a0f8a9dfb377ba5a78c0d75d28c3889d45b70285d034e32e",
+      "window_size": 16
+    },
+    {
+      "case_id": "CASE-W032-0003",
+      "pair_id": "PAIR-0003",
+      "prompt_file": "text/CASE-W032-0003.txt",
+      "prompt_sha256": "2e69998af549b1cdb1cd43493fa78ffefa23b089955018083c5eedcfc1a7a4e1",
+      "window_size": 32
+    },
+    {
+      "case_id": "CASE-W064-0003",
+      "pair_id": "PAIR-0003",
+      "prompt_file": "text/CASE-W064-0003.txt",
+      "prompt_sha256": "a20b8703b3f7d7dc56c2df0a37aac7339e1a9e8304dfac71329c1cd2e792591e",
+      "window_size": 64
+    },
+    {
+      "case_id": "CASE-W004-0004",
+      "pair_id": "PAIR-0004",
+      "prompt_file": "text/CASE-W004-0004.txt",
+      "prompt_sha256": "8e23b1e35cd03bde1ac3c5d38644ed965f433ea2dd6637849877be3281936331",
+      "window_size": 4
+    },
+    {
+      "case_id": "CASE-W008-0004",
+      "pair_id": "PAIR-0004",
+      "prompt_file": "text/CASE-W008-0004.txt",
+      "prompt_sha256": "9e019bd7cfc5c5ce39d56e1271a44b18dd6f2f8e65b727b069bdaca0c8289860",
+      "window_size": 8
+    },
+    {
+      "case_id": "CASE-W016-0004",
+      "pair_id": "PAIR-0004",
+      "prompt_file": "text/CASE-W016-0004.txt",
+      "prompt_sha256": "0f054ba03d0893685588a0bdce86a272b6b415334612a42ba6048f02746702e7",
+      "window_size": 16
+    },
+    {
+      "case_id": "CASE-W032-0004",
+      "pair_id": "PAIR-0004",
+      "prompt_file": "text/CASE-W032-0004.txt",
+      "prompt_sha256": "dbedf0cb08eb9b35ead74631de75e2dbb3c1e40e5d8ff56e86bf8919a5267f0e",
+      "window_size": 32
+    },
+    {
+      "case_id": "CASE-W064-0004",
+      "pair_id": "PAIR-0004",
+      "prompt_file": "text/CASE-W064-0004.txt",
+      "prompt_sha256": "a31a6fc0e73a6574ff5678088de4b46182575587205979e3138d27a9a49655ee",
+      "window_size": 64
+    },
+    {
+      "case_id": "CASE-W004-0005",
+      "pair_id": "PAIR-0005",
+      "prompt_file": "text/CASE-W004-0005.txt",
+      "prompt_sha256": "97b837dcddfb11b5d72bdd68e687ea5d75f0045d6469997ca9c36086c784511e",
+      "window_size": 4
+    },
+    {
+      "case_id": "CASE-W008-0005",
+      "pair_id": "PAIR-0005",
+      "prompt_file": "text/CASE-W008-0005.txt",
+      "prompt_sha256": "178e1106e933136242157f339e17ef5efd563ba4f778de1bef22eedab224ef3b",
+      "window_size": 8
+    },
+    {
+      "case_id": "CASE-W016-0005",
+      "pair_id": "PAIR-0005",
+      "prompt_file": "text/CASE-W016-0005.txt",
+      "prompt_sha256": "cd582885c25d6e2267c7ecf29633c29b2af2f500233901a3170add3cb200c509",
+      "window_size": 16
+    },
+    {
+      "case_id": "CASE-W032-0005",
+      "pair_id": "PAIR-0005",
+      "prompt_file": "text/CASE-W032-0005.txt",
+      "prompt_sha256": "1ab67e1ca985859815e0cd26954cfd8115e144c56959d8ca81113f10fcc50efe",
+      "window_size": 32
+    },
+    {
+      "case_id": "CASE-W064-0005",
+      "pair_id": "PAIR-0005",
+      "prompt_file": "text/CASE-W064-0005.txt",
+      "prompt_sha256": "810451399f7770fc9e9d7a060c3e5039042940c89a1d5956667fd43f4df2b33b",
+      "window_size": 64
+    },
+    {
+      "case_id": "CASE-W004-0006",
+      "pair_id": "PAIR-0006",
+      "prompt_file": "text/CASE-W004-0006.txt",
+      "prompt_sha256": "e2c91039ce09b25ffbeff54a08e56c6fc8eb6f4bf99b438df7d67151041c3aae",
+      "window_size": 4
+    },
+    {
+      "case_id": "CASE-W008-0006",
+      "pair_id": "PAIR-0006",
+      "prompt_file": "text/CASE-W008-0006.txt",
+      "prompt_sha256": "5d35fc9ce8f8d8b2458c5a3910ee6be3c99971fba73ae75cd9bf6cd0227bf943",
+      "window_size": 8
+    },
+    {
+      "case_id": "CASE-W016-0006",
+      "pair_id": "PAIR-0006",
+      "prompt_file": "text/CASE-W016-0006.txt",
+      "prompt_sha256": "3fac6d7d3704776db3ce886ae2061988f8c7bb30f1d160ddabdd7cba8ce650bf",
+      "window_size": 16
+    },
+    {
+      "case_id": "CASE-W032-0006",
+      "pair_id": "PAIR-0006",
+      "prompt_file": "text/CASE-W032-0006.txt",
+      "prompt_sha256": "165830758c9390738d030beae30b58452dec6d8a4019ded322f09f21fb0e63ef",
+      "window_size": 32
+    },
+    {
+      "case_id": "CASE-W064-0006",
+      "pair_id": "PAIR-0006",
+      "prompt_file": "text/CASE-W064-0006.txt",
+      "prompt_sha256": "01991fe5cb64dc34b932c463fefd1567ef6a8762be7e465c4af069d194e810b9",
+      "window_size": 64
+    }
+  ],
+  "collection_protocol": {
+    "fresh_conversation_per_case": true,
+    "ground_truth_visible": false,
+    "prior_responses_visible": false,
+    "response_format": "json_object"
+  },
+  "experiment_id": "EXP-000001",
+  "generated_at_utc": "2026-07-26T03:36:31.650716Z",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "model_visible_index_sha256": "b719845b89dfaaabe4ac568c83786e1372eb8a7978084d2b8c7b7959f8023304"
+  },
+  "pair_count": 5,
+  "pilot_id": "PILOT-002",
+  "pilot_version": "0.1.0",
+  "window_sizes": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ]
+}

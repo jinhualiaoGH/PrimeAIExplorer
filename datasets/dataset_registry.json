@@ -1,0 +1,43 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Dataset Registry",
+    "registry_version":  "0.2.0",
+    "updated_date":  "2026-07-25",
+    "datasets":  [
+                     {
+                         "dataset_id":  "DS-000001",
+                         "title":  "Prime Gap Memory-Limited Learning Dataset",
+                         "short_name":  "prime_gap_memory_limited_learning",
+                         "version":  "0.1.0",
+                         "status":  "Proposed",
+                         "source_universe":  "PrimeNet",
+                         "dataset_family":  "prime_gap_sequences",
+                         "primary_experiment":  "EXP-000001",
+                         "created_date":  "2026-07-25",
+                         "modified_date":  "2026-07-25"
+                     },
+                     {
+                         "dataset_id":  "DS-000002",
+                         "title":  "Prime Gap Compression Dataset",
+                         "short_name":  "prime_gap_compression",
+                         "version":  "0.1.0",
+                         "status":  "Proposed",
+                         "source_universe":  "PrimeNet",
+                         "dataset_family":  "compression_tasks",
+                         "primary_experiment":  "EXP-000002",
+                         "created_date":  "2026-07-25",
+                         "modified_date":  "2026-07-25"
+                     },
+                     {
+                         "dataset_id":  "DS-000003",
+                         "title":  "Prime Structure Abstraction Dataset",
+                         "short_name":  "prime_structure_abstraction",
+                         "version":  "0.1.0",
+                         "status":  "Proposed",
+                         "source_universe":  "PrimeNet",
+                         "dataset_family":  "abstraction_tasks",
+                         "primary_experiment":  "EXP-000003",
+                         "created_date":  "2026-07-25",
+                         "modified_date":  "2026-07-25"
+                     }
+                 ]
+}

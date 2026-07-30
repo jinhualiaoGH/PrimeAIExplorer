@@ -1,0 +1,5 @@
+﻿label,window,count,accuracy,mean_confidence,brier_score,prediction_entropy_bits,mean_signed_error,mean_absolute_error
+GPT-5.6 Thinking,4,1,0.0,18,0.0324,0.0,-2,2
+GPT-5.6 Thinking,8,1,1.0,60,0.16000000000000003,0.0,0,0
+Comparison Model,4,1,0.0,18,0.0324,0.0,-2,2
+Comparison Model,8,1,1.0,60,0.16000000000000003,0.0,0,0

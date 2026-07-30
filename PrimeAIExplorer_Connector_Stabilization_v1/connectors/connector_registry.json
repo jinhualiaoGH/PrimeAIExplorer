@@ -1,0 +1,47 @@
+{
+  "registry_name": "PrimeAIExplorer Connector Registry",
+  "registry_version": "0.7.1",
+  "connector_schema_version": "0.7.0",
+  "updated_date": "2026-07-29",
+  "connectors": [
+    {
+      "connector_id": "CONNECTOR-000001",
+      "title": "Deterministic Mock Connector",
+      "short_name": "deterministic_mock",
+      "version": "0.1.0",
+      "status": "Active",
+      "connector_type": "deterministic_mock",
+      "implementation_module": "connectors.mock",
+      "cost_class": "free",
+      "external_access": "false",
+      "created_date": "2026-07-25",
+      "modified_date": "2026-07-29"
+    },
+    {
+      "connector_id": "CONNECTOR-000002",
+      "title": "Replay Connector",
+      "short_name": "replay",
+      "version": "0.1.0",
+      "status": "Planned",
+      "connector_type": "replay",
+      "implementation_module": "",
+      "cost_class": "free",
+      "external_access": "false",
+      "created_date": "2026-07-25",
+      "modified_date": "2026-07-29"
+    },
+    {
+      "connector_id": "CONNECTOR-000003",
+      "title": "OpenAI Connector",
+      "short_name": "openai",
+      "version": "0.1.0",
+      "status": "Disabled",
+      "connector_type": "hosted_api",
+      "implementation_module": "",
+      "cost_class": "paid",
+      "external_access": "true",
+      "created_date": "2026-07-25",
+      "modified_date": "2026-07-29"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿name,version,metric_count,table_count,warning_count
+performance,1.0.0,20,2,0
+behavior,1.0.0,19,5,0
+calibration,1.0.0,15,2,0
+distribution,1.0.0,20,5,0
+surprise,1.0.0,13,6,0

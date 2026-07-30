@@ -1,0 +1,4 @@
+﻿connector_id,title,short_name,version,status,connector_type,implementation_module,cost_class,external_access,created_date,modified_date
+CONNECTOR-000001,Deterministic Mock Connector,deterministic_mock,0.1.0,Active,deterministic_mock,connectors.mock,free,false,2026-07-25,2026-07-29
+CONNECTOR-000002,Replay Connector,replay,0.1.0,Planned,replay,,free,false,2026-07-25,2026-07-29
+CONNECTOR-000003,OpenAI Connector,openai,0.1.0,Disabled,hosted_api,,paid,true,2026-07-25,2026-07-29

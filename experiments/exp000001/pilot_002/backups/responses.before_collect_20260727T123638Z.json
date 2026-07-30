@@ -1,0 +1,231 @@
+[
+  {
+    "case_id": "CASE-W004-0002",
+    "collected_at": "2026-07-26T04:31:08.772460Z",
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0002",
+    "response": {
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern."
+    },
+    "window_size": 4
+  },
+  {
+    "case_id": "CASE-W008-0002",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0002",
+    "response": null,
+    "window_size": 8
+  },
+  {
+    "case_id": "CASE-W016-0002",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0002",
+    "response": null,
+    "window_size": 16
+  },
+  {
+    "case_id": "CASE-W032-0002",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0002",
+    "response": null,
+    "window_size": 32
+  },
+  {
+    "case_id": "CASE-W064-0002",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0002",
+    "response": null,
+    "window_size": 64
+  },
+  {
+    "case_id": "CASE-W004-0003",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0003",
+    "response": null,
+    "window_size": 4
+  },
+  {
+    "case_id": "CASE-W008-0003",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0003",
+    "response": null,
+    "window_size": 8
+  },
+  {
+    "case_id": "CASE-W016-0003",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0003",
+    "response": null,
+    "window_size": 16
+  },
+  {
+    "case_id": "CASE-W032-0003",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0003",
+    "response": null,
+    "window_size": 32
+  },
+  {
+    "case_id": "CASE-W064-0003",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0003",
+    "response": null,
+    "window_size": 64
+  },
+  {
+    "case_id": "CASE-W004-0004",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0004",
+    "response": null,
+    "window_size": 4
+  },
+  {
+    "case_id": "CASE-W008-0004",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0004",
+    "response": null,
+    "window_size": 8
+  },
+  {
+    "case_id": "CASE-W016-0004",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0004",
+    "response": null,
+    "window_size": 16
+  },
+  {
+    "case_id": "CASE-W032-0004",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0004",
+    "response": null,
+    "window_size": 32
+  },
+  {
+    "case_id": "CASE-W064-0004",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0004",
+    "response": null,
+    "window_size": 64
+  },
+  {
+    "case_id": "CASE-W004-0005",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0005",
+    "response": null,
+    "window_size": 4
+  },
+  {
+    "case_id": "CASE-W008-0005",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0005",
+    "response": null,
+    "window_size": 8
+  },
+  {
+    "case_id": "CASE-W016-0005",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0005",
+    "response": null,
+    "window_size": 16
+  },
+  {
+    "case_id": "CASE-W032-0005",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0005",
+    "response": null,
+    "window_size": 32
+  },
+  {
+    "case_id": "CASE-W064-0005",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0005",
+    "response": null,
+    "window_size": 64
+  },
+  {
+    "case_id": "CASE-W004-0006",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0006",
+    "response": null,
+    "window_size": 4
+  },
+  {
+    "case_id": "CASE-W008-0006",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0006",
+    "response": null,
+    "window_size": 8
+  },
+  {
+    "case_id": "CASE-W016-0006",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0006",
+    "response": null,
+    "window_size": 16
+  },
+  {
+    "case_id": "CASE-W032-0006",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0006",
+    "response": null,
+    "window_size": 32
+  },
+  {
+    "case_id": "CASE-W064-0006",
+    "collected_at": null,
+    "collection_mode": "manual_chat",
+    "model": "GPT-5.6 Thinking",
+    "pair_id": "PAIR-0006",
+    "response": null,
+    "window_size": 64
+  }
+]

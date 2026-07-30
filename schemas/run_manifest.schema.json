@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PrimeAIExplorer Run Manifest",
+  "type": "object",
+  "required": [
+    "run_id",
+    "experiment_id",
+    "platform_version",
+    "configuration_sha256",
+    "status"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "pattern": "^RUN-[0-9]{6}$"
+    },
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^EXP-[0-9]{6}$"
+    },
+    "platform_version": {
+      "type": "string"
+    },
+    "configuration_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "running",
+        "completed",
+        "failed",
+        "cancelled"
+      ]
+    }
+  }
+}

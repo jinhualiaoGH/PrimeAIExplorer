@@ -1,0 +1,4 @@
+﻿experiment_id,title,short_name,version,status,experimental_universe,created_date,modified_date
+EXP-000001,Memory-Limited Learning,memory_limited_learning,0.1.0,Proposed,PrimeNet,2026-07-25,2026-07-25
+EXP-000002,Compression Efficiency,compression_efficiency,0.1.0,Proposed,PrimeNet,2026-07-25,2026-07-25
+EXP-000003,Emergence of Abstraction,emergence_of_abstraction,0.1.0,Proposed,PrimeNet,2026-07-25,2026-07-25

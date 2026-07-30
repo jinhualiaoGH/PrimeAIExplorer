@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: primeaiexplorer
+Version: 1.0.0rc3
+Summary: PrimeAIExplorer v1.0 RC2 scientific AI observatory and release candidate
+Author: PrimeAIExplorer
+Requires-Python: >=3.10
+License-File: LICENSE
+Provides-Extra: workspace
+Requires-Dist: prompt-toolkit>=3.0; extra == "workspace"
+Dynamic: license-file

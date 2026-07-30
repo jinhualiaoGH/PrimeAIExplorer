@@ -1,0 +1,4 @@
+﻿record_index,case_id,window,prediction,confidence
+1,CASE-W004-0001,4,6,0.8
+3,CASE-W008-0001,8,4,0.7
+4,CASE-W008-0002,8,8,0.95

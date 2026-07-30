@@ -1,0 +1,36 @@
+{
+  "responses": [
+    {
+      "case_id": "CASE-W004-0001",
+      "prediction": 6,
+      "confidence": 80,
+      "explanation": "The local sequence repeats a common gap."
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "response": {
+        "prediction": 6,
+        "confidence": 72,
+        "explanation": "Six is a frequent prime gap."
+      }
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "prediction": 4,
+      "confidence": 61,
+      "explanation": "The continuation is uncertain."
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "prediction": 6,
+      "confidence": 74,
+      "explanation": "Recent local values favor six."
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "prediction": 8,
+      "confidence": 55,
+      "explanation": "A small even gap is likely."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿case_id,window,prediction,actual_gap,confidence,correct,explanation,response_path,response_sha256
+CASE-W004-0001,4,6,6,80,True,The local sequence repeats a common gap.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_2\demo\exp000001\pilot_001\responses.json#entry-1,10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387
+CASE-W008-0001,8,6,6,72,True,Six is a frequent prime gap.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_2\demo\exp000001\pilot_001\responses.json#entry-2,10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387
+CASE-W016-0001,16,4,6,61,False,The continuation is uncertain.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_2\demo\exp000001\pilot_001\responses.json#entry-3,10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387
+CASE-W032-0001,32,6,6,74,True,Recent local values favor six.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_2\demo\exp000001\pilot_001\responses.json#entry-4,10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387
+CASE-W064-0001,64,8,6,55,False,A small even gap is likely.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_2\demo\exp000001\pilot_001\responses.json#entry-5,10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387

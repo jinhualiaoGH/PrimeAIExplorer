@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PrimeAIExplorer Observatory Dashboard</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a2e;--text:#edf2ff;--muted:#aab6d3;--line:#2a3654;--accent:#78a6ff}
+*{box-sizing:border-box} body{margin:0;font:15px/1.5 system-ui,Segoe UI,sans-serif;background:var(--bg);color:var(--text)}
+header,main{max-width:1180px;margin:auto;padding:28px} h1{margin:0 0 6px} .subtitle,.meta{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:24px 0}
+.card,section{background:var(--panel);border:1px solid var(--line);border-radius:14px} .card{padding:16px;color:var(--text);text-decoration:none;display:flex;flex-direction:column} .card span{color:var(--muted);font-size:13px}
+section{padding:22px;margin:18px 0} table{width:100%;border-collapse:collapse;margin-top:14px} th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left} th{width:45%;color:var(--muted);font-weight:500} code{color:var(--accent)} pre{overflow:auto;background:#080d19;padding:14px;border-radius:10px}
+</style></head><body><header><h1>PrimeAIExplorer Observatory Dashboard</h1><div class="subtitle">Unified view of performance, behavior, calibration, distribution, and surprise.</div>
+<div class="cards"><a class="card" href="#performance"><strong>Performance</strong><span>20 metrics · 2 tables</span></a><a class="card" href="#behavior"><strong>Behavior</strong><span>19 metrics · 5 tables</span></a><a class="card" href="#calibration"><strong>Calibration</strong><span>15 metrics · 2 tables</span></a><a class="card" href="#distribution"><strong>Distribution</strong><span>20 metrics · 5 tables</span></a><a class="card" href="#surprise"><strong>Surprise</strong><span>13 metrics · 6 tables</span></a></div></header><main><section id="performance">
+<h2>Performance Observatory</h2>
+<div class="meta">Version 1.0.0</div>
+<table><tbody><tr><th>record_count</th><td>4</td></tr><tr><th>correct_count</th><td>2</td></tr><tr><th>incorrect_count</th><td>2</td></tr><tr><th>accuracy</th><td>0.5</td></tr><tr><th>mean_confidence</th><td>83.75</td></tr><tr><th>median_confidence</th><td>85</td></tr><tr><th>brier_score</th><td>0.460625</td></tr><tr><th>ece</th><td>0.5875</td></tr><tr><th>prediction_entropy_bits</th><td>1.5</td></tr><tr><th>normalized_prediction_entropy</th><td>0.946394630357</td></tr><tr><th>distinct_predictions</th><td>3</td></tr><tr><th>mean_signed_error</th><td>1.5</td></tr><tr><th>mean_absolute_error</th><td>1.5</td></tr><tr><th>median_absolute_error</th><td>1</td></tr><tr><th>exact_error_rate</th><td>0.5</td></tr><tr><th>dataset_case_count</th><td>—</td></tr><tr><th>dataset_coverage</th><td>—</td></tr><tr><th>ledger_entry_count</th><td>—</td></tr><tr><th>pending_entry_count</th><td>0</td></tr><tr><th>pilot_completion</th><td>—</td></tr></tbody></table>
+<h3>Tables</h3><ul><li><code>calibration_bins</code> — 3 rows</li><li><code>window_performance</code> — 2 rows</li></ul>
+</section><section id="behavior">
+<h2>Behavior Observatory</h2>
+<div class="meta">Version 1.0.0</div>
+<table><tbody><tr><th>record_count</th><td>4</td></tr><tr><th>distinct_predictions</th><td>3</td></tr><tr><th>favorite_prediction</th><td>6</td></tr><tr><th>favorite_prediction_count</th><td>2</td></tr><tr><th>favorite_prediction_share</th><td>0.5</td></tr><tr><th>prediction_entropy_bits</th><td>1.5</td></tr><tr><th>normalized_prediction_entropy</th><td>0.946394630357</td></tr><tr><th>transition_count</th><td>3</td></tr><tr><th>switch_count</th><td>2</td></tr><tr><th>switch_rate</th><td>0.666666666667</td></tr><tr><th>repeat_count</th><td>1</td></tr><tr><th>repeat_rate</th><td>0.333333333333</td></tr><tr><th>run_count</th><td>3</td></tr><tr><th>mean_run_length</th><td>1.33333333333</td></tr><tr><th>max_run_length</th><td>2</td></tr><tr><th>min_run_length</th><td>1</td></tr><tr><th>mean_confidence</th><td>83.75</td></tr><tr><th>empirical_accuracy</th><td>0.5</td></tr><tr><th>confidence_realism_gap</th><td>0.3375</td></tr></tbody></table>
+<h3>Tables</h3><ul><li><code>prediction_popularity</code> — 3 rows</li><li><code>persistence_runs</code> — 3 rows</li><li><code>prediction_transitions</code> — 3 rows</li><li><code>window_behavior</code> — 2 rows</li><li><code>behavior_fingerprint</code> — 11 rows</li></ul>
+</section><section id="calibration">
+<h2>Calibration Observatory</h2>
+<div class="meta">Version 1.0.0</div>
+<table><tbody><tr><th>record_count</th><td>4</td></tr><tr><th>bin_count</th><td>10</td></tr><tr><th>occupied_bin_count</th><td>3</td></tr><tr><th>accuracy</th><td>0.5</td></tr><tr><th>mean_confidence</th><td>0.8375</td></tr><tr><th>signed_calibration_bias</th><td>0.3375</td></tr><tr><th>absolute_calibration_bias</th><td>0.3375</td></tr><tr><th>ece</th><td>0.5875</td></tr><tr><th>maximum_calibration_error</th><td>0.925</td></tr><tr><th>brier_score</th><td>0.460625</td></tr><tr><th>overconfident_record_count</th><td>2</td></tr><tr><th>underconfident_record_count</th><td>2</td></tr><tr><th>exactly_calibrated_record_count</th><td>0</td></tr><tr><th>overconfidence_rate</th><td>0.5</td></tr><tr><th>underconfidence_rate</th><td>0.5</td></tr></tbody></table>
+<h3>Tables</h3><ul><li><code>reliability_bins</code> — 3 rows</li><li><code>window_calibration</code> — 2 rows</li></ul>
+</section><section id="distribution">
+<h2>Distribution Observatory</h2>
+<div class="meta">Version 1.0.0</div>
+<table><tbody><tr><th>record_count</th><td>4</td></tr><tr><th>distinct_prediction_count</th><td>3</td></tr><tr><th>distinct_truth_count</th><td>3</td></tr><tr><th>prediction_entropy_bits</th><td>1.5</td></tr><tr><th>truth_entropy_bits</th><td>1.5</td></tr><tr><th>normalized_prediction_entropy</th><td>0.946394630357</td></tr><tr><th>normalized_truth_entropy</th><td>0.946394630357</td></tr><tr><th>mean_signed_error</th><td>1.5</td></tr><tr><th>median_signed_error</th><td>1</td></tr><tr><th>mean_absolute_error</th><td>1.5</td></tr><tr><th>median_absolute_error</th><td>1</td></tr><tr><th>maximum_absolute_error</th><td>4</td></tr><tr><th>exact_count</th><td>2</td></tr><tr><th>underprediction_count</th><td>0</td></tr><tr><th>overprediction_count</th><td>2</td></tr><tr><th>exact_rate</th><td>0.5</td></tr><tr><th>underprediction_rate</th><td>0</td></tr><tr><th>overprediction_rate</th><td>0.5</td></tr><tr><th>total_variation_distance</th><td>0.25</td></tr><tr><th>jensen_shannon_divergence_bits</th><td>0.25</td></tr></tbody></table>
+<h3>Tables</h3><ul><li><code>prediction_distribution</code> — 3 rows</li><li><code>truth_distribution</code> — 3 rows</li><li><code>error_distribution</code> — 3 rows</li><li><code>confusion_matrix</code> — 4 rows</li><li><code>window_distribution</code> — 2 rows</li></ul>
+</section><section id="surprise">
+<h2>Surprise Observatory</h2>
+<div class="meta">Version 1.0.0</div>
+<table><tbody><tr><th>record_count</th><td>4</td></tr><tr><th>novel_prediction_count</th><td>3</td></tr><tr><th>novel_prediction_rate</th><td>0.75</td></tr><tr><th>mean_surprise_index</th><td>1.04034452978</td></tr><tr><th>maximum_surprise_index</th><td>1.44438561898</td></tr><tr><th>mean_confidence_surprise</th><td>0.5875</td></tr><tr><th>unexpected_error_count</th><td>2</td></tr><tr><th>unexpected_error_rate</th><td>0.5</td></tr><tr><th>distinct_prediction_count</th><td>3</td></tr><tr><th>distinct_truth_count</th><td>3</td></tr><tr><th>mean_truth_rarity_bits</th><td>1.5</td></tr><tr><th>mean_prediction_rarity_bits</th><td>1.5</td></tr><tr><th>mean_transition_surprise_bits</th><td>0.666666666667</td></tr></tbody></table>
+<h3>Tables</h3><ul><li><code>surprise_events</code> — 4 rows</li><li><code>surprise_timeline</code> — 4 rows</li><li><code>novel_predictions</code> — 3 rows</li><li><code>window_surprise</code> — 2 rows</li><li><code>unexpected_transitions</code> — 3 rows</li><li><code>top_surprises</code> — 4 rows</li></ul>
+</section><section><h2>Analysis Context</h2><pre>{
+  &quot;experiment_id&quot;: &quot;EXP-000001&quot;,
+  &quot;pilot_id&quot;: &quot;pilot_007&quot;,
+  &quot;model&quot;: &quot;GPT-5.6 Thinking&quot;
+}</pre></section></main></body></html>

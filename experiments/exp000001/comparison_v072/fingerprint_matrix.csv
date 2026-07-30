@@ -1,0 +1,4 @@
+﻿label,model,pilot_id,favorite_prediction,favorite_prediction_share,prediction_entropy_bits,normalized_prediction_entropy,mean_confidence,ece,mean_signed_error,mean_absolute_error,switch_rate,mean_run_length,max_run_length
+GPT-5.6-Thinking · pilot_001,GPT-5.6-Thinking,pilot_001,,,,,,,,,,,
+GPT-5.6-Thinking · pilot_002_partial,GPT-5.6-Thinking,pilot_002_partial,,,,,,,,,,,
+GPT-5.6 Thinking · pilot_002,GPT-5.6 Thinking,pilot_002,6,0.8,0.7219280948873623,0.7219280948873623,20.4,0.20400000000000001,-6.4,6.4,0.25,2.5,4

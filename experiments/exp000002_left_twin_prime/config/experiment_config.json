@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-000002",
+  "experiment_name": "Left Twin Prime Continuation",
+  "prime_root": "E:/PrimeNet/Repository/ranges",
+  "gap_root": "E:/PrimeNet/Repository/gaps_u16_v3",
+  "output_root": "C:/PrimeAIExplorer/experiments/exp000002_left_twin_prime",
+  "dataset_file": "data/left_twin_primes.u64.npy",
+  "dataset_metadata_file": "data/left_twin_primes.metadata.json",
+  "target_count": 100000001,
+  "window_sizes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "representations": [
+    "absolute",
+    "gaps",
+    "combined"
+  ],
+  "definition_conditions": [
+    "hidden",
+    "disclosed"
+  ],
+  "evaluation_scales": [
+    1000,
+    10000,
+    100000,
+    1000000,
+    10000000,
+    100000000
+  ],
+  "random_cases_per_scale": 10,
+  "random_seed": 20260729,
+  "response_glob": "responses/**/*.json",
+  "strict_json": true
+}

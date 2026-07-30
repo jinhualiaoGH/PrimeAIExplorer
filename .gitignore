@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Generated data
+runs/
+results/
+responses/
+logs/
+output/
+outputs/
+reports/
+
+# Local datasets
+datasets/*.npy
+datasets/*.npz
+datasets/*.bin
+datasets/*.csv
+
+# IDE
+.vscode/settings.json
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Windows
+Thumbs.db
+Desktop.ini

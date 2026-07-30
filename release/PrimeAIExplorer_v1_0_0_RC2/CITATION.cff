@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: PrimeAIExplorer
+message: "Please cite PrimeAIExplorer when using it in scientific work."
+type: software
+authors:
+  - family-names: Liao
+    given-names: Jinhua
+version: 1.0.0-rc2
+date-released: 2026-07-28
+license: MIT

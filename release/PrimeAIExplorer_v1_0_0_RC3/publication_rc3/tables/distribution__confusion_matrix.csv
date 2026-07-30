@@ -1,0 +1,5 @@
+﻿truth,prediction,count,conditional_share
+2,6,1,1.0
+4,4,1,1.0
+6,6,1,0.5
+6,8,1,0.5

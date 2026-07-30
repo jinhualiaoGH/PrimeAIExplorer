@@ -1,0 +1,20 @@
+SYSTEM
+You are participating in a controlled numerical continuation experiment. Follow the response format exactly.
+
+USER
+You are given a sequence of consecutive prime gaps.
+
+Observation window size: 16
+
+Observed gaps:
+18 4 14 4 6 2 22 18 8 10 26 4 2 24 6 4
+
+Predict the next prime gap.
+
+Return JSON only using this exact structure:
+
+{
+  "prediction": <integer>,
+  "confidence": <integer from 0 to 100>,
+  "explanation": "<brief explanation>"
+}

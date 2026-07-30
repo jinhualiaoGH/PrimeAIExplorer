@@ -1,0 +1,12 @@
+{
+  "schema_version": "0.7.0",
+  "primeaiexplorer_version": "0.7.0",
+  "created_utc": "2026-07-27T17:28:44.424885+00:00",
+  "analysis_count": 2,
+  "analysis_sources": [
+    "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\demo\\exp000001\\analysis_v070\\model_a",
+    "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\demo\\exp000001\\analysis_v070\\model_b"
+  ],
+  "comparison_summary_sha256": "9eea650ee5e5a8c757e5479deb6a8cc66268aa590b6c7cfe8e3e054912b8abba",
+  "command": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\.venv\\Scripts\\paiexp compare --analysis C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\demo\\exp000001\\analysis_v070\\model_a --label GPT-5.6 Thinking --analysis C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\demo\\exp000001\\analysis_v070\\model_b --label Comparison Model --output C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_0\\demo\\exp000001\\comparison_v070"
+}

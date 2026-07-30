@@ -1,0 +1,6 @@
+﻿n,case_id,window,prediction,truth,confidence,correct,signed_error,absolute_error
+1,CASE-W004-0002,4,4,12,18,False,-8,8
+2,CASE-W008-0002,8,6,12,18,False,-6,6
+3,CASE-W016-0002,16,6,12,22,False,-6,6
+4,CASE-W032-0002,32,6,12,22,False,-6,6
+5,CASE-W064-0002,64,6,12,22,False,-6,6

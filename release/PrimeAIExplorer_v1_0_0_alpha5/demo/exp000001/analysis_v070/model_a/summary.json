@@ -1,0 +1,610 @@
+{
+  "schema_version": "0.7.3",
+  "record_count": 2,
+  "ledger_entry_count": 5,
+  "completed_entry_count": 2,
+  "pending_entry_count": 3,
+  "pilot_completion": 0.4,
+  "dataset_case_count": 5,
+  "dataset_coverage": 0.4,
+  "correct_count": 1,
+  "incorrect_count": 1,
+  "accuracy": 0.5,
+  "mean_confidence": 39,
+  "median_confidence": 39.0,
+  "brier_score": 0.09620000000000001,
+  "ece": 0.29000000000000004,
+  "prediction_entropy_bits": 1.0,
+  "normalized_prediction_entropy": 1.0,
+  "distinct_predictions": 2,
+  "prediction_popularity": [
+    {
+      "rank": 1,
+      "prediction": 4,
+      "count": 1,
+      "frequency": 0.5
+    },
+    {
+      "rank": 2,
+      "prediction": 6,
+      "count": 1,
+      "frequency": 0.5
+    }
+  ],
+  "persistence": {
+    "switch_count": 1,
+    "switch_rate": 1.0,
+    "run_count": 2,
+    "mean_run_length": 1,
+    "max_run_length": 1,
+    "runs": [
+      {
+        "run": 1,
+        "prediction": 4,
+        "start_n": 1,
+        "end_n": 1,
+        "length": 1
+      },
+      {
+        "run": 2,
+        "prediction": 6,
+        "start_n": 2,
+        "end_n": 2,
+        "length": 1
+      }
+    ]
+  },
+  "persistence_runs": [
+    {
+      "run": 1,
+      "prediction": 4,
+      "start_n": 1,
+      "end_n": 1,
+      "length": 1
+    },
+    {
+      "run": 2,
+      "prediction": 6,
+      "start_n": 2,
+      "end_n": 2,
+      "length": 1
+    }
+  ],
+  "confidence_realism": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 1,
+      "average_confidence": 0.18,
+      "observed_accuracy": 0.0,
+      "realism_gap": -0.18
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "count": 1,
+      "average_confidence": 0.6,
+      "observed_accuracy": 1.0,
+      "realism_gap": 0.4
+    }
+  ],
+  "surprise_index": [
+    {
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "truth": 6,
+      "confidence": 60,
+      "absolute_error": 0,
+      "relative_error": 0.0,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.6,
+      "correct": true,
+      "rank": 1
+    },
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "truth": 6,
+      "confidence": 18,
+      "absolute_error": 2,
+      "relative_error": 0.3333333333333333,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.5133333333333333,
+      "correct": false,
+      "rank": 2
+    }
+  ],
+  "model_fingerprint": [
+    {
+      "metric": "favorite_prediction",
+      "value": 4
+    },
+    {
+      "metric": "favorite_prediction_share",
+      "value": 0.5
+    },
+    {
+      "metric": "prediction_entropy_bits",
+      "value": 1.0
+    },
+    {
+      "metric": "normalized_prediction_entropy",
+      "value": 1.0
+    },
+    {
+      "metric": "mean_confidence",
+      "value": 39
+    },
+    {
+      "metric": "ece",
+      "value": 0.29000000000000004
+    },
+    {
+      "metric": "mean_signed_error",
+      "value": -1
+    },
+    {
+      "metric": "mean_absolute_error",
+      "value": 1
+    },
+    {
+      "metric": "switch_rate",
+      "value": 1.0
+    },
+    {
+      "metric": "mean_run_length",
+      "value": 1
+    },
+    {
+      "metric": "max_run_length",
+      "value": 1
+    }
+  ],
+  "mean_signed_error": -1,
+  "mean_absolute_error": 1,
+  "median_absolute_error": 1.0,
+  "exact_error_rate": 0.5,
+  "prediction_distribution": [
+    {
+      "prediction": 4,
+      "count": 1,
+      "frequency": 0.5,
+      "rank": 1
+    },
+    {
+      "prediction": 6,
+      "count": 1,
+      "frequency": 0.5,
+      "rank": 2
+    }
+  ],
+  "truth_distribution": [
+    {
+      "truth": 6,
+      "count": 2,
+      "frequency": 1.0,
+      "rank": 1
+    }
+  ],
+  "gap_spectrum": [
+    {
+      "gap": 4,
+      "predicted": 1,
+      "truth": 0,
+      "bias": 1,
+      "predicted_frequency": 0.5,
+      "truth_frequency": 0.0,
+      "absolute_bias": 1
+    },
+    {
+      "gap": 6,
+      "predicted": 1,
+      "truth": 2,
+      "bias": -1,
+      "predicted_frequency": 0.5,
+      "truth_frequency": 1.0,
+      "absolute_bias": 1
+    }
+  ],
+  "prediction_bias": [
+    {
+      "gap": 4,
+      "predicted": 1,
+      "truth": 0,
+      "bias": 1
+    },
+    {
+      "gap": 6,
+      "predicted": 1,
+      "truth": 2,
+      "bias": -1
+    }
+  ],
+  "confusion_labels": [
+    4,
+    6
+  ],
+  "confusion_matrix": [
+    {
+      "truth": 6,
+      "prediction": 4,
+      "count": 1
+    },
+    {
+      "truth": 6,
+      "prediction": 6,
+      "count": 1
+    }
+  ],
+  "transition_labels": [
+    4,
+    6
+  ],
+  "prediction_transitions": [
+    {
+      "from_prediction": 4,
+      "to_prediction": 6,
+      "count": 1
+    }
+  ],
+  "error_distribution": [
+    {
+      "signed_error": -2,
+      "count": 1,
+      "frequency": 0.5
+    },
+    {
+      "signed_error": 0,
+      "count": 1,
+      "frequency": 0.5
+    }
+  ],
+  "confidence_histogram": [
+    {
+      "bin_low": 0,
+      "bin_high": 10,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 10,
+      "bin_high": 20,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_absolute_error": 2
+    },
+    {
+      "bin_low": 20,
+      "bin_high": 30,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 30,
+      "bin_high": 40,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 40,
+      "bin_high": 50,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 50,
+      "bin_high": 60,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 60,
+      "bin_high": 70,
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_absolute_error": 0
+    },
+    {
+      "bin_low": 70,
+      "bin_high": 80,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 80,
+      "bin_high": 90,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 90,
+      "bin_high": 100,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    }
+  ],
+  "confidence_error": [
+    {
+      "case_id": "CASE-W004-0002",
+      "confidence": 18,
+      "absolute_error": 2,
+      "signed_error": -2,
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "confidence": 60,
+      "absolute_error": 0,
+      "signed_error": 0,
+      "correct": true
+    }
+  ],
+  "gap_families": [
+    {
+      "family": "twin",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 0,
+      "truth_in_family": 0
+    },
+    {
+      "family": "small",
+      "count": 2,
+      "accuracy": 0.5,
+      "mean_confidence": 39,
+      "mean_absolute_error": 1,
+      "predicted_in_family": 2,
+      "truth_in_family": 2
+    },
+    {
+      "family": "medium",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 0,
+      "truth_in_family": 0
+    },
+    {
+      "family": "large",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 0,
+      "truth_in_family": 0
+    }
+  ],
+  "timeline": [
+    {
+      "n": 1,
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "truth": 6,
+      "confidence": 18,
+      "correct": false,
+      "signed_error": -2,
+      "absolute_error": 2
+    },
+    {
+      "n": 2,
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "truth": 6,
+      "confidence": 60,
+      "correct": true,
+      "signed_error": 0,
+      "absolute_error": 0
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.18
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 0.6,
+      "absolute_gap": 0.4
+    }
+  ],
+  "metric_trends": [
+    {
+      "n": 1,
+      "case_id": "CASE-W004-0002",
+      "accuracy": 0.0,
+      "brier": 0.0324,
+      "ece": 0.18,
+      "entropy": 0.0,
+      "mean_absolute_error": 2,
+      "mean_signed_error": -2
+    },
+    {
+      "n": 2,
+      "case_id": "CASE-W008-0002",
+      "accuracy": 0.5,
+      "brier": 0.09620000000000001,
+      "ece": 0.29000000000000004,
+      "entropy": 1.0,
+      "mean_absolute_error": 1,
+      "mean_signed_error": -1
+    }
+  ],
+  "timing": {
+    "duration_count": 0,
+    "mean_response_seconds": null,
+    "median_response_seconds": null,
+    "timestamp_count": 1,
+    "mean_collection_interval_seconds": null,
+    "median_collection_interval_seconds": null
+  },
+  "window_observatory": [
+    {
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -2,
+      "mean_absolute_error": 2
+    },
+    {
+      "window": 8,
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 60,
+      "brier_score": 0.16000000000000003,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": 0,
+      "mean_absolute_error": 0
+    }
+  ],
+  "by_window": {
+    "4": {
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -2,
+      "mean_absolute_error": 2
+    },
+    "8": {
+      "window": 8,
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 60,
+      "brier_score": 0.16000000000000003,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": 0,
+      "mean_absolute_error": 0
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 9.5,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 1
+      },
+      {
+        "word": "gaps",
+        "count": 1
+      },
+      {
+        "word": "irregular",
+        "count": 1
+      },
+      {
+        "word": "common",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "gap",
+        "count": 1
+      },
+      {
+        "word": "after",
+        "count": 1
+      },
+      {
+        "word": "short",
+        "count": 1
+      },
+      {
+        "word": "pattern",
+        "count": 1
+      },
+      {
+        "word": "valid",
+        "count": 1
+      },
+      {
+        "word": "response",
+        "count": 1
+      },
+      {
+        "word": "committed",
+        "count": 1
+      },
+      {
+        "word": "by",
+        "count": 1
+      },
+      {
+        "word": "collection",
+        "count": 1
+      },
+      {
+        "word": "assistant",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 1,
+      "frequency_prior": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha5\\demo\\exp000001\\pilot_002\\responses.json#entry-1",
+      "collection_sha256": "52334b73c0bc777fab9fa301496ac8df5fd5f86570337fc4139daeba0a7b7834",
+      "entry_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "response_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "correct": false,
+      "collected_at": null,
+      "response_seconds": null
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 60,
+      "explanation": "A valid response committed by the Collection Assistant.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha5\\demo\\exp000001\\pilot_002\\responses.json#entry-2",
+      "collection_sha256": "52334b73c0bc777fab9fa301496ac8df5fd5f86570337fc4139daeba0a7b7834",
+      "entry_sha256": "9566de4e576ab15f57608c6aa120570214b118d14667b4799bc6dc8af10a83cb",
+      "response_sha256": "9566de4e576ab15f57608c6aa120570214b118d14667b4799bc6dc8af10a83cb",
+      "correct": true,
+      "collected_at": "2026-07-28T02:39:50.933758Z",
+      "response_seconds": null
+    }
+  ]
+}

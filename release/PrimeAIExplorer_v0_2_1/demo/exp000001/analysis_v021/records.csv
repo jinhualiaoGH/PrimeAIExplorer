@@ -1,0 +1,6 @@
+﻿case_id,window,prediction,actual_gap,confidence,correct,explanation,response_path,response_sha256
+CASE-W004-0001,4,6,6,74,True,A repeated small gap suggests six.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_1\demo\exp000001\pilot_001\CASE-W004-0001.response.json,73e1e4d46e69aee1cd97189c88b40259863f21f8fc34d7fb5a191e0365ccf6d5
+CASE-W008-0001,8,6,8,62,False,Six is locally frequent.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_1\demo\exp000001\pilot_001\CASE-W008-0001.response.json,447c6804c3fbf5745af0d61acf6a589ce824f2bed2800dbf230eb420639af90b
+CASE-W016-0001,16,6,6,70,True,The recent pattern favors six.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_1\demo\exp000001\pilot_001\CASE-W016-0001.response.json,9696ae92c58524c3d9e2d8147236e843cd3e53bef1a961ff9e7373a2e1620a3a
+CASE-W032-0001,32,10,12,44,False,Ten is plausible from the local mix.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_1\demo\exp000001\pilot_001\CASE-W032-0001.response.json,7e491bc09c68d1ac52b93c1bb9448add12514094e001c3271bfc12103a83883b
+CASE-W064-0001,64,4,4,58,True,Four follows a short-gap pattern.,C:\PrimeAIExplorer\release\PrimeAIExplorer_v0_2_1\demo\exp000001\pilot_001\CASE-W064-0001.response.json,7596587a48c33a99410f18a75b7b8e96ee752dd03acd700298f61fe827a4573c

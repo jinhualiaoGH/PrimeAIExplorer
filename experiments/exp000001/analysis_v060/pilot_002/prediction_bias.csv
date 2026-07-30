@@ -1,0 +1,4 @@
+﻿gap,predicted,truth,bias
+4,1,0,1
+6,4,0,4
+12,0,5,-5

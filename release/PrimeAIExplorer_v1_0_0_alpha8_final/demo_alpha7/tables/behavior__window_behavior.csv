@@ -1,0 +1,3 @@
+﻿window,count,distinct_predictions,favorite_prediction,favorite_prediction_share,prediction_entropy_bits,switch_rate,run_count,max_run_length
+4,2,1,6,1.0,0.0,0.0,1,2
+8,2,2,4,0.5,1.0,1.0,2,1

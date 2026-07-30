@@ -1,0 +1,138 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://primenet.local/primeaiexplorer/schemas/connector.schema.json",
+    "title":  "PrimeAIExplorer Canonical Connector Definition",
+    "description":  "Canonical schema for a PrimeAIExplorer connector definition.",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "connector_id",
+                     "connector_schema_version",
+                     "title",
+                     "short_name",
+                     "version",
+                     "status",
+                     "connector_type",
+                     "implementation_module",
+                     "external_access",
+                     "cost_class",
+                     "capabilities"
+                 ],
+    "properties":  {
+                       "connector_id":  {
+                                            "type":  "string",
+                                            "pattern":  "^CONNECTOR-[0-9]{6}$"
+                                        },
+                       "connector_schema_version":  {
+                                                        "type":  "string",
+                                                        "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                    },
+                       "title":  {
+                                     "type":  "string",
+                                     "minLength":  1
+                                 },
+                       "short_name":  {
+                                          "type":  "string",
+                                          "pattern":  "^[a-z][a-z0-9_]*$"
+                                      },
+                       "version":  {
+                                       "type":  "string",
+                                       "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                   },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "Planned",
+                                                   "Draft",
+                                                   "Active",
+                                                   "Disabled",
+                                                   "Suspended",
+                                                   "Retired",
+                                                   "Invalidated"
+                                               ]
+                                  },
+                       "connector_type":  {
+                                              "type":  "string",
+                                              "enum":  [
+                                                           "deterministic_mock",
+                                                           "local_model",
+                                                           "hosted_api",
+                                                           "command_line",
+                                                           "replay",
+                                                           "human_interface",
+                                                           "simulation"
+                                                       ]
+                                          },
+                       "implementation_module":  {
+                                                     "type":  [
+                                                                  "string",
+                                                                  "null"
+                                                              ]
+                                                 },
+                       "external_access":  {
+                                               "type":  "boolean"
+                                           },
+                       "cost_class":  {
+                                          "type":  "string",
+                                          "enum":  [
+                                                       "free",
+                                                       "local_resource",
+                                                       "paid",
+                                                       "unknown"
+                                                   ]
+                                      },
+                       "capabilities":  {
+                                            "type":  "object",
+                                            "additionalProperties":  false,
+                                            "required":  [
+                                                             "supports_system_messages",
+                                                             "supports_structured_output",
+                                                             "supports_seed",
+                                                             "supports_temperature",
+                                                             "supports_tools",
+                                                             "supports_streaming",
+                                                             "supports_usage_reporting"
+                                                         ],
+                                            "properties":  {
+                                                               "supports_system_messages":  {
+                                                                                                "type":  "boolean"
+                                                                                            },
+                                                               "supports_developer_messages":  {
+                                                                                                   "type":  "boolean"
+                                                                                               },
+                                                               "supports_structured_output":  {
+                                                                                                  "type":  "boolean"
+                                                                                              },
+                                                               "supports_seed":  {
+                                                                                     "type":  "boolean"
+                                                                                 },
+                                                               "supports_temperature":  {
+                                                                                            "type":  "boolean"
+                                                                                        },
+                                                               "supports_tools":  {
+                                                                                      "type":  "boolean"
+                                                                                  },
+                                                               "supports_streaming":  {
+                                                                                          "type":  "boolean"
+                                                                                      },
+                                                               "supports_usage_reporting":  {
+                                                                                                "type":  "boolean"
+                                                                                            },
+                                                               "maximum_context_tokens":  {
+                                                                                              "type":  [
+                                                                                                           "integer",
+                                                                                                           "null"
+                                                                                                       ],
+                                                                                              "minimum":  1
+                                                                                          },
+                                                               "maximum_output_tokens":  {
+                                                                                             "type":  [
+                                                                                                          "integer",
+                                                                                                          "null"
+                                                                                                      ],
+                                                                                             "minimum":  1
+                                                                                         }
+                                                           }
+                                        }
+                   }
+}

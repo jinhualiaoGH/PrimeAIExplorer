@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "kind": "doctor",
+  "created_utc": "2026-07-29T01:07:46.179067+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Python",
+      "passed": true,
+      "detail": "3.14.5",
+      "required": true
+    },
+    {
+      "name": "Operating system",
+      "passed": true,
+      "detail": "Windows-11-10.0.26200-SP0",
+      "required": true
+    },
+    {
+      "name": "Working directory",
+      "passed": true,
+      "detail": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_RC3",
+      "required": true
+    },
+    {
+      "name": "Writable directory",
+      "passed": true,
+      "detail": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_RC3",
+      "required": true
+    },
+    {
+      "name": "Import primeaiexplorer.observatories",
+      "passed": true,
+      "detail": "available",
+      "required": true
+    },
+    {
+      "name": "Import primeaiexplorer.exporters",
+      "passed": true,
+      "detail": "available",
+      "required": true
+    },
+    {
+      "name": "Import primeaiexplorer.dashboards",
+      "passed": true,
+      "detail": "available",
+      "required": true
+    },
+    {
+      "name": "Import primeaiexplorer.visualizations",
+      "passed": true,
+      "detail": "available",
+      "required": true
+    },
+    {
+      "name": "Optional prompt-toolkit",
+      "passed": true,
+      "detail": "available",
+      "required": false
+    }
+  ]
+}

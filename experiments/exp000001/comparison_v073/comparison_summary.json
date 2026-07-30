@@ -1,0 +1,247 @@
+{
+  "schema_version": "0.7.2",
+  "created_utc": "2026-07-27T19:36:29.696404+00:00",
+  "analysis_count": 3,
+  "experiment_ids": [
+    "EXP-000001"
+  ],
+  "models": [
+    "GPT-5.6 Thinking",
+    "GPT-5.6-Thinking"
+  ],
+  "pilots": [
+    "pilot_001",
+    "pilot_002",
+    "pilot_002_partial"
+  ],
+  "comparison_rows": [
+    {
+      "label": "GPT-5.6-Thinking · pilot_001",
+      "model": "GPT-5.6-Thinking",
+      "pilot_id": "pilot_001",
+      "experiment_id": "EXP-000001",
+      "analysis_folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_001",
+      "record_count": 5,
+      "accuracy": 1.0,
+      "brier_score": 0.5379200000000001,
+      "ece": 0.6560000000000001,
+      "prediction_entropy_bits": 0.0,
+      "distinct_predictions": 1,
+      "mean_confidence": 34.4,
+      "mean_signed_error": null,
+      "mean_absolute_error": null,
+      "switch_rate": 0.0,
+      "max_run_length": 0,
+      "favorite_prediction": null,
+      "favorite_prediction_share": null,
+      "accuracy_rank": 1,
+      "brier_score_rank": 3,
+      "ece_rank": 3,
+      "mean_absolute_error_rank": null
+    },
+    {
+      "label": "GPT-5.6-Thinking · pilot_002_partial",
+      "model": "GPT-5.6-Thinking",
+      "pilot_id": "pilot_002_partial",
+      "experiment_id": "EXP-000001",
+      "analysis_folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_002_partial",
+      "record_count": 1,
+      "accuracy": 0.0,
+      "brier_score": 0.0324,
+      "ece": 0.18,
+      "prediction_entropy_bits": 0.0,
+      "distinct_predictions": 1,
+      "mean_confidence": 18,
+      "mean_signed_error": null,
+      "mean_absolute_error": null,
+      "switch_rate": 0.0,
+      "max_run_length": 0,
+      "favorite_prediction": null,
+      "favorite_prediction_share": null,
+      "accuracy_rank": 2,
+      "brier_score_rank": 1,
+      "ece_rank": 1,
+      "mean_absolute_error_rank": null
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_002",
+      "experiment_id": "EXP-000001",
+      "analysis_folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v060\\pilot_002",
+      "record_count": 5,
+      "accuracy": 0.0,
+      "brier_score": 0.041999999999999996,
+      "ece": 0.20400000000000001,
+      "prediction_entropy_bits": 0.7219280948873623,
+      "distinct_predictions": 2,
+      "mean_confidence": 20.4,
+      "mean_signed_error": -6.4,
+      "mean_absolute_error": 6.4,
+      "switch_rate": 0.25,
+      "max_run_length": 4,
+      "favorite_prediction": 6,
+      "favorite_prediction_share": 0.8,
+      "accuracy_rank": 3,
+      "brier_score_rank": 2,
+      "ece_rank": 2,
+      "mean_absolute_error_rank": 1
+    }
+  ],
+  "fingerprint_matrix": [
+    {
+      "label": "GPT-5.6-Thinking · pilot_001",
+      "model": "GPT-5.6-Thinking",
+      "pilot_id": "pilot_001",
+      "favorite_prediction": null,
+      "favorite_prediction_share": null,
+      "prediction_entropy_bits": null,
+      "normalized_prediction_entropy": null,
+      "mean_confidence": null,
+      "ece": null,
+      "mean_signed_error": null,
+      "mean_absolute_error": null,
+      "switch_rate": null,
+      "mean_run_length": null,
+      "max_run_length": null
+    },
+    {
+      "label": "GPT-5.6-Thinking · pilot_002_partial",
+      "model": "GPT-5.6-Thinking",
+      "pilot_id": "pilot_002_partial",
+      "favorite_prediction": null,
+      "favorite_prediction_share": null,
+      "prediction_entropy_bits": null,
+      "normalized_prediction_entropy": null,
+      "mean_confidence": null,
+      "ece": null,
+      "mean_signed_error": null,
+      "mean_absolute_error": null,
+      "switch_rate": null,
+      "mean_run_length": null,
+      "max_run_length": null
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_002",
+      "favorite_prediction": 6,
+      "favorite_prediction_share": 0.8,
+      "prediction_entropy_bits": 0.7219280948873623,
+      "normalized_prediction_entropy": 0.7219280948873623,
+      "mean_confidence": 20.4,
+      "ece": 0.20400000000000001,
+      "mean_signed_error": -6.4,
+      "mean_absolute_error": 6.4,
+      "switch_rate": 0.25,
+      "mean_run_length": 2.5,
+      "max_run_length": 4
+    }
+  ],
+  "window_comparison": [
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -8,
+      "mean_absolute_error": 8
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "window": 8,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "window": 16,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "window": 32,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "window": 64,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    }
+  ],
+  "rankings": [
+    {
+      "metric": "accuracy",
+      "best_label": "GPT-5.6-Thinking · pilot_001",
+      "best_value": 1.0,
+      "direction": "higher"
+    },
+    {
+      "metric": "brier_score",
+      "best_label": "GPT-5.6-Thinking · pilot_002_partial",
+      "best_value": 0.0324,
+      "direction": "lower"
+    },
+    {
+      "metric": "ece",
+      "best_label": "GPT-5.6-Thinking · pilot_002_partial",
+      "best_value": 0.18,
+      "direction": "lower"
+    },
+    {
+      "metric": "mean_absolute_error",
+      "best_label": "GPT-5.6 Thinking · pilot_002",
+      "best_value": 6.4,
+      "direction": "lower"
+    }
+  ],
+  "aggregate": {
+    "mean_accuracy": 0.3333333333333333,
+    "mean_brier_score": 0.2041066666666667,
+    "mean_ece": 0.34666666666666673,
+    "mean_absolute_error": 6.4
+  },
+  "sources": [
+    {
+      "label": "GPT-5.6-Thinking · pilot_001",
+      "folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_001",
+      "summary_sha256": "5d3c20ffad3b77763f84f4c59e3896a29c8f7431eac6bd7b2eedbdac39916a23"
+    },
+    {
+      "label": "GPT-5.6-Thinking · pilot_002_partial",
+      "folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_002_partial",
+      "summary_sha256": "b81d64f90d8b72e1241b75df0938e84678dd5b08588bd7d974c8d297c8b4ac1a"
+    },
+    {
+      "label": "GPT-5.6 Thinking · pilot_002",
+      "folder": "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v060\\pilot_002",
+      "summary_sha256": "3aa1ac6c4225be4fdb4716c1ac5d19d55a48d326560c96dbf85436dcfb93b63d"
+    }
+  ]
+}

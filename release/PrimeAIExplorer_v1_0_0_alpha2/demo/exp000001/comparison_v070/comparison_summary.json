@@ -1,0 +1,190 @@
+{
+  "schema_version": "0.7.3",
+  "created_utc": "2026-07-27T21:30:41.171567+00:00",
+  "analysis_count": 2,
+  "experiment_ids": [
+    "EXP-000001"
+  ],
+  "models": [
+    "Comparison Model",
+    "GPT-5.6 Thinking"
+  ],
+  "pilots": [
+    "pilot_002_a",
+    "pilot_002_b"
+  ],
+  "comparison_rows": [
+    {
+      "label": "GPT-5.6 Thinking",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_002_a",
+      "experiment_id": "EXP-000001",
+      "analysis_folder": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha2\\demo\\exp000001\\analysis_v070\\model_a",
+      "record_count": 2,
+      "accuracy": 0.5,
+      "brier_score": 0.09620000000000001,
+      "ece": 0.29000000000000004,
+      "prediction_entropy_bits": 1.0,
+      "distinct_predictions": 2,
+      "mean_confidence": 39,
+      "mean_signed_error": -1,
+      "mean_absolute_error": 1,
+      "switch_rate": 1.0,
+      "max_run_length": 1,
+      "favorite_prediction": 4,
+      "favorite_prediction_share": 0.5,
+      "accuracy_rank": 1,
+      "brier_score_rank": 2,
+      "ece_rank": 2,
+      "mean_absolute_error_rank": 2
+    },
+    {
+      "label": "Comparison Model",
+      "model": "Comparison Model",
+      "pilot_id": "pilot_002_b",
+      "experiment_id": "EXP-000001",
+      "analysis_folder": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha2\\demo\\exp000001\\analysis_v070\\model_b",
+      "record_count": 2,
+      "accuracy": 0.5,
+      "brier_score": 0.09620000000000001,
+      "ece": 0.29000000000000004,
+      "prediction_entropy_bits": 1.0,
+      "distinct_predictions": 2,
+      "mean_confidence": 39,
+      "mean_signed_error": -1,
+      "mean_absolute_error": 1,
+      "switch_rate": 1.0,
+      "max_run_length": 1,
+      "favorite_prediction": 4,
+      "favorite_prediction_share": 0.5,
+      "accuracy_rank": 2,
+      "brier_score_rank": 1,
+      "ece_rank": 1,
+      "mean_absolute_error_rank": 1
+    }
+  ],
+  "fingerprint_matrix": [
+    {
+      "label": "GPT-5.6 Thinking",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_002_a",
+      "favorite_prediction": 4,
+      "favorite_prediction_share": 0.5,
+      "prediction_entropy_bits": 1.0,
+      "normalized_prediction_entropy": 1.0,
+      "mean_confidence": 39,
+      "ece": 0.29000000000000004,
+      "mean_signed_error": -1,
+      "mean_absolute_error": 1,
+      "switch_rate": 1.0,
+      "mean_run_length": 1,
+      "max_run_length": 1
+    },
+    {
+      "label": "Comparison Model",
+      "model": "Comparison Model",
+      "pilot_id": "pilot_002_b",
+      "favorite_prediction": 4,
+      "favorite_prediction_share": 0.5,
+      "prediction_entropy_bits": 1.0,
+      "normalized_prediction_entropy": 1.0,
+      "mean_confidence": 39,
+      "ece": 0.29000000000000004,
+      "mean_signed_error": -1,
+      "mean_absolute_error": 1,
+      "switch_rate": 1.0,
+      "mean_run_length": 1,
+      "max_run_length": 1
+    }
+  ],
+  "window_comparison": [
+    {
+      "label": "GPT-5.6 Thinking",
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -2,
+      "mean_absolute_error": 2
+    },
+    {
+      "label": "GPT-5.6 Thinking",
+      "window": 8,
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 60,
+      "brier_score": 0.16000000000000003,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": 0,
+      "mean_absolute_error": 0
+    },
+    {
+      "label": "Comparison Model",
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -2,
+      "mean_absolute_error": 2
+    },
+    {
+      "label": "Comparison Model",
+      "window": 8,
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 60,
+      "brier_score": 0.16000000000000003,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": 0,
+      "mean_absolute_error": 0
+    }
+  ],
+  "rankings": [
+    {
+      "metric": "accuracy",
+      "best_label": "GPT-5.6 Thinking",
+      "best_value": 0.5,
+      "direction": "higher"
+    },
+    {
+      "metric": "brier_score",
+      "best_label": "Comparison Model",
+      "best_value": 0.09620000000000001,
+      "direction": "lower"
+    },
+    {
+      "metric": "ece",
+      "best_label": "Comparison Model",
+      "best_value": 0.29000000000000004,
+      "direction": "lower"
+    },
+    {
+      "metric": "mean_absolute_error",
+      "best_label": "Comparison Model",
+      "best_value": 1.0,
+      "direction": "lower"
+    }
+  ],
+  "aggregate": {
+    "mean_accuracy": 0.5,
+    "mean_brier_score": 0.09620000000000001,
+    "mean_ece": 0.29000000000000004,
+    "mean_absolute_error": 1.0
+  },
+  "sources": [
+    {
+      "label": "GPT-5.6 Thinking",
+      "folder": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha2\\demo\\exp000001\\analysis_v070\\model_a",
+      "summary_sha256": "79f32a693f16bc402e91f6b3d8d23532280eddecf5ceec298a63c149056a509b"
+    },
+    {
+      "label": "Comparison Model",
+      "folder": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_alpha2\\demo\\exp000001\\analysis_v070\\model_b",
+      "summary_sha256": "79f32a693f16bc402e91f6b3d8d23532280eddecf5ceec298a63c149056a509b"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿case_id,window,prediction,actual_gap,confidence,correct,explanation,response_path,collection_sha256,entry_sha256,response_sha256
+CASE-W004-0002,4,4,12,18,False,Prime gaps are irregular; 4 is a common small gap after this short pattern.,C:\PrimeAIExplorer\experiments\exp000001\pilot_002_completed\responses.json#entry-1,5d1b057b97a51ee6907e37a8e8b7dfce29fa295811395c11b9ed00481784c32e,e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49,e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49

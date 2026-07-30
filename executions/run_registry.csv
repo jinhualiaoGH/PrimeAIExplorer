@@ -1,0 +1,4 @@
+﻿"execution_profile_id","title","short_name","version","status","connector_id","execution_mode","external_access","cost_class","implementation_module","created_date","modified_date"
+"EXEC-000001","Deterministic Mock Pipeline","deterministic_mock_pipeline","0.1.0","Active","CONNECTOR-000001","local","false","free","core.execution_engine","2026-07-25","2026-07-25"
+"EXEC-000002","Replay Pipeline","replay_pipeline","0.1.0","Planned","CONNECTOR-000002","replay","false","free","","2026-07-25","2026-07-25"
+"EXEC-000003","Hosted Model Pipeline","hosted_model_pipeline","0.1.0","Disabled","CONNECTOR-000003","api","true","paid","","2026-07-25","2026-07-25"

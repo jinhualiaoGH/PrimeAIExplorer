@@ -1,0 +1,50 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Execution Registry",
+    "registry_version":  "0.8.0",
+    "run_schema_version":  "0.8.0",
+    "updated_date":  "2026-07-25",
+    "execution_profiles":  [
+                               {
+                                   "execution_profile_id":  "EXEC-000001",
+                                   "title":  "Deterministic Mock Pipeline",
+                                   "short_name":  "deterministic_mock_pipeline",
+                                   "version":  "0.1.0",
+                                   "status":  "Active",
+                                   "connector_id":  "CONNECTOR-000001",
+                                   "execution_mode":  "local",
+                                   "external_access":  false,
+                                   "cost_class":  "free",
+                                   "implementation_module":  "core.execution_engine",
+                                   "created_date":  "2026-07-25",
+                                   "modified_date":  "2026-07-25"
+                               },
+                               {
+                                   "execution_profile_id":  "EXEC-000002",
+                                   "title":  "Replay Pipeline",
+                                   "short_name":  "replay_pipeline",
+                                   "version":  "0.1.0",
+                                   "status":  "Planned",
+                                   "connector_id":  "CONNECTOR-000002",
+                                   "execution_mode":  "replay",
+                                   "external_access":  false,
+                                   "cost_class":  "free",
+                                   "implementation_module":  "",
+                                   "created_date":  "2026-07-25",
+                                   "modified_date":  "2026-07-25"
+                               },
+                               {
+                                   "execution_profile_id":  "EXEC-000003",
+                                   "title":  "Hosted Model Pipeline",
+                                   "short_name":  "hosted_model_pipeline",
+                                   "version":  "0.1.0",
+                                   "status":  "Disabled",
+                                   "connector_id":  "CONNECTOR-000003",
+                                   "execution_mode":  "api",
+                                   "external_access":  true,
+                                   "cost_class":  "paid",
+                                   "implementation_module":  "",
+                                   "created_date":  "2026-07-25",
+                                   "modified_date":  "2026-07-25"
+                               }
+                           ]
+}

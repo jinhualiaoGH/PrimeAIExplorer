@@ -1,0 +1,37 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Experiment Registry",
+    "registry_version":  "0.2.0",
+    "updated_date":  "2026-07-25",
+    "experiments":  [
+                        {
+                            "experiment_id":  "EXP-000001",
+                            "title":  "Memory-Limited Learning",
+                            "short_name":  "memory_limited_learning",
+                            "version":  "0.1.0",
+                            "status":  "Proposed",
+                            "experimental_universe":  "PrimeNet",
+                            "created_date":  "2026-07-25",
+                            "modified_date":  "2026-07-25"
+                        },
+                        {
+                            "experiment_id":  "EXP-000002",
+                            "title":  "Compression Efficiency",
+                            "short_name":  "compression_efficiency",
+                            "version":  "0.1.0",
+                            "status":  "Proposed",
+                            "experimental_universe":  "PrimeNet",
+                            "created_date":  "2026-07-25",
+                            "modified_date":  "2026-07-25"
+                        },
+                        {
+                            "experiment_id":  "EXP-000003",
+                            "title":  "Emergence of Abstraction",
+                            "short_name":  "emergence_of_abstraction",
+                            "version":  "0.1.0",
+                            "status":  "Proposed",
+                            "experimental_universe":  "PrimeNet",
+                            "created_date":  "2026-07-25",
+                            "modified_date":  "2026-07-25"
+                        }
+                    ]
+}

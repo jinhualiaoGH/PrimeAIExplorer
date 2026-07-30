@@ -1,0 +1,46 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Prompt Registry",
+    "registry_version":  "0.2.0",
+    "updated_date":  "2026-07-25",
+    "prompts":  [
+                    {
+                        "prompt_id":  "PROMPT-000001",
+                        "title":  "Memory-Limited Prime Gap Prediction Prompt",
+                        "short_name":  "memory_limited_prime_gap_prediction",
+                        "version":  "0.1.0",
+                        "status":  "Proposed",
+                        "prompt_family":  "memory_limited_learning",
+                        "experiment_id":  "EXP-000001",
+                        "dataset_id":  "DS-000001",
+                        "response_schema_id":  "RESPONSE-000001",
+                        "created_date":  "2026-07-25",
+                        "modified_date":  "2026-07-25"
+                    },
+                    {
+                        "prompt_id":  "PROMPT-000002",
+                        "title":  "Prime Gap Compression Prompt",
+                        "short_name":  "prime_gap_compression",
+                        "version":  "0.1.0",
+                        "status":  "Proposed",
+                        "prompt_family":  "compression",
+                        "experiment_id":  "EXP-000002",
+                        "dataset_id":  "DS-000002",
+                        "response_schema_id":  "RESPONSE-000002",
+                        "created_date":  "2026-07-25",
+                        "modified_date":  "2026-07-25"
+                    },
+                    {
+                        "prompt_id":  "PROMPT-000003",
+                        "title":  "Prime Structure Abstraction Prompt",
+                        "short_name":  "prime_structure_abstraction",
+                        "version":  "0.1.0",
+                        "status":  "Proposed",
+                        "prompt_family":  "abstraction",
+                        "experiment_id":  "EXP-000003",
+                        "dataset_id":  "DS-000003",
+                        "response_schema_id":  "RESPONSE-000003",
+                        "created_date":  "2026-07-25",
+                        "modified_date":  "2026-07-25"
+                    }
+                ]
+}

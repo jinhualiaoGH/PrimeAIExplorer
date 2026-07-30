@@ -1,0 +1,5 @@
+﻿metric,best_label,best_value,direction
+accuracy,GPT-5.6-Thinking · pilot_001,1.0,higher
+brier_score,GPT-5.6-Thinking · pilot_002_partial,0.0324,lower
+ece,GPT-5.6-Thinking · pilot_002_partial,0.18,lower
+mean_absolute_error,GPT-5.6 Thinking · pilot_002,6.4,lower

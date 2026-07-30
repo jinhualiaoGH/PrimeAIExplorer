@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/primeaiexplorer/__init__.py
+src/primeaiexplorer/analyzer.py
+src/primeaiexplorer/cli.py
+src/primeaiexplorer/io.py
+src/primeaiexplorer/metrics.py
+src/primeaiexplorer/report.py
+src/primeaiexplorer.egg-info/PKG-INFO
+src/primeaiexplorer.egg-info/SOURCES.txt
+src/primeaiexplorer.egg-info/dependency_links.txt
+src/primeaiexplorer.egg-info/entry_points.txt
+src/primeaiexplorer.egg-info/top_level.txt
+tests/test_metrics.py

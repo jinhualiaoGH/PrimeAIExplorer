@@ -1,0 +1,3 @@
+﻿bin_low,bin_high,count,average_confidence,observed_accuracy,realism_gap
+0.1,0.2,2,0.18,0.0,-0.18
+0.2,0.3,3,0.22,0.0,-0.22

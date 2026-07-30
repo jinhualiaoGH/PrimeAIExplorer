@@ -1,0 +1,45 @@
+{
+  "experiment": {
+    "id": "EXP-000001",
+    "name": "Prime Gap Continuation"
+  },
+  "paths": {
+    "experiment_root": "experiments/EXP-000001"
+  },
+  "repository": {
+    "prime_root": "E:/PrimeNet/Repository/ranges",
+    "gap_root": "E:/PrimeNet/Repository/gaps_u16"
+  },
+  "sequence": {
+    "plugin": "prime_gap",
+    "dataset_file": "data/prime_gaps.u16.npy",
+    "target_count": 100000001
+  },
+  "sampling": {
+    "endpoints": [
+      1000,
+      10000,
+      100000,
+      1000000,
+      10000000,
+      100000000
+    ],
+    "window_sizes": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "representations": [
+      "absolute"
+    ],
+    "definition_conditions": [
+      "hidden",
+      "disclosed"
+    ]
+  },
+  "prompt": {
+    "target_label": "prime gap"
+  }
+}

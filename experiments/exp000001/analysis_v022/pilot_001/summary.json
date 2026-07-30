@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.2.2",
+  "record_count": 5,
+  "dataset_case_count": 100,
+  "dataset_coverage": 0.05,
+  "correct_count": 5,
+  "incorrect_count": 0,
+  "accuracy": 1.0,
+  "mean_confidence": 34.4,
+  "median_confidence": 18,
+  "brier_score": 0.5379200000000001,
+  "ece": 0.6560000000000001,
+  "prediction_entropy_bits": -0.0,
+  "normalized_prediction_entropy": 0.0,
+  "distinct_predictions": 1,
+  "prediction_distribution": [
+    {
+      "prediction": 6,
+      "count": 5
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 4,
+      "accuracy": 1.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.8200000000000001
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 1.0,
+      "absolute_gap": 0.0
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "16": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "32": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 100,
+      "brier_score": 0.0
+    },
+    "64": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 14.2,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 6
+      },
+      {
+        "word": "gap",
+        "count": 6
+      },
+      {
+        "word": "gaps",
+        "count": 5
+      },
+      {
+        "word": "irregular",
+        "count": 4
+      },
+      {
+        "word": "common",
+        "count": 4
+      },
+      {
+        "word": "small",
+        "count": 4
+      },
+      {
+        "word": "observed",
+        "count": 3
+      },
+      {
+        "word": "after",
+        "count": 2
+      },
+      {
+        "word": "even",
+        "count": 2
+      },
+      {
+        "word": "following",
+        "count": 2
+      },
+      {
+        "word": "sequence",
+        "count": 2
+      },
+      {
+        "word": "reasonable",
+        "count": 1
+      },
+      {
+        "word": "low-confidence",
+        "count": 1
+      },
+      {
+        "word": "guess",
+        "count": 1
+      },
+      {
+        "word": "plausible",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "frequency_prior": 4,
+      "pattern_continuation": 3
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0001",
+      "window": 4,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small gap and a reasonable low-confidence guess after 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001_normalized\\responses.json#entry-1",
+      "response_sha256": "2fd853efeaf1ea7383a568e519079e296cfc83d2fdb037955e31cc3240bf2db3",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation after 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001_normalized\\responses.json#entry-2",
+      "response_sha256": "2fd853efeaf1ea7383a568e519079e296cfc83d2fdb037955e31cc3240bf2db3",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "window": 16,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is selected as a common small even gap following the observed sequence.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001_normalized\\responses.json#entry-3",
+      "response_sha256": "2fd853efeaf1ea7383a568e519079e296cfc83d2fdb037955e31cc3240bf2db3",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "window": 32,
+      "prediction": 6,
+      "confidence": 100,
+      "explanation": "The observed sequence matches consecutive prime gaps beginning at 1697; the next prime gap is 6.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001_normalized\\responses.json#entry-4",
+      "response_sha256": "2fd853efeaf1ea7383a568e519079e296cfc83d2fdb037955e31cc3240bf2db3",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "window": 64,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is chosen as a common small gap following the observed terminal gap of 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001_normalized\\responses.json#entry-5",
+      "response_sha256": "2fd853efeaf1ea7383a568e519079e296cfc83d2fdb037955e31cc3240bf2db3",
+      "correct": true
+    }
+  ]
+}

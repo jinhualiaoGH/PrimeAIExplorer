@@ -1,0 +1,428 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://primenet.local/primeaiexplorer/schemas/observation.schema.json",
+    "title":  "PrimeAIExplorer Canonical Observation",
+    "description":  "Canonical schema for a PrimeAIExplorer scientific observation.",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "observation_id",
+                     "observation_schema_version",
+                     "run_id",
+                     "condition_id",
+                     "attempt_id",
+                     "status",
+                     "experiment",
+                     "dataset",
+                     "prompt",
+                     "subject",
+                     "execution",
+                     "timing",
+                     "request",
+                     "response",
+                     "integrity",
+                     "cache",
+                     "error",
+                     "environment",
+                     "evaluation"
+                 ],
+    "properties":  {
+                       "observation_id":  {
+                                              "type":  "string",
+                                              "pattern":  "^OBS-[0-9]{10}$"
+                                          },
+                       "observation_schema_version":  {
+                                                          "type":  "string",
+                                                          "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                      },
+                       "run_id":  {
+                                      "type":  "string",
+                                      "pattern":  "^RUN-[0-9]{8}-[0-9]{6}$"
+                                  },
+                       "condition_id":  {
+                                            "type":  "string",
+                                            "minLength":  1
+                                        },
+                       "attempt_id":  {
+                                          "type":  "string",
+                                          "pattern":  "^ATTEMPT-[0-9]{3}$"
+                                      },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "pending",
+                                                   "executing",
+                                                   "succeeded",
+                                                   "failed",
+                                                   "timed_out",
+                                                   "refused",
+                                                   "invalid_response",
+                                                   "cancelled",
+                                                   "cached",
+                                                   "superseded"
+                                               ]
+                                  },
+                       "experiment":  {
+                                          "type":  "object",
+                                          "additionalProperties":  false,
+                                          "required":  [
+                                                           "experiment_id",
+                                                           "experiment_version",
+                                                           "experimental_universe"
+                                                       ],
+                                          "properties":  {
+                                                             "experiment_id":  {
+                                                                                   "type":  "string",
+                                                                                   "pattern":  "^EXP-[0-9]{6}$"
+                                                                               },
+                                                             "experiment_version":  {
+                                                                                        "type":  "string",
+                                                                                        "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                    },
+                                                             "hypothesis_id":  {
+                                                                                   "type":  [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ]
+                                                                               },
+                                                             "experimental_universe":  {
+                                                                                           "type":  "string",
+                                                                                           "minLength":  1
+                                                                                       }
+                                                         }
+                                      },
+                       "dataset":  {
+                                       "type":  "object",
+                                       "additionalProperties":  false,
+                                       "required":  [
+                                                        "dataset_id",
+                                                        "dataset_version",
+                                                        "partition"
+                                                    ],
+                                       "properties":  {
+                                                          "dataset_id":  {
+                                                                             "type":  "string",
+                                                                             "pattern":  "^DS-[0-9]{6}$"
+                                                                         },
+                                                          "dataset_version":  {
+                                                                                  "type":  "string",
+                                                                                  "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                              },
+                                                          "partition":  {
+                                                                            "type":  "string",
+                                                                            "minLength":  1
+                                                                        },
+                                                          "record_id":  {
+                                                                            "type":  [
+                                                                                         "string",
+                                                                                         "null"
+                                                                                     ]
+                                                                        },
+                                                          "artifact_sha256":  {
+                                                                                  "type":  [
+                                                                                               "string",
+                                                                                               "null"
+                                                                                           ],
+                                                                                  "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                              }
+                                                      }
+                                   },
+                       "prompt":  {
+                                      "type":  "object",
+                                      "additionalProperties":  false,
+                                      "required":  [
+                                                       "prompt_id",
+                                                       "prompt_version",
+                                                       "rendered_prompt_sha256",
+                                                       "response_schema_id"
+                                                   ],
+                                      "properties":  {
+                                                         "prompt_id":  {
+                                                                           "type":  "string",
+                                                                           "pattern":  "^PROMPT-[0-9]{6}$"
+                                                                       },
+                                                         "prompt_version":  {
+                                                                                "type":  "string",
+                                                                                "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                            },
+                                                         "rendered_prompt_sha256":  {
+                                                                                        "type":  "string",
+                                                                                        "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                                    },
+                                                         "response_schema_id":  {
+                                                                                    "type":  "string",
+                                                                                    "pattern":  "^RESPONSE-[0-9]{6}$"
+                                                                                },
+                                                         "response_schema_version":  {
+                                                                                         "type":  "string",
+                                                                                         "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                     }
+                                                     }
+                                  },
+                       "subject":  {
+                                       "type":  "object",
+                                       "additionalProperties":  false,
+                                       "required":  [
+                                                        "subject_id",
+                                                        "subject_type",
+                                                        "provider",
+                                                        "connector",
+                                                        "model_identifier"
+                                                    ],
+                                       "properties":  {
+                                                          "subject_id":  {
+                                                                             "type":  "string",
+                                                                             "pattern":  "^SUBJECT-[0-9]{6}$"
+                                                                         },
+                                                          "subject_type":  {
+                                                                               "type":  "string",
+                                                                               "enum":  [
+                                                                                            "ai_model",
+                                                                                            "deterministic_baseline",
+                                                                                            "human",
+                                                                                            "simulation"
+                                                                                        ]
+                                                                           },
+                                                          "provider":  {
+                                                                           "type":  "string",
+                                                                           "minLength":  1
+                                                                       },
+                                                          "connector":  {
+                                                                            "type":  "string",
+                                                                            "minLength":  1
+                                                                        },
+                                                          "connector_version":  {
+                                                                                    "type":  "string",
+                                                                                    "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                },
+                                                          "model_identifier":  {
+                                                                                   "type":  "string",
+                                                                                   "minLength":  1
+                                                                               },
+                                                          "reported_model_version":  {
+                                                                                         "type":  [
+                                                                                                      "string",
+                                                                                                      "null"
+                                                                                                  ]
+                                                                                     }
+                                                      }
+                                   },
+                       "execution":  {
+                                         "type":  "object",
+                                         "additionalProperties":  true,
+                                         "required":  [
+                                                          "mode",
+                                                          "parameters"
+                                                      ],
+                                         "properties":  {
+                                                            "mode":  {
+                                                                         "type":  "string",
+                                                                         "enum":  [
+                                                                                      "dry_run",
+                                                                                      "local",
+                                                                                      "api",
+                                                                                      "cached"
+                                                                                  ]
+                                                                     },
+                                                            "parameters":  {
+                                                                               "type":  "object"
+                                                                           }
+                                                        }
+                                     },
+                       "timing":  {
+                                      "type":  "object",
+                                      "additionalProperties":  false,
+                                      "required":  [
+                                                       "created_at_utc"
+                                                   ],
+                                      "properties":  {
+                                                         "created_at_utc":  {
+                                                                                "type":  "string",
+                                                                                "format":  "date-time"
+                                                                            },
+                                                         "started_at_utc":  {
+                                                                                "type":  [
+                                                                                             "string",
+                                                                                             "null"
+                                                                                         ],
+                                                                                "format":  "date-time"
+                                                                            },
+                                                         "completed_at_utc":  {
+                                                                                  "type":  [
+                                                                                               "string",
+                                                                                               "null"
+                                                                                           ],
+                                                                                  "format":  "date-time"
+                                                                              },
+                                                         "latency_seconds":  {
+                                                                                 "type":  [
+                                                                                              "number",
+                                                                                              "null"
+                                                                                          ],
+                                                                                 "minimum":  0
+                                                                             }
+                                                     }
+                                  },
+                       "request":  {
+                                       "type":  "object",
+                                       "additionalProperties":  true,
+                                       "required":  [
+                                                        "request_sha256"
+                                                    ],
+                                       "properties":  {
+                                                          "request_sha256":  {
+                                                                                 "type":  "string",
+                                                                                 "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                             },
+                                                          "rendered_prompt":  {
+                                                                                  "type":  [
+                                                                                               "string",
+                                                                                               "null"
+                                                                                           ]
+                                                                              }
+                                                      }
+                                   },
+                       "response":  {
+                                        "type":  "object",
+                                        "additionalProperties":  true,
+                                        "required":  [
+                                                         "raw_text",
+                                                         "response_sha256"
+                                                     ],
+                                        "properties":  {
+                                                           "raw_text":  {
+                                                                            "type":  [
+                                                                                         "string",
+                                                                                         "null"
+                                                                                     ]
+                                                                        },
+                                                           "response_sha256":  {
+                                                                                   "type":  [
+                                                                                                "string",
+                                                                                                "null"
+                                                                                            ],
+                                                                                   "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                               },
+                                                           "finish_reason":  {
+                                                                                 "type":  [
+                                                                                              "string",
+                                                                                              "null"
+                                                                                          ]
+                                                                             }
+                                                       }
+                                    },
+                       "integrity":  {
+                                         "type":  "object",
+                                         "additionalProperties":  false,
+                                         "required":  [
+                                                          "algorithm",
+                                                          "configuration_sha256"
+                                                      ],
+                                         "properties":  {
+                                                            "algorithm":  {
+                                                                              "type":  "string",
+                                                                              "const":  "SHA-256"
+                                                                          },
+                                                            "configuration_sha256":  {
+                                                                                         "type":  "string",
+                                                                                         "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                                     }
+                                                        }
+                                     },
+                       "cache":  {
+                                     "type":  "object",
+                                     "additionalProperties":  false,
+                                     "required":  [
+                                                      "was_cached"
+                                                  ],
+                                     "properties":  {
+                                                        "was_cached":  {
+                                                                           "type":  "boolean"
+                                                                       },
+                                                        "cache_key":  {
+                                                                          "type":  [
+                                                                                       "string",
+                                                                                       "null"
+                                                                                   ]
+                                                                      },
+                                                        "source_observation_id":  {
+                                                                                      "type":  [
+                                                                                                   "string",
+                                                                                                   "null"
+                                                                                               ],
+                                                                                      "pattern":  "^OBS-[0-9]{10}$"
+                                                                                  }
+                                                    }
+                                 },
+                       "error":  {
+                                     "type":  "object",
+                                     "additionalProperties":  false,
+                                     "required":  [
+                                                      "category",
+                                                      "message"
+                                                  ],
+                                     "properties":  {
+                                                        "category":  {
+                                                                         "type":  [
+                                                                                      "string",
+                                                                                      "null"
+                                                                                  ]
+                                                                     },
+                                                        "message":  {
+                                                                        "type":  [
+                                                                                     "string",
+                                                                                     "null"
+                                                                                 ]
+                                                                    },
+                                                        "retryable":  {
+                                                                          "type":  "boolean"
+                                                                      }
+                                                    }
+                                 },
+                       "environment":  {
+                                           "type":  "object",
+                                           "additionalProperties":  true,
+                                           "required":  [
+                                                            "primeaiexplorer_version",
+                                                            "python_version",
+                                                            "operating_system"
+                                                        ],
+                                           "properties":  {
+                                                              "primeaiexplorer_version":  {
+                                                                                              "type":  "string",
+                                                                                              "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                          },
+                                                              "python_version":  {
+                                                                                     "type":  "string",
+                                                                                     "minLength":  1
+                                                                                 },
+                                                              "operating_system":  {
+                                                                                       "type":  "string",
+                                                                                       "minLength":  1
+                                                                                   }
+                                                          }
+                                       },
+                       "evaluation":  {
+                                          "type":  "object",
+                                          "additionalProperties":  true,
+                                          "required":  [
+                                                           "state"
+                                                       ],
+                                          "properties":  {
+                                                             "state":  {
+                                                                           "type":  "string",
+                                                                           "enum":  [
+                                                                                        "not_started",
+                                                                                        "pending",
+                                                                                        "valid",
+                                                                                        "invalid",
+                                                                                        "scored",
+                                                                                        "review_required",
+                                                                                        "reviewed",
+                                                                                        "excluded_with_reason"
+                                                                                    ]
+                                                                       }
+                                                         }
+                                      }
+                   }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.2.5",
+  "primeaiexplorer_version": "0.2.5",
+  "created_utc": "2026-07-27T12:31:26.135641+00:00",
+  "experiment_id": "EXP-000001",
+  "pilot_id": "pilot_002",
+  "model": "GPT-5.6-Thinking",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "responses_source": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\demo\\exp000001\\pilot_002",
+  "prompts_source": null,
+  "dataset_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\demo\\exp000001\\dataset\\cases.csv",
+  "dataset_sha256": "34cd54f182249d803a4028d2882bd0fe1a6faf848a65801e5e3e67c7ed3b805e",
+  "dataset_case_count": 5,
+  "ledger_entry_count": 5,
+  "completed_entry_count": 2,
+  "pending_entry_count": 3,
+  "response_count": 2,
+  "collection_sha256_values": [
+    "6d8348194b34525591e4b91904ffb1755676bce608ff1d09dd06199f726033cb"
+  ],
+  "summary_sha256": "e94046178d1c6b5f99be973fa5fcd5466797bc91b44552d8d86a0cb44564caff",
+  "command": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\.venv\\Scripts\\paiexp analyze --responses C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\demo\\exp000001\\pilot_002 --dataset C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\demo\\exp000001\\dataset\\cases.csv --output C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_5\\demo\\exp000001\\analysis_v025 --model GPT-5.6-Thinking --experiment-id EXP-000001 --pilot-id pilot_002"
+}

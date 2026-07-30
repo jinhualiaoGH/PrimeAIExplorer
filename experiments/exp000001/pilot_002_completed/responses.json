@@ -1,0 +1,13 @@
+﻿{
+    "case_id":  "CASE-W004-0002",
+    "collected_at":  "2026-07-26T04:31:08.772460Z",
+    "collection_mode":  "manual_chat",
+    "model":  "GPT-5.6 Thinking",
+    "pair_id":  "PAIR-0002",
+    "response":  {
+                     "prediction":  4,
+                     "confidence":  18,
+                     "explanation":  "Prime gaps are irregular; 4 is a common small gap after this short pattern."
+                 },
+    "window_size":  4
+}

@@ -1,0 +1,6 @@
+case_id,pair_id,window_size,model,prediction,ground_truth,exact_match,absolute_error,signed_error,confidence,confidence_probability,brier_score,observable_strategy,explanation_characters,explanation_words,target_left_prime,target_right_prime,response_sha256
+CASE-W004-0001,PAIR-0001,4,GPT-5.6 Thinking,6,6,True,0,0,18,0.18,0.6724000000000001,frequency_and_local_heuristic,96,17,2207,2213,03bad859d5444aec06e7d94d65d8e5cfd92ef7560d07a6ac91f268aee698d6cd
+CASE-W008-0001,PAIR-0001,8,GPT-5.6 Thinking,6,6,True,0,0,18,0.18,0.6724000000000001,frequency_and_local_heuristic,92,17,2207,2213,c3f99368366891b2f7d05eaabe855b4d00da1b37080e192a5d9541a77ecee7a8
+CASE-W016-0001,PAIR-0001,16,GPT-5.6 Thinking,6,6,True,0,0,18,0.18,0.6724000000000001,frequency_and_local_heuristic,99,17,2207,2213,26e5a31ae9e948b68d9692153076969d564e53b5b27daaf73659545218cf56a9
+CASE-W032-0001,PAIR-0001,32,GPT-5.6 Thinking,6,6,True,0,0,100,1.0,0.0,sequence_recognition_claim,96,16,2207,2213,78658c81de7dc77f27e5c85ce03de36dce4f8504a9db10a296961b093f86d384
+CASE-W064-0001,PAIR-0001,64,GPT-5.6 Thinking,6,6,True,0,0,18,0.18,0.6724000000000001,frequency_and_local_heuristic,101,19,2207,2213,59a96e1352b973703bbd3be0856d719f791a434e013892854a44d33df5d69f5d

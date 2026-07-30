@@ -1,0 +1,209 @@
+{
+  "schema_version": "0.2.3",
+  "record_count": 5,
+  "dataset_case_count": 100,
+  "dataset_coverage": 0.05,
+  "correct_count": 5,
+  "incorrect_count": 0,
+  "accuracy": 1.0,
+  "mean_confidence": 34.4,
+  "median_confidence": 18,
+  "brier_score": 0.5379200000000001,
+  "ece": 0.6560000000000001,
+  "prediction_entropy_bits": 0.0,
+  "normalized_prediction_entropy": 0.0,
+  "distinct_predictions": 1,
+  "prediction_distribution": [
+    {
+      "prediction": 6,
+      "count": 5
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 4,
+      "accuracy": 1.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.8200000000000001
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 1.0,
+      "absolute_gap": 0.0
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "16": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "32": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 100,
+      "brier_score": 0.0
+    },
+    "64": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 14.2,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 6
+      },
+      {
+        "word": "gap",
+        "count": 6
+      },
+      {
+        "word": "gaps",
+        "count": 5
+      },
+      {
+        "word": "irregular",
+        "count": 4
+      },
+      {
+        "word": "common",
+        "count": 4
+      },
+      {
+        "word": "small",
+        "count": 4
+      },
+      {
+        "word": "observed",
+        "count": 3
+      },
+      {
+        "word": "after",
+        "count": 2
+      },
+      {
+        "word": "even",
+        "count": 2
+      },
+      {
+        "word": "following",
+        "count": 2
+      },
+      {
+        "word": "sequence",
+        "count": 2
+      },
+      {
+        "word": "reasonable",
+        "count": 1
+      },
+      {
+        "word": "low-confidence",
+        "count": 1
+      },
+      {
+        "word": "guess",
+        "count": 1
+      },
+      {
+        "word": "plausible",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "frequency_prior": 4,
+      "pattern_continuation": 3
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0001",
+      "window": 4,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small gap and a reasonable low-confidence guess after 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001\\responses.json#document-1",
+      "collection_sha256": "4c5e2f5af25bae2b3c9b417b320a911eb255c81c36c3929b6ec0af1888368b21",
+      "entry_sha256": "b69b4d08bdc714729519dbe0561c9f49e3abd97fb5acaa21e81cbbcfe8b88b1f",
+      "response_sha256": "b69b4d08bdc714729519dbe0561c9f49e3abd97fb5acaa21e81cbbcfe8b88b1f",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation after 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001\\responses.json#document-2",
+      "collection_sha256": "4c5e2f5af25bae2b3c9b417b320a911eb255c81c36c3929b6ec0af1888368b21",
+      "entry_sha256": "dc704c021e16e89bfea0f8288c070a4c85045dd76152efcc225106744a086b0e",
+      "response_sha256": "dc704c021e16e89bfea0f8288c070a4c85045dd76152efcc225106744a086b0e",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "window": 16,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is selected as a common small even gap following the observed sequence.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001\\responses.json#document-3",
+      "collection_sha256": "4c5e2f5af25bae2b3c9b417b320a911eb255c81c36c3929b6ec0af1888368b21",
+      "entry_sha256": "fd813cc7f975db784da1f4590cae13cdf3d618801c241cf45672a7c057954b2a",
+      "response_sha256": "fd813cc7f975db784da1f4590cae13cdf3d618801c241cf45672a7c057954b2a",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "window": 32,
+      "prediction": 6,
+      "confidence": 100,
+      "explanation": "The observed sequence matches consecutive prime gaps beginning at 1697; the next prime gap is 6.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001\\responses.json#document-4",
+      "collection_sha256": "4c5e2f5af25bae2b3c9b417b320a911eb255c81c36c3929b6ec0af1888368b21",
+      "entry_sha256": "33d3b90a4fd4e91d1397794d35a219441948cebeba84250ed1e5b7a963f7629b",
+      "response_sha256": "33d3b90a4fd4e91d1397794d35a219441948cebeba84250ed1e5b7a963f7629b",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "window": 64,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is chosen as a common small gap following the observed terminal gap of 4.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_001\\responses.json#document-5",
+      "collection_sha256": "4c5e2f5af25bae2b3c9b417b320a911eb255c81c36c3929b6ec0af1888368b21",
+      "entry_sha256": "0b0c701d3762a9488b8f4528689ebe4dd11780ee9dbe5835fefb85413e5d713d",
+      "response_sha256": "0b0c701d3762a9488b8f4528689ebe4dd11780ee9dbe5835fefb85413e5d713d",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "0.2.4",
+  "record_count": 1,
+  "ledger_entry_count": 5,
+  "completed_entry_count": 1,
+  "pending_entry_count": 4,
+  "pilot_completion": 0.2,
+  "dataset_case_count": 5,
+  "dataset_coverage": 0.2,
+  "correct_count": 0,
+  "incorrect_count": 1,
+  "accuracy": 0.0,
+  "mean_confidence": 18,
+  "median_confidence": 18,
+  "brier_score": 0.0324,
+  "ece": 0.18,
+  "prediction_entropy_bits": 0.0,
+  "normalized_prediction_entropy": 0.0,
+  "distinct_predictions": 1,
+  "prediction_distribution": [
+    {
+      "prediction": 4,
+      "count": 1
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.18
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 12,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 1
+      },
+      {
+        "word": "gaps",
+        "count": 1
+      },
+      {
+        "word": "irregular",
+        "count": 1
+      },
+      {
+        "word": "common",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "gap",
+        "count": 1
+      },
+      {
+        "word": "after",
+        "count": 1
+      },
+      {
+        "word": "short",
+        "count": 1
+      },
+      {
+        "word": "pattern",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 1,
+      "frequency_prior": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_4\\demo\\exp000001\\pilot_002\\responses.json#entry-1",
+      "collection_sha256": "a678d39c7cafb333486432f06285071b96c63ee2a7e0499b3dc34350ac9e7d57",
+      "entry_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "response_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "correct": false
+    }
+  ]
+}

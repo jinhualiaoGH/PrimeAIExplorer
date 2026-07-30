@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primeaiexplorer"
+version = "0.2.4"
+description = "A reproducible observatory for prime-gap prediction responses"
+requires-python = ">=3.10"
+authors = [{name = "PrimeAIExplorer"}]
+dependencies = []
+
+[project.scripts]
+paiexp = "primeaiexplorer.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,226 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "https://primenet.local/primeaiexplorer/schemas/scientific_report.schema.json",
+    "title":  "PrimeAIExplorer Canonical Scientific Report",
+    "description":  "Canonical schema for a PrimeAIExplorer report manifest.",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "report_artifact_id",
+                     "report_schema_version",
+                     "report_definition",
+                     "status",
+                     "created_at_utc",
+                     "title",
+                     "authors",
+                     "experiment",
+                     "sections",
+                     "evidence",
+                     "integrity",
+                     "environment",
+                     "provenance"
+                 ],
+    "properties":  {
+                       "report_artifact_id":  {
+                                                  "type":  "string",
+                                                  "pattern":  "^RPT-[0-9]{10}$"
+                                              },
+                       "report_schema_version":  {
+                                                     "type":  "string",
+                                                     "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                 },
+                       "report_definition":  {
+                                                 "type":  "object",
+                                                 "additionalProperties":  false,
+                                                 "required":  [
+                                                                  "report_definition_id",
+                                                                  "report_definition_version",
+                                                                  "report_type"
+                                                              ],
+                                                 "properties":  {
+                                                                    "report_definition_id":  {
+                                                                                                 "type":  "string",
+                                                                                                 "pattern":  "^REPORT-[0-9]{6}$"
+                                                                                             },
+                                                                    "report_definition_version":  {
+                                                                                                      "type":  "string",
+                                                                                                      "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                                  },
+                                                                    "report_type":  {
+                                                                                        "type":  "string",
+                                                                                        "minLength":  1
+                                                                                    }
+                                                                }
+                                             },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "draft",
+                                                   "generated",
+                                                   "validation",
+                                                   "review_required",
+                                                   "reviewed",
+                                                   "approved",
+                                                   "released",
+                                                   "superseded",
+                                                   "withdrawn"
+                                               ]
+                                  },
+                       "created_at_utc":  {
+                                              "type":  "string",
+                                              "format":  "date-time"
+                                          },
+                       "title":  {
+                                     "type":  "string",
+                                     "minLength":  1
+                                 },
+                       "authors":  {
+                                       "type":  "array",
+                                       "items":  {
+                                                     "type":  "string",
+                                                     "minLength":  1
+                                                 }
+                                   },
+                       "experiment":  {
+                                          "type":  "object",
+                                          "additionalProperties":  false,
+                                          "required":  [
+                                                           "experiment_id",
+                                                           "experiment_version"
+                                                       ],
+                                          "properties":  {
+                                                             "experiment_id":  {
+                                                                                   "type":  "string",
+                                                                                   "pattern":  "^EXP-[0-9]{6}$"
+                                                                               },
+                                                             "experiment_version":  {
+                                                                                        "type":  "string",
+                                                                                        "pattern":  "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                                                                                    }
+                                                         }
+                                      },
+                       "sections":  {
+                                        "type":  "array",
+                                        "minItems":  1,
+                                        "items":  {
+                                                      "type":  "object",
+                                                      "additionalProperties":  false,
+                                                      "required":  [
+                                                                       "section_id",
+                                                                       "title",
+                                                                       "content"
+                                                                   ],
+                                                      "properties":  {
+                                                                         "section_id":  {
+                                                                                            "type":  "string",
+                                                                                            "minLength":  1
+                                                                                        },
+                                                                         "title":  {
+                                                                                       "type":  "string",
+                                                                                       "minLength":  1
+                                                                                   },
+                                                                         "content":  {
+                                                                                         "type":  "string"
+                                                                                     }
+                                                                     }
+                                                  }
+                                    },
+                       "evidence":  {
+                                        "type":  "object",
+                                        "additionalProperties":  false,
+                                        "required":  [
+                                                         "observation_ids",
+                                                         "evaluation_result_ids",
+                                                         "statistical_summary_ids",
+                                                         "evidence_manifest_sha256"
+                                                     ],
+                                        "properties":  {
+                                                           "observation_ids":  {
+                                                                                   "type":  "array",
+                                                                                   "items":  {
+                                                                                                 "type":  "string",
+                                                                                                 "pattern":  "^OBS-[0-9]{10}$"
+                                                                                             }
+                                                                               },
+                                                           "evaluation_result_ids":  {
+                                                                                         "type":  "array",
+                                                                                         "items":  {
+                                                                                                       "type":  "string",
+                                                                                                       "pattern":  "^EVR-[0-9]{10}$"
+                                                                                                   }
+                                                                                     },
+                                                           "statistical_summary_ids":  {
+                                                                                           "type":  "array",
+                                                                                           "items":  {
+                                                                                                         "type":  "string",
+                                                                                                         "pattern":  "^SSR-[0-9]{10}$"
+                                                                                                     }
+                                                                                       },
+                                                           "evidence_manifest_sha256":  {
+                                                                                            "type":  "string",
+                                                                                            "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                                        }
+                                                       }
+                                    },
+                       "integrity":  {
+                                         "type":  "object",
+                                         "additionalProperties":  false,
+                                         "required":  [
+                                                          "algorithm",
+                                                          "report_manifest_sha256",
+                                                          "markdown_sha256"
+                                                      ],
+                                         "properties":  {
+                                                            "algorithm":  {
+                                                                              "type":  "string",
+                                                                              "const":  "SHA-256"
+                                                                          },
+                                                            "report_manifest_sha256":  {
+                                                                                           "type":  "string",
+                                                                                           "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                                       },
+                                                            "markdown_sha256":  {
+                                                                                    "type":  "string",
+                                                                                    "pattern":  "^[a-fA-F0-9]{64}$"
+                                                                                }
+                                                        }
+                                     },
+                       "environment":  {
+                                           "type":  "object",
+                                           "additionalProperties":  true,
+                                           "required":  [
+                                                            "primeaiexplorer_version",
+                                                            "python_version",
+                                                            "operating_system"
+                                                        ],
+                                           "properties":  {
+                                                              "primeaiexplorer_version":  {
+                                                                                              "type":  "string"
+                                                                                          },
+                                                              "python_version":  {
+                                                                                     "type":  "string"
+                                                                                 },
+                                                              "operating_system":  {
+                                                                                       "type":  "string"
+                                                                                   }
+                                                          }
+                                       },
+                       "provenance":  {
+                                          "type":  "object",
+                                          "additionalProperties":  true,
+                                          "required":  [
+                                                           "generated_at_utc",
+                                                           "generator_version"
+                                                       ],
+                                          "properties":  {
+                                                             "generated_at_utc":  {
+                                                                                      "type":  "string",
+                                                                                      "format":  "date-time"
+                                                                                  },
+                                                             "generator_version":  {
+                                                                                       "type":  "string"
+                                                                                   }
+                                                         }
+                                      }
+                   }
+}

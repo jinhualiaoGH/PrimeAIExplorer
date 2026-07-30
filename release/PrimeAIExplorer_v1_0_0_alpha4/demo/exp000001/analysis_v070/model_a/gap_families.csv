@@ -1,0 +1,5 @@
+﻿family,count,accuracy,mean_confidence,mean_absolute_error,predicted_in_family,truth_in_family
+twin,0,0.0,0.0,0.0,0,0
+small,2,0.5,39,1,2,2
+medium,0,0.0,0.0,0.0,0,0
+large,0,0.0,0.0,0.0,0,0

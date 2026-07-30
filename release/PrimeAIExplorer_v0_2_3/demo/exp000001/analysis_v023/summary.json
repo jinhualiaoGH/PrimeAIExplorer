@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.2.3",
+  "record_count": 5,
+  "dataset_case_count": 5,
+  "dataset_coverage": 1.0,
+  "correct_count": 5,
+  "incorrect_count": 0,
+  "accuracy": 1.0,
+  "mean_confidence": 34.4,
+  "median_confidence": 18,
+  "brier_score": 0.5379200000000001,
+  "ece": 0.6560000000000001,
+  "prediction_entropy_bits": 0.0,
+  "normalized_prediction_entropy": 0.0,
+  "distinct_predictions": 1,
+  "prediction_distribution": [
+    {
+      "prediction": 6,
+      "count": 5
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 4,
+      "accuracy": 1.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.8200000000000001
+    },
+    {
+      "bin_low": 0.9,
+      "bin_high": 1.0,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 1.0,
+      "absolute_gap": 0.0
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "16": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    },
+    "32": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 100,
+      "brier_score": 0.0
+    },
+    "64": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 18,
+      "brier_score": 0.6724000000000001
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 5.2,
+    "top_content_words": [
+      {
+        "word": "common",
+        "count": 2
+      },
+      {
+        "word": "gap",
+        "count": 2
+      },
+      {
+        "word": "sequence",
+        "count": 2
+      },
+      {
+        "word": "prime",
+        "count": 1
+      },
+      {
+        "word": "gaps",
+        "count": 1
+      },
+      {
+        "word": "irregular",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "even",
+        "count": 1
+      },
+      {
+        "word": "selected",
+        "count": 1
+      },
+      {
+        "word": "local",
+        "count": 1
+      },
+      {
+        "word": "suggests",
+        "count": 1
+      },
+      {
+        "word": "recognized",
+        "count": 1
+      },
+      {
+        "word": "exactly",
+        "count": 1
+      },
+      {
+        "word": "low-confidence",
+        "count": 1
+      },
+      {
+        "word": "frequency",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "frequency_prior": 2,
+      "pattern_continuation": 2,
+      "local_context": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0001",
+      "window": 4,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small gap.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_3\\demo\\exp000001\\pilot_001\\responses.json#document-1",
+      "collection_sha256": "534f0f53e6a8e83c0abc7f044d61325a1acabddf06c3fab56c74bdaa46c8bcdb",
+      "entry_sha256": "5b2ededad9693b7523801590dd3ec8225a50cb7c773af62d3d0333513255b25b",
+      "response_sha256": "5b2ededad9693b7523801590dd3ec8225a50cb7c773af62d3d0333513255b25b",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "A common even gap is selected.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_3\\demo\\exp000001\\pilot_001\\responses.json#document-2",
+      "collection_sha256": "534f0f53e6a8e83c0abc7f044d61325a1acabddf06c3fab56c74bdaa46c8bcdb",
+      "entry_sha256": "46c0cac3bc93493aaa2a61a05956d4b722cd805459ba6b96f137b5bb8402d5b7",
+      "response_sha256": "46c0cac3bc93493aaa2a61a05956d4b722cd805459ba6b96f137b5bb8402d5b7",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "window": 16,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "The local sequence suggests 6.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_3\\demo\\exp000001\\pilot_001\\responses.json#document-3",
+      "collection_sha256": "534f0f53e6a8e83c0abc7f044d61325a1acabddf06c3fab56c74bdaa46c8bcdb",
+      "entry_sha256": "fa0b2a50cc31bfa2e44815f6617790e5eeb5b1b342a5b3c844397ebbdb3b2402",
+      "response_sha256": "fa0b2a50cc31bfa2e44815f6617790e5eeb5b1b342a5b3c844397ebbdb3b2402",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "window": 32,
+      "prediction": 6,
+      "confidence": 100,
+      "explanation": "The sequence is recognized exactly.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_3\\demo\\exp000001\\pilot_001\\responses.json#document-4",
+      "collection_sha256": "534f0f53e6a8e83c0abc7f044d61325a1acabddf06c3fab56c74bdaa46c8bcdb",
+      "entry_sha256": "716664156d43d1949220b4985e7f9bfae6379bda288b930f77c36722eb38b7f4",
+      "response_sha256": "716664156d43d1949220b4985e7f9bfae6379bda288b930f77c36722eb38b7f4",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "window": 64,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "A low-confidence frequency prior selects 6.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_3\\demo\\exp000001\\pilot_001\\responses.json#document-5",
+      "collection_sha256": "534f0f53e6a8e83c0abc7f044d61325a1acabddf06c3fab56c74bdaa46c8bcdb",
+      "entry_sha256": "6fb4f08404cae5637dd8ad7eb19c2c6e97704940a07a040dd4eb748baf708884",
+      "response_sha256": "6fb4f08404cae5637dd8ad7eb19c2c6e97704940a07a040dd4eb748baf708884",
+      "correct": true
+    }
+  ]
+}

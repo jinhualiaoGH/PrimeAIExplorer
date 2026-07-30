@@ -1,0 +1,5 @@
+﻿metric,best_label,best_value,direction
+accuracy,GPT-5.6 Thinking,0.5,higher
+brier_score,Comparison Model,0.09620000000000001,lower
+ece,Comparison Model,0.29000000000000004,lower
+mean_absolute_error,Comparison Model,1.0,lower

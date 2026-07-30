@@ -1,0 +1,850 @@
+{
+  "schema_version": "0.6.0",
+  "record_count": 5,
+  "ledger_entry_count": 25,
+  "completed_entry_count": 5,
+  "pending_entry_count": 20,
+  "pilot_completion": 0.2,
+  "dataset_case_count": 100,
+  "dataset_coverage": 0.05,
+  "correct_count": 0,
+  "incorrect_count": 5,
+  "accuracy": 0.0,
+  "mean_confidence": 20.4,
+  "median_confidence": 22,
+  "brier_score": 0.041999999999999996,
+  "ece": 0.20400000000000001,
+  "prediction_entropy_bits": 0.7219280948873623,
+  "normalized_prediction_entropy": 0.7219280948873623,
+  "distinct_predictions": 2,
+  "prediction_popularity": [
+    {
+      "rank": 1,
+      "prediction": 6,
+      "count": 4,
+      "frequency": 0.8
+    },
+    {
+      "rank": 2,
+      "prediction": 4,
+      "count": 1,
+      "frequency": 0.2
+    }
+  ],
+  "persistence": {
+    "switch_count": 1,
+    "switch_rate": 0.25,
+    "run_count": 2,
+    "mean_run_length": 2.5,
+    "max_run_length": 4,
+    "runs": [
+      {
+        "run": 1,
+        "prediction": 4,
+        "start_n": 1,
+        "end_n": 1,
+        "length": 1
+      },
+      {
+        "run": 2,
+        "prediction": 6,
+        "start_n": 2,
+        "end_n": 5,
+        "length": 4
+      }
+    ]
+  },
+  "persistence_runs": [
+    {
+      "run": 1,
+      "prediction": 4,
+      "start_n": 1,
+      "end_n": 1,
+      "length": 1
+    },
+    {
+      "run": 2,
+      "prediction": 6,
+      "start_n": 2,
+      "end_n": 5,
+      "length": 4
+    }
+  ],
+  "confidence_realism": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 2,
+      "average_confidence": 0.18,
+      "observed_accuracy": 0.0,
+      "realism_gap": -0.18
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.3,
+      "count": 3,
+      "average_confidence": 0.22,
+      "observed_accuracy": 0.0,
+      "realism_gap": -0.22
+    }
+  ],
+  "surprise_index": [
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "truth": 12,
+      "confidence": 18,
+      "absolute_error": 8,
+      "relative_error": 0.6666666666666666,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.8466666666666667,
+      "correct": false,
+      "rank": 1
+    },
+    {
+      "case_id": "CASE-W016-0002",
+      "window": 16,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "absolute_error": 6,
+      "relative_error": 0.5,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.72,
+      "correct": false,
+      "rank": 2
+    },
+    {
+      "case_id": "CASE-W032-0002",
+      "window": 32,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "absolute_error": 6,
+      "relative_error": 0.5,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.72,
+      "correct": false,
+      "rank": 3
+    },
+    {
+      "case_id": "CASE-W064-0002",
+      "window": 64,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "absolute_error": 6,
+      "relative_error": 0.5,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.72,
+      "correct": false,
+      "rank": 4
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 18,
+      "absolute_error": 6,
+      "relative_error": 0.5,
+      "truth_frequency": 1.0,
+      "rarity_bits": -0.0,
+      "surprise_score": 0.6799999999999999,
+      "correct": false,
+      "rank": 5
+    }
+  ],
+  "model_fingerprint": [
+    {
+      "metric": "favorite_prediction",
+      "value": 6
+    },
+    {
+      "metric": "favorite_prediction_share",
+      "value": 0.8
+    },
+    {
+      "metric": "prediction_entropy_bits",
+      "value": 0.7219280948873623
+    },
+    {
+      "metric": "normalized_prediction_entropy",
+      "value": 0.7219280948873623
+    },
+    {
+      "metric": "mean_confidence",
+      "value": 20.4
+    },
+    {
+      "metric": "ece",
+      "value": 0.20400000000000001
+    },
+    {
+      "metric": "mean_signed_error",
+      "value": -6.4
+    },
+    {
+      "metric": "mean_absolute_error",
+      "value": 6.4
+    },
+    {
+      "metric": "switch_rate",
+      "value": 0.25
+    },
+    {
+      "metric": "mean_run_length",
+      "value": 2.5
+    },
+    {
+      "metric": "max_run_length",
+      "value": 4
+    }
+  ],
+  "mean_signed_error": -6.4,
+  "mean_absolute_error": 6.4,
+  "median_absolute_error": 6,
+  "exact_error_rate": 0.0,
+  "prediction_distribution": [
+    {
+      "prediction": 6,
+      "count": 4,
+      "frequency": 0.8,
+      "rank": 1
+    },
+    {
+      "prediction": 4,
+      "count": 1,
+      "frequency": 0.2,
+      "rank": 2
+    }
+  ],
+  "truth_distribution": [
+    {
+      "truth": 12,
+      "count": 5,
+      "frequency": 1.0,
+      "rank": 1
+    }
+  ],
+  "gap_spectrum": [
+    {
+      "gap": 4,
+      "predicted": 1,
+      "truth": 0,
+      "bias": 1,
+      "predicted_frequency": 0.2,
+      "truth_frequency": 0.0,
+      "absolute_bias": 1
+    },
+    {
+      "gap": 6,
+      "predicted": 4,
+      "truth": 0,
+      "bias": 4,
+      "predicted_frequency": 0.8,
+      "truth_frequency": 0.0,
+      "absolute_bias": 4
+    },
+    {
+      "gap": 12,
+      "predicted": 0,
+      "truth": 5,
+      "bias": -5,
+      "predicted_frequency": 0.0,
+      "truth_frequency": 1.0,
+      "absolute_bias": 5
+    }
+  ],
+  "prediction_bias": [
+    {
+      "gap": 4,
+      "predicted": 1,
+      "truth": 0,
+      "bias": 1
+    },
+    {
+      "gap": 6,
+      "predicted": 4,
+      "truth": 0,
+      "bias": 4
+    },
+    {
+      "gap": 12,
+      "predicted": 0,
+      "truth": 5,
+      "bias": -5
+    }
+  ],
+  "confusion_labels": [
+    4,
+    6,
+    12
+  ],
+  "confusion_matrix": [
+    {
+      "truth": 12,
+      "prediction": 4,
+      "count": 1
+    },
+    {
+      "truth": 12,
+      "prediction": 6,
+      "count": 4
+    }
+  ],
+  "transition_labels": [
+    4,
+    6
+  ],
+  "prediction_transitions": [
+    {
+      "from_prediction": 4,
+      "to_prediction": 6,
+      "count": 1
+    },
+    {
+      "from_prediction": 6,
+      "to_prediction": 6,
+      "count": 3
+    }
+  ],
+  "error_distribution": [
+    {
+      "signed_error": -8,
+      "count": 1,
+      "frequency": 0.2
+    },
+    {
+      "signed_error": -6,
+      "count": 4,
+      "frequency": 0.8
+    }
+  ],
+  "confidence_histogram": [
+    {
+      "bin_low": 0,
+      "bin_high": 10,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 10,
+      "bin_high": 20,
+      "count": 2,
+      "accuracy": 0.0,
+      "mean_absolute_error": 7
+    },
+    {
+      "bin_low": 20,
+      "bin_high": 30,
+      "count": 3,
+      "accuracy": 0.0,
+      "mean_absolute_error": 6
+    },
+    {
+      "bin_low": 30,
+      "bin_high": 40,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 40,
+      "bin_high": 50,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 50,
+      "bin_high": 60,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 60,
+      "bin_high": 70,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 70,
+      "bin_high": 80,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 80,
+      "bin_high": 90,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    },
+    {
+      "bin_low": 90,
+      "bin_high": 100,
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_absolute_error": 0.0
+    }
+  ],
+  "confidence_error": [
+    {
+      "case_id": "CASE-W004-0002",
+      "confidence": 18,
+      "absolute_error": 8,
+      "signed_error": -8,
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "confidence": 18,
+      "absolute_error": 6,
+      "signed_error": -6,
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W016-0002",
+      "confidence": 22,
+      "absolute_error": 6,
+      "signed_error": -6,
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W032-0002",
+      "confidence": 22,
+      "absolute_error": 6,
+      "signed_error": -6,
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W064-0002",
+      "confidence": 22,
+      "absolute_error": 6,
+      "signed_error": -6,
+      "correct": false
+    }
+  ],
+  "gap_families": [
+    {
+      "family": "twin",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 0,
+      "truth_in_family": 0
+    },
+    {
+      "family": "small",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 5,
+      "truth_in_family": 0
+    },
+    {
+      "family": "medium",
+      "count": 5,
+      "accuracy": 0.0,
+      "mean_confidence": 20.4,
+      "mean_absolute_error": 6.4,
+      "predicted_in_family": 0,
+      "truth_in_family": 5
+    },
+    {
+      "family": "large",
+      "count": 0,
+      "accuracy": 0.0,
+      "mean_confidence": 0.0,
+      "mean_absolute_error": 0.0,
+      "predicted_in_family": 0,
+      "truth_in_family": 0
+    }
+  ],
+  "timeline": [
+    {
+      "n": 1,
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "truth": 12,
+      "confidence": 18,
+      "correct": false,
+      "signed_error": -8,
+      "absolute_error": 8
+    },
+    {
+      "n": 2,
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 18,
+      "correct": false,
+      "signed_error": -6,
+      "absolute_error": 6
+    },
+    {
+      "n": 3,
+      "case_id": "CASE-W016-0002",
+      "window": 16,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "correct": false,
+      "signed_error": -6,
+      "absolute_error": 6
+    },
+    {
+      "n": 4,
+      "case_id": "CASE-W032-0002",
+      "window": 32,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "correct": false,
+      "signed_error": -6,
+      "absolute_error": 6
+    },
+    {
+      "n": 5,
+      "case_id": "CASE-W064-0002",
+      "window": 64,
+      "prediction": 6,
+      "truth": 12,
+      "confidence": 22,
+      "correct": false,
+      "signed_error": -6,
+      "absolute_error": 6
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.1,
+      "bin_high": 0.2,
+      "count": 2,
+      "accuracy": 0.0,
+      "average_confidence": 0.18,
+      "absolute_gap": 0.18
+    },
+    {
+      "bin_low": 0.2,
+      "bin_high": 0.3,
+      "count": 3,
+      "accuracy": 0.0,
+      "average_confidence": 0.22,
+      "absolute_gap": 0.22
+    }
+  ],
+  "metric_trends": [
+    {
+      "n": 1,
+      "case_id": "CASE-W004-0002",
+      "accuracy": 0.0,
+      "brier": 0.0324,
+      "ece": 0.18,
+      "entropy": 0.0,
+      "mean_absolute_error": 8,
+      "mean_signed_error": -8
+    },
+    {
+      "n": 2,
+      "case_id": "CASE-W008-0002",
+      "accuracy": 0.0,
+      "brier": 0.0324,
+      "ece": 0.18,
+      "entropy": 1.0,
+      "mean_absolute_error": 7,
+      "mean_signed_error": -7
+    },
+    {
+      "n": 3,
+      "case_id": "CASE-W016-0002",
+      "accuracy": 0.0,
+      "brier": 0.037733333333333334,
+      "ece": 0.19333333333333333,
+      "entropy": 0.9182958340544896,
+      "mean_absolute_error": 6.666666666666667,
+      "mean_signed_error": -6.666666666666667
+    },
+    {
+      "n": 4,
+      "case_id": "CASE-W032-0002",
+      "accuracy": 0.0,
+      "brier": 0.0404,
+      "ece": 0.2,
+      "entropy": 0.8112781244591328,
+      "mean_absolute_error": 6.5,
+      "mean_signed_error": -6.5
+    },
+    {
+      "n": 5,
+      "case_id": "CASE-W064-0002",
+      "accuracy": 0.0,
+      "brier": 0.041999999999999996,
+      "ece": 0.20400000000000001,
+      "entropy": 0.7219280948873623,
+      "mean_absolute_error": 6.4,
+      "mean_signed_error": -6.4
+    }
+  ],
+  "timing": {
+    "duration_count": 0,
+    "mean_response_seconds": null,
+    "median_response_seconds": null,
+    "timestamp_count": 5,
+    "mean_collection_interval_seconds": 29726.4692435,
+    "median_collection_interval_seconds": 1671.5262005
+  },
+  "window_observatory": [
+    {
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -8,
+      "mean_absolute_error": 8
+    },
+    {
+      "window": 8,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "window": 16,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "window": 32,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    {
+      "window": 64,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    }
+  ],
+  "by_window": {
+    "4": {
+      "window": 4,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -8,
+      "mean_absolute_error": 8
+    },
+    "8": {
+      "window": 8,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 18,
+      "brier_score": 0.0324,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    "16": {
+      "window": 16,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    "32": {
+      "window": 32,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    },
+    "64": {
+      "window": 64,
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 22,
+      "brier_score": 0.0484,
+      "prediction_entropy_bits": 0.0,
+      "mean_signed_error": -6,
+      "mean_absolute_error": 6
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 0.6,
+    "average_words": 11.4,
+    "top_content_words": [
+      {
+        "word": "prime",
+        "count": 5
+      },
+      {
+        "word": "gaps",
+        "count": 5
+      },
+      {
+        "word": "irregular",
+        "count": 5
+      },
+      {
+        "word": "common",
+        "count": 5
+      },
+      {
+        "word": "small",
+        "count": 5
+      },
+      {
+        "word": "gap",
+        "count": 5
+      },
+      {
+        "word": "even",
+        "count": 4
+      },
+      {
+        "word": "plausible",
+        "count": 3
+      },
+      {
+        "word": "continuation",
+        "count": 3
+      },
+      {
+        "word": "after",
+        "count": 1
+      },
+      {
+        "word": "short",
+        "count": 1
+      },
+      {
+        "word": "pattern",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 4,
+      "frequency_prior": 5
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0002",
+      "window": 4,
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_002\\responses.json#entry-1",
+      "collection_sha256": "2f830579b16191dacb6270213d17ab3acfd0e0a92e92414652fd4d36dc482920",
+      "entry_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "response_sha256": "e358f6bb44470a5e9e82bfc1e275f743f8050267071c38596fd5ad0da6e7cd49",
+      "correct": false,
+      "collected_at": "2026-07-26T04:31:08.772460Z",
+      "response_seconds": null
+    },
+    {
+      "case_id": "CASE-W008-0002",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_002\\responses.json#entry-2",
+      "collection_sha256": "2f830579b16191dacb6270213d17ab3acfd0e0a92e92414652fd4d36dc482920",
+      "entry_sha256": "9797a9665cecf741968bfcb760f6e756d14a366a39d56251bb97e08efc85162f",
+      "response_sha256": "9797a9665cecf741968bfcb760f6e756d14a366a39d56251bb97e08efc85162f",
+      "correct": false,
+      "collected_at": "2026-07-27T12:36:38.354682Z",
+      "response_seconds": null
+    },
+    {
+      "case_id": "CASE-W016-0002",
+      "window": 16,
+      "prediction": 6,
+      "confidence": 22,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_002\\responses.json#entry-3",
+      "collection_sha256": "2f830579b16191dacb6270213d17ab3acfd0e0a92e92414652fd4d36dc482920",
+      "entry_sha256": "85fe1cae3eadbc70204e3a6290cba7e4b9e23240a6f58acba2f7baa9d7351fee",
+      "response_sha256": "85fe1cae3eadbc70204e3a6290cba7e4b9e23240a6f58acba2f7baa9d7351fee",
+      "correct": false,
+      "collected_at": "2026-07-27T13:29:06.447885Z",
+      "response_seconds": null
+    },
+    {
+      "case_id": "CASE-W032-0002",
+      "window": 32,
+      "prediction": 6,
+      "confidence": 22,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_002\\responses.json#entry-4",
+      "collection_sha256": "2f830579b16191dacb6270213d17ab3acfd0e0a92e92414652fd4d36dc482920",
+      "entry_sha256": "cb6b1b41ef939a9459769377a286a192a32c76f56fe49618062c532fd618c4d6",
+      "response_sha256": "cb6b1b41ef939a9459769377a286a192a32c76f56fe49618062c532fd618c4d6",
+      "correct": false,
+      "collected_at": "2026-07-27T13:32:21.407083Z",
+      "response_seconds": null
+    },
+    {
+      "case_id": "CASE-W064-0002",
+      "window": 64,
+      "prediction": 6,
+      "confidence": 22,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\experiments\\exp000001\\pilot_002\\responses.json#entry-5",
+      "collection_sha256": "2f830579b16191dacb6270213d17ab3acfd0e0a92e92414652fd4d36dc482920",
+      "entry_sha256": "6da786d9698afeb9967012655fba57e7c8fd64afce849e4b420f5a2d3e57f18c",
+      "response_sha256": "6da786d9698afeb9967012655fba57e7c8fd64afce849e4b420f5a2d3e57f18c",
+      "correct": false,
+      "collected_at": "2026-07-27T13:32:54.649434Z",
+      "response_seconds": null
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.2.1",
+  "primeaiexplorer_version": "0.2.1",
+  "created_utc": "2026-07-26T19:36:18.806111+00:00",
+  "experiment_id": "EXP-000001",
+  "pilot_id": "pilot_001",
+  "model": "demo-model",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "responses_root": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_1\\demo\\exp000001\\pilot_001",
+  "dataset_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_1\\demo\\exp000001\\cases.csv",
+  "dataset_sha256": "9c09bdc6495f2c038a4a3e822bd9acd4819bd315c4170fe2884774c88471881e",
+  "response_count": 5,
+  "summary_sha256": "f48aafb9806f15284044766d4cd3f48e6925b1e7bea42ff9f4ca50cb981ba4c3",
+  "command": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_1\\.venv\\Scripts\\paiexp analyze --responses .\\demo\\exp000001\\pilot_001 --dataset .\\demo\\exp000001\\cases.csv --output .\\demo\\exp000001\\analysis_v021 --model demo-model --experiment-id EXP-000001 --pilot-id pilot_001"
+}

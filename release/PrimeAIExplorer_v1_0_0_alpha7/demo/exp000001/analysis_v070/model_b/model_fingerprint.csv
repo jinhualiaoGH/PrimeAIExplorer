@@ -1,0 +1,12 @@
+﻿metric,value
+favorite_prediction,4
+favorite_prediction_share,0.5
+prediction_entropy_bits,1.0
+normalized_prediction_entropy,1.0
+mean_confidence,39
+ece,0.29000000000000004
+mean_signed_error,-1
+mean_absolute_error,1
+switch_rate,1.0
+mean_run_length,1
+max_run_length,1

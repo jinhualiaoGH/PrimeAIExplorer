@@ -1,0 +1,4 @@
+﻿"prompt_id","title","short_name","version","status","prompt_family","experiment_id","dataset_id","response_schema_id","created_date","modified_date"
+"PROMPT-000001","Memory-Limited Prime Gap Prediction Prompt","memory_limited_prime_gap_prediction","0.1.0","Proposed","memory_limited_learning","EXP-000001","DS-000001","RESPONSE-000001","2026-07-25","2026-07-25"
+"PROMPT-000002","Prime Gap Compression Prompt","prime_gap_compression","0.1.0","Proposed","compression","EXP-000002","DS-000002","RESPONSE-000002","2026-07-25","2026-07-25"
+"PROMPT-000003","Prime Structure Abstraction Prompt","prime_structure_abstraction","0.1.0","Proposed","abstraction","EXP-000003","DS-000003","RESPONSE-000003","2026-07-25","2026-07-25"

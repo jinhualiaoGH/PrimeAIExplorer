@@ -1,0 +1,804 @@
+{
+  "behavior": {
+    "metadata": {
+      "experiment_id": "EXP-000001",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_007",
+      "sequence_order": "input_order"
+    },
+    "metrics": {
+      "confidence_realism_gap": 0.3375,
+      "distinct_predictions": 3,
+      "empirical_accuracy": 0.5,
+      "favorite_prediction": 6,
+      "favorite_prediction_count": 2,
+      "favorite_prediction_share": 0.5,
+      "max_run_length": 2,
+      "mean_confidence": 83.75,
+      "mean_run_length": 1.3333333333333333,
+      "min_run_length": 1,
+      "normalized_prediction_entropy": 0.9463946303571862,
+      "prediction_entropy_bits": 1.5,
+      "record_count": 4,
+      "repeat_count": 1,
+      "repeat_rate": 0.3333333333333333,
+      "run_count": 3,
+      "switch_count": 2,
+      "switch_rate": 0.6666666666666666,
+      "transition_count": 3
+    },
+    "name": "behavior",
+    "summary": {
+      "favorite_prediction": 6,
+      "max_run_length": 2,
+      "record_count": 4,
+      "status": "complete",
+      "switch_rate": 0.6666666666666666
+    },
+    "tables": {
+      "behavior_fingerprint": [
+        {
+          "metric": "favorite_prediction",
+          "value": 6
+        },
+        {
+          "metric": "favorite_prediction_share",
+          "value": 0.5
+        },
+        {
+          "metric": "prediction_entropy_bits",
+          "value": 1.5
+        },
+        {
+          "metric": "normalized_prediction_entropy",
+          "value": 0.9463946303571862
+        },
+        {
+          "metric": "switch_rate",
+          "value": 0.6666666666666666
+        },
+        {
+          "metric": "repeat_rate",
+          "value": 0.3333333333333333
+        },
+        {
+          "metric": "mean_run_length",
+          "value": 1.3333333333333333
+        },
+        {
+          "metric": "max_run_length",
+          "value": 2
+        },
+        {
+          "metric": "mean_confidence",
+          "value": 83.75
+        },
+        {
+          "metric": "empirical_accuracy",
+          "value": 0.5
+        },
+        {
+          "metric": "confidence_realism_gap",
+          "value": 0.3375
+        }
+      ],
+      "persistence_runs": [
+        {
+          "end_case_id": "CASE-W004-0002",
+          "end_n": 2,
+          "length": 2,
+          "prediction": 6,
+          "run": 1,
+          "start_case_id": "CASE-W004-0001",
+          "start_n": 1
+        },
+        {
+          "end_case_id": "CASE-W008-0001",
+          "end_n": 3,
+          "length": 1,
+          "prediction": 4,
+          "run": 2,
+          "start_case_id": "CASE-W008-0001",
+          "start_n": 3
+        },
+        {
+          "end_case_id": "CASE-W008-0002",
+          "end_n": 4,
+          "length": 1,
+          "prediction": 8,
+          "run": 3,
+          "start_case_id": "CASE-W008-0002",
+          "start_n": 4
+        }
+      ],
+      "prediction_popularity": [
+        {
+          "count": 2,
+          "frequency": 0.5,
+          "prediction": 6,
+          "rank": 1
+        },
+        {
+          "count": 1,
+          "frequency": 0.25,
+          "prediction": 4,
+          "rank": 2
+        },
+        {
+          "count": 1,
+          "frequency": 0.25,
+          "prediction": 8,
+          "rank": 3
+        }
+      ],
+      "prediction_transitions": [
+        {
+          "count": 1,
+          "from_prediction": 4,
+          "is_switch": true,
+          "probability": 1.0,
+          "to_prediction": 8
+        },
+        {
+          "count": 1,
+          "from_prediction": 6,
+          "is_switch": true,
+          "probability": 0.5,
+          "to_prediction": 4
+        },
+        {
+          "count": 1,
+          "from_prediction": 6,
+          "is_switch": false,
+          "probability": 0.5,
+          "to_prediction": 6
+        }
+      ],
+      "window_behavior": [
+        {
+          "count": 2,
+          "distinct_predictions": 1,
+          "favorite_prediction": 6,
+          "favorite_prediction_share": 1.0,
+          "max_run_length": 2,
+          "prediction_entropy_bits": 0.0,
+          "run_count": 1,
+          "switch_rate": 0.0,
+          "window": 4
+        },
+        {
+          "count": 2,
+          "distinct_predictions": 2,
+          "favorite_prediction": 4,
+          "favorite_prediction_share": 0.5,
+          "max_run_length": 1,
+          "prediction_entropy_bits": 1.0,
+          "run_count": 2,
+          "switch_rate": 1.0,
+          "window": 8
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "warnings": []
+  },
+  "calibration": {
+    "metadata": {
+      "configured_bin_count": 10,
+      "experiment_id": "EXP-000001",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_007"
+    },
+    "metrics": {
+      "absolute_calibration_bias": 0.3375,
+      "accuracy": 0.5,
+      "bin_count": 10,
+      "brier_score": 0.460625,
+      "ece": 0.5875,
+      "exactly_calibrated_record_count": 0,
+      "maximum_calibration_error": 0.925,
+      "mean_confidence": 0.8375,
+      "occupied_bin_count": 3,
+      "overconfidence_rate": 0.5,
+      "overconfident_record_count": 2,
+      "record_count": 4,
+      "signed_calibration_bias": 0.3375,
+      "underconfidence_rate": 0.5,
+      "underconfident_record_count": 2
+    },
+    "name": "calibration",
+    "summary": {
+      "ece": 0.5875,
+      "maximum_calibration_error": 0.925,
+      "record_count": 4,
+      "signed_calibration_bias": 0.3375,
+      "status": "complete"
+    },
+    "tables": {
+      "reliability_bins": [
+        {
+          "absolute_gap": 0.30000000000000004,
+          "accuracy": 1.0,
+          "average_confidence": 0.7,
+          "bin_high": 0.8,
+          "bin_low": 0.7,
+          "calibration_state": "underconfident",
+          "count": 1,
+          "signed_gap": -0.30000000000000004,
+          "weighted_gap": 0.07500000000000001
+        },
+        {
+          "absolute_gap": 0.19999999999999996,
+          "accuracy": 1.0,
+          "average_confidence": 0.8,
+          "bin_high": 0.9,
+          "bin_low": 0.8,
+          "calibration_state": "underconfident",
+          "count": 1,
+          "signed_gap": -0.19999999999999996,
+          "weighted_gap": 0.04999999999999999
+        },
+        {
+          "absolute_gap": 0.925,
+          "accuracy": 0.0,
+          "average_confidence": 0.925,
+          "bin_high": 1.0,
+          "bin_low": 0.9,
+          "calibration_state": "overconfident",
+          "count": 2,
+          "signed_gap": 0.925,
+          "weighted_gap": 0.4625
+        }
+      ],
+      "window_calibration": [
+        {
+          "accuracy": 0.5,
+          "brier_score": 0.42500000000000004,
+          "count": 2,
+          "ece": 0.55,
+          "mean_confidence": 0.85,
+          "signed_calibration_bias": 0.35,
+          "window": 4
+        },
+        {
+          "accuracy": 0.5,
+          "brier_score": 0.49624999999999997,
+          "count": 2,
+          "ece": 0.625,
+          "mean_confidence": 0.825,
+          "signed_calibration_bias": 0.32499999999999996,
+          "window": 8
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "warnings": []
+  },
+  "distribution": {
+    "metadata": {
+      "experiment_id": "EXP-000001",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_007"
+    },
+    "metrics": {
+      "distinct_prediction_count": 3,
+      "distinct_truth_count": 3,
+      "exact_count": 2,
+      "exact_rate": 0.5,
+      "jensen_shannon_divergence_bits": 0.25,
+      "maximum_absolute_error": 4,
+      "mean_absolute_error": 1.5,
+      "mean_signed_error": 1.5,
+      "median_absolute_error": 1.0,
+      "median_signed_error": 1.0,
+      "normalized_prediction_entropy": 0.9463946303571862,
+      "normalized_truth_entropy": 0.9463946303571862,
+      "overprediction_count": 2,
+      "overprediction_rate": 0.5,
+      "prediction_entropy_bits": 1.5,
+      "record_count": 4,
+      "total_variation_distance": 0.25,
+      "truth_entropy_bits": 1.5,
+      "underprediction_count": 0,
+      "underprediction_rate": 0.0
+    },
+    "name": "distribution",
+    "summary": {
+      "jensen_shannon_divergence_bits": 0.25,
+      "mean_absolute_error": 1.5,
+      "record_count": 4,
+      "status": "complete",
+      "total_variation_distance": 0.25
+    },
+    "tables": {
+      "confusion_matrix": [
+        {
+          "conditional_share": 1.0,
+          "count": 1,
+          "prediction": 6,
+          "truth": 2
+        },
+        {
+          "conditional_share": 1.0,
+          "count": 1,
+          "prediction": 4,
+          "truth": 4
+        },
+        {
+          "conditional_share": 0.5,
+          "count": 1,
+          "prediction": 6,
+          "truth": 6
+        },
+        {
+          "conditional_share": 0.5,
+          "count": 1,
+          "prediction": 8,
+          "truth": 6
+        }
+      ],
+      "error_distribution": [
+        {
+          "count": 2,
+          "share": 0.5,
+          "signed_error": 0
+        },
+        {
+          "count": 1,
+          "share": 0.25,
+          "signed_error": 2
+        },
+        {
+          "count": 1,
+          "share": 0.25,
+          "signed_error": 4
+        }
+      ],
+      "prediction_distribution": [
+        {
+          "count": 1,
+          "prediction": 4,
+          "share": 0.25
+        },
+        {
+          "count": 2,
+          "prediction": 6,
+          "share": 0.5
+        },
+        {
+          "count": 1,
+          "prediction": 8,
+          "share": 0.25
+        }
+      ],
+      "truth_distribution": [
+        {
+          "count": 1,
+          "share": 0.25,
+          "truth": 2
+        },
+        {
+          "count": 1,
+          "share": 0.25,
+          "truth": 4
+        },
+        {
+          "count": 2,
+          "share": 0.5,
+          "truth": 6
+        }
+      ],
+      "window_distribution": [
+        {
+          "count": 2,
+          "distinct_predictions": 1,
+          "distinct_truths": 2,
+          "mean_absolute_error": 2,
+          "mean_signed_error": 2,
+          "prediction_entropy_bits": 0.0,
+          "truth_entropy_bits": 1.0,
+          "window": 4
+        },
+        {
+          "count": 2,
+          "distinct_predictions": 2,
+          "distinct_truths": 2,
+          "mean_absolute_error": 1,
+          "mean_signed_error": 1,
+          "prediction_entropy_bits": 1.0,
+          "truth_entropy_bits": 1.0,
+          "window": 8
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "warnings": []
+  },
+  "performance": {
+    "metadata": {
+      "calibration_bin_count": 10,
+      "experiment_id": "EXP-000001",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_007"
+    },
+    "metrics": {
+      "accuracy": 0.5,
+      "brier_score": 0.460625,
+      "correct_count": 2,
+      "dataset_case_count": null,
+      "dataset_coverage": null,
+      "distinct_predictions": 3,
+      "ece": 0.5875,
+      "exact_error_rate": 0.5,
+      "incorrect_count": 2,
+      "ledger_entry_count": null,
+      "mean_absolute_error": 1.5,
+      "mean_confidence": 83.75,
+      "mean_signed_error": 1.5,
+      "median_absolute_error": 1.0,
+      "median_confidence": 85.0,
+      "normalized_prediction_entropy": 0.9463946303571862,
+      "pending_entry_count": 0,
+      "pilot_completion": null,
+      "prediction_entropy_bits": 1.5,
+      "record_count": 4
+    },
+    "name": "performance",
+    "summary": {
+      "accuracy": 0.5,
+      "brier_score": 0.460625,
+      "ece": 0.5875,
+      "record_count": 4,
+      "status": "complete"
+    },
+    "tables": {
+      "calibration_bins": [
+        {
+          "absolute_gap": 0.30000000000000004,
+          "accuracy": 1.0,
+          "average_confidence": 0.7,
+          "bin_high": 0.8,
+          "bin_low": 0.7,
+          "count": 1
+        },
+        {
+          "absolute_gap": 0.19999999999999996,
+          "accuracy": 1.0,
+          "average_confidence": 0.8,
+          "bin_high": 0.9,
+          "bin_low": 0.8,
+          "count": 1
+        },
+        {
+          "absolute_gap": 0.925,
+          "accuracy": 0.0,
+          "average_confidence": 0.925,
+          "bin_high": 1.0,
+          "bin_low": 0.9,
+          "count": 2
+        }
+      ],
+      "window_performance": [
+        {
+          "accuracy": 0.5,
+          "brier_score": 0.42500000000000004,
+          "count": 2,
+          "mean_absolute_error": 2,
+          "mean_confidence": 85,
+          "mean_signed_error": 2,
+          "prediction_entropy_bits": 0.0,
+          "window": 4
+        },
+        {
+          "accuracy": 0.5,
+          "brier_score": 0.49624999999999997,
+          "count": 2,
+          "mean_absolute_error": 1,
+          "mean_confidence": 82.5,
+          "mean_signed_error": 1,
+          "prediction_entropy_bits": 1.0,
+          "window": 8
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "warnings": []
+  },
+  "surprise": {
+    "metadata": {
+      "experiment_id": "EXP-000001",
+      "formula": "mean(truth rarity, prediction rarity, confidence surprise, error surprise, optional transition surprise)",
+      "model": "GPT-5.6 Thinking",
+      "pilot_id": "pilot_007"
+    },
+    "metrics": {
+      "distinct_prediction_count": 3,
+      "distinct_truth_count": 3,
+      "maximum_surprise_index": 1.4443856189774724,
+      "mean_confidence_surprise": 0.5875,
+      "mean_prediction_rarity_bits": 1.5,
+      "mean_surprise_index": 1.040344529780426,
+      "mean_transition_surprise_bits": 0.6666666666666666,
+      "mean_truth_rarity_bits": 1.5,
+      "novel_prediction_count": 3,
+      "novel_prediction_rate": 0.75,
+      "record_count": 4,
+      "unexpected_error_count": 2,
+      "unexpected_error_rate": 0.5
+    },
+    "name": "surprise",
+    "summary": {
+      "maximum_surprise_index": 1.4443856189774724,
+      "mean_surprise_index": 1.040344529780426,
+      "novel_prediction_rate": 0.75,
+      "record_count": 4,
+      "status": "complete"
+    },
+    "tables": {
+      "novel_predictions": [
+        {
+          "case_id": "CASE-W004-0001",
+          "confidence": 0.8,
+          "prediction": 6,
+          "record_index": 1,
+          "window": 4
+        },
+        {
+          "case_id": "CASE-W008-0001",
+          "confidence": 0.7,
+          "prediction": 4,
+          "record_index": 3,
+          "window": 8
+        },
+        {
+          "case_id": "CASE-W008-0002",
+          "confidence": 0.95,
+          "prediction": 8,
+          "record_index": 4,
+          "window": 8
+        }
+      ],
+      "surprise_events": [
+        {
+          "absolute_error": 0,
+          "case_id": "CASE-W004-0001",
+          "confidence": 0.8,
+          "confidence_surprise": 0.19999999999999996,
+          "correct": true,
+          "error_surprise_bits": 0.0,
+          "novel_prediction": true,
+          "prediction": 6,
+          "prediction_rarity_bits": 1.0,
+          "previous_prediction": null,
+          "record_index": 1,
+          "surprise_index": 0.55,
+          "surprise_rank": 4,
+          "transition_probability": null,
+          "transition_surprise_bits": null,
+          "truth": 6,
+          "truth_rarity_bits": 1.0,
+          "window": 4
+        },
+        {
+          "absolute_error": 4,
+          "case_id": "CASE-W004-0002",
+          "confidence": 0.9,
+          "confidence_surprise": 0.9,
+          "correct": false,
+          "error_surprise_bits": 2.321928094887362,
+          "novel_prediction": false,
+          "prediction": 6,
+          "prediction_rarity_bits": 1.0,
+          "previous_prediction": 6,
+          "record_index": 2,
+          "surprise_index": 1.4443856189774724,
+          "surprise_rank": 1,
+          "transition_probability": 0.5,
+          "transition_surprise_bits": 1.0,
+          "truth": 2,
+          "truth_rarity_bits": 2.0,
+          "window": 4
+        },
+        {
+          "absolute_error": 0,
+          "case_id": "CASE-W008-0001",
+          "confidence": 0.7,
+          "confidence_surprise": 0.30000000000000004,
+          "correct": true,
+          "error_surprise_bits": 0.0,
+          "novel_prediction": true,
+          "prediction": 4,
+          "prediction_rarity_bits": 2.0,
+          "previous_prediction": 6,
+          "record_index": 3,
+          "surprise_index": 1.06,
+          "surprise_rank": 3,
+          "transition_probability": 0.5,
+          "transition_surprise_bits": 1.0,
+          "truth": 4,
+          "truth_rarity_bits": 2.0,
+          "window": 8
+        },
+        {
+          "absolute_error": 2,
+          "case_id": "CASE-W008-0002",
+          "confidence": 0.95,
+          "confidence_surprise": 0.95,
+          "correct": false,
+          "error_surprise_bits": 1.584962500721156,
+          "novel_prediction": true,
+          "prediction": 8,
+          "prediction_rarity_bits": 2.0,
+          "previous_prediction": 4,
+          "record_index": 4,
+          "surprise_index": 1.1069925001442311,
+          "surprise_rank": 2,
+          "transition_probability": 1.0,
+          "transition_surprise_bits": -0.0,
+          "truth": 6,
+          "truth_rarity_bits": 1.0,
+          "window": 8
+        }
+      ],
+      "surprise_timeline": [
+        {
+          "case_id": "CASE-W004-0001",
+          "cumulative_max_surprise": 0.55,
+          "cumulative_mean_surprise": 0.55,
+          "record_index": 1,
+          "surprise_index": 0.55,
+          "window": 4
+        },
+        {
+          "case_id": "CASE-W004-0002",
+          "cumulative_max_surprise": 1.4443856189774724,
+          "cumulative_mean_surprise": 0.9971928094887362,
+          "record_index": 2,
+          "surprise_index": 1.4443856189774724,
+          "window": 4
+        },
+        {
+          "case_id": "CASE-W008-0001",
+          "cumulative_max_surprise": 1.4443856189774724,
+          "cumulative_mean_surprise": 1.0181285396591575,
+          "record_index": 3,
+          "surprise_index": 1.06,
+          "window": 8
+        },
+        {
+          "case_id": "CASE-W008-0002",
+          "cumulative_max_surprise": 1.4443856189774724,
+          "cumulative_mean_surprise": 1.040344529780426,
+          "record_index": 4,
+          "surprise_index": 1.1069925001442311,
+          "window": 8
+        }
+      ],
+      "top_surprises": [
+        {
+          "absolute_error": 4,
+          "case_id": "CASE-W004-0002",
+          "confidence": 0.9,
+          "confidence_surprise": 0.9,
+          "correct": false,
+          "error_surprise_bits": 2.321928094887362,
+          "novel_prediction": false,
+          "prediction": 6,
+          "prediction_rarity_bits": 1.0,
+          "previous_prediction": 6,
+          "record_index": 2,
+          "surprise_index": 1.4443856189774724,
+          "surprise_rank": 1,
+          "transition_probability": 0.5,
+          "transition_surprise_bits": 1.0,
+          "truth": 2,
+          "truth_rarity_bits": 2.0,
+          "window": 4
+        },
+        {
+          "absolute_error": 2,
+          "case_id": "CASE-W008-0002",
+          "confidence": 0.95,
+          "confidence_surprise": 0.95,
+          "correct": false,
+          "error_surprise_bits": 1.584962500721156,
+          "novel_prediction": true,
+          "prediction": 8,
+          "prediction_rarity_bits": 2.0,
+          "previous_prediction": 4,
+          "record_index": 4,
+          "surprise_index": 1.1069925001442311,
+          "surprise_rank": 2,
+          "transition_probability": 1.0,
+          "transition_surprise_bits": -0.0,
+          "truth": 6,
+          "truth_rarity_bits": 1.0,
+          "window": 8
+        },
+        {
+          "absolute_error": 0,
+          "case_id": "CASE-W008-0001",
+          "confidence": 0.7,
+          "confidence_surprise": 0.30000000000000004,
+          "correct": true,
+          "error_surprise_bits": 0.0,
+          "novel_prediction": true,
+          "prediction": 4,
+          "prediction_rarity_bits": 2.0,
+          "previous_prediction": 6,
+          "record_index": 3,
+          "surprise_index": 1.06,
+          "surprise_rank": 3,
+          "transition_probability": 0.5,
+          "transition_surprise_bits": 1.0,
+          "truth": 4,
+          "truth_rarity_bits": 2.0,
+          "window": 8
+        },
+        {
+          "absolute_error": 0,
+          "case_id": "CASE-W004-0001",
+          "confidence": 0.8,
+          "confidence_surprise": 0.19999999999999996,
+          "correct": true,
+          "error_surprise_bits": 0.0,
+          "novel_prediction": true,
+          "prediction": 6,
+          "prediction_rarity_bits": 1.0,
+          "previous_prediction": null,
+          "record_index": 1,
+          "surprise_index": 0.55,
+          "surprise_rank": 4,
+          "transition_probability": null,
+          "transition_surprise_bits": null,
+          "truth": 6,
+          "truth_rarity_bits": 1.0,
+          "window": 4
+        }
+      ],
+      "unexpected_transitions": [
+        {
+          "count": 1,
+          "from_prediction": 4,
+          "probability": 1.0,
+          "surprise_bits": -0.0,
+          "to_prediction": 8
+        },
+        {
+          "count": 1,
+          "from_prediction": 6,
+          "probability": 0.5,
+          "surprise_bits": 1.0,
+          "to_prediction": 4
+        },
+        {
+          "count": 1,
+          "from_prediction": 6,
+          "probability": 0.5,
+          "surprise_bits": 1.0,
+          "to_prediction": 6
+        }
+      ],
+      "window_surprise": [
+        {
+          "count": 2,
+          "maximum_surprise_index": 1.4443856189774724,
+          "mean_surprise_index": 0.9971928094887362,
+          "novel_prediction_rate": 0.5,
+          "unexpected_error_rate": 0.5,
+          "window": 4
+        },
+        {
+          "count": 2,
+          "maximum_surprise_index": 1.1069925001442311,
+          "mean_surprise_index": 1.0834962500721157,
+          "novel_prediction_rate": 1.0,
+          "unexpected_error_rate": 0.5,
+          "window": 8
+        }
+      ]
+    },
+    "version": "1.0.0",
+    "warnings": []
+  }
+}

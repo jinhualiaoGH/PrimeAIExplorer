@@ -1,0 +1,9 @@
+﻿{"prediction":6,"confidence":18,"explanation":"Prime gaps are irregular; 6 is a common small gap."}
+
+{"prediction":6,"confidence":18,"explanation":"A common even gap is selected."}
+
+{"prediction":6,"confidence":18,"explanation":"The local sequence suggests 6."}
+
+{"prediction":6,"confidence":100,"explanation":"The sequence is recognized exactly."}
+
+{"prediction":6,"confidence":18,"explanation":"A low-confidence frequency prior selects 6."}

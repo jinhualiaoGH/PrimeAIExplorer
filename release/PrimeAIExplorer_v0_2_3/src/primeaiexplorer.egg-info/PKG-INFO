@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: primeaiexplorer
+Version: 0.2.3
+Summary: A reproducible observatory for prime-gap prediction responses
+Author: PrimeAIExplorer
+Requires-Python: >=3.10

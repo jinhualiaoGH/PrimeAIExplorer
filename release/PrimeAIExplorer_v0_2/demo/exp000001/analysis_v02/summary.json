@@ -1,0 +1,221 @@
+{
+  "schema_version": "0.2.0",
+  "record_count": 5,
+  "correct_count": 3,
+  "incorrect_count": 2,
+  "accuracy": 0.6,
+  "mean_confidence": 61.6,
+  "median_confidence": 62,
+  "brier_score": 0.1824,
+  "ece": 0.40800000000000003,
+  "prediction_entropy_bits": 1.3709505944546687,
+  "normalized_prediction_entropy": 0.8649735207179273,
+  "distinct_predictions": 3,
+  "prediction_distribution": [
+    {
+      "prediction": 4,
+      "count": 1
+    },
+    {
+      "prediction": 6,
+      "count": 3
+    },
+    {
+      "prediction": 10,
+      "count": 1
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.4,
+      "bin_high": 0.5,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.44,
+      "absolute_gap": 0.44
+    },
+    {
+      "bin_low": 0.5,
+      "bin_high": 0.6,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 0.58,
+      "absolute_gap": 0.42000000000000004
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.62,
+      "absolute_gap": 0.62
+    },
+    {
+      "bin_low": 0.7,
+      "bin_high": 0.8,
+      "count": 2,
+      "accuracy": 1.0,
+      "average_confidence": 0.72,
+      "absolute_gap": 0.28
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 74,
+      "brier_score": 0.06760000000000001
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 62,
+      "brier_score": 0.3844
+    },
+    "16": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 70,
+      "brier_score": 0.09000000000000002
+    },
+    "32": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 44,
+      "brier_score": 0.1936
+    },
+    "64": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 58,
+      "brier_score": 0.17640000000000003
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 5,
+    "top_content_words": [
+      {
+        "word": "six",
+        "count": 3
+      },
+      {
+        "word": "pattern",
+        "count": 2
+      },
+      {
+        "word": "repeated",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "gap",
+        "count": 1
+      },
+      {
+        "word": "suggests",
+        "count": 1
+      },
+      {
+        "word": "locally",
+        "count": 1
+      },
+      {
+        "word": "frequent",
+        "count": 1
+      },
+      {
+        "word": "recent",
+        "count": 1
+      },
+      {
+        "word": "favors",
+        "count": 1
+      },
+      {
+        "word": "ten",
+        "count": 1
+      },
+      {
+        "word": "plausible",
+        "count": 1
+      },
+      {
+        "word": "from",
+        "count": 1
+      },
+      {
+        "word": "local",
+        "count": 1
+      },
+      {
+        "word": "mix",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 3,
+      "frequency_prior": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0001",
+      "window": 4,
+      "prediction": 6,
+      "confidence": 74,
+      "explanation": "A repeated small gap suggests six.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2\\demo\\exp000001\\pilot_001\\CASE-W004-0001.response.json",
+      "response_sha256": "73e1e4d46e69aee1cd97189c88b40259863f21f8fc34d7fb5a191e0365ccf6d5",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 62,
+      "explanation": "Six is locally frequent.",
+      "actual_gap": 8,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2\\demo\\exp000001\\pilot_001\\CASE-W008-0001.response.json",
+      "response_sha256": "447c6804c3fbf5745af0d61acf6a589ce824f2bed2800dbf230eb420639af90b",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "window": 16,
+      "prediction": 6,
+      "confidence": 70,
+      "explanation": "The recent pattern favors six.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2\\demo\\exp000001\\pilot_001\\CASE-W016-0001.response.json",
+      "response_sha256": "9696ae92c58524c3d9e2d8147236e843cd3e53bef1a961ff9e7373a2e1620a3a",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "window": 32,
+      "prediction": 10,
+      "confidence": 44,
+      "explanation": "Ten is plausible from the local mix.",
+      "actual_gap": 12,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2\\demo\\exp000001\\pilot_001\\CASE-W032-0001.response.json",
+      "response_sha256": "7e491bc09c68d1ac52b93c1bb9448add12514094e001c3271bfc12103a83883b",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "window": 64,
+      "prediction": 4,
+      "confidence": 58,
+      "explanation": "Four follows a short-gap pattern.",
+      "actual_gap": 4,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2\\demo\\exp000001\\pilot_001\\CASE-W064-0001.response.json",
+      "response_sha256": "7596587a48c33a99410f18a75b7b8e96ee752dd03acd700298f61fe827a4573c",
+      "correct": true
+    }
+  ]
+}

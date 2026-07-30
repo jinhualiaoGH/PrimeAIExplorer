@@ -1,0 +1,11 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Observation Registry",
+    "registry_version":  "0.3.0",
+    "observation_schema_version":  "0.3.0",
+    "updated_date":  "2026-07-25",
+    "next_observation_sequence":  1,
+    "observation_count":  0,
+    "observations":  [
+
+                     ]
+}

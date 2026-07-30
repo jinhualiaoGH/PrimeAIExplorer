@@ -1,0 +1,44 @@
+﻿{
+    "registry_name":  "PrimeAIExplorer Evaluation Registry",
+    "registry_version":  "0.4.0",
+    "evaluation_schema_version":  "0.4.0",
+    "updated_date":  "2026-07-25",
+    "evaluators":  [
+                       {
+                           "evaluator_id":  "EVAL-000001",
+                           "title":  "Exact Match Evaluator",
+                           "short_name":  "exact_match",
+                           "version":  "0.1.0",
+                           "status":  "Active",
+                           "evaluator_type":  "deterministic",
+                           "primary_metric_id":  "METRIC-000001",
+                           "implementation_module":  "core.evaluation",
+                           "created_date":  "2026-07-25",
+                           "modified_date":  "2026-07-25"
+                       },
+                       {
+                           "evaluator_id":  "EVAL-000002",
+                           "title":  "Numeric Error Evaluator",
+                           "short_name":  "numeric_error",
+                           "version":  "0.1.0",
+                           "status":  "Active",
+                           "evaluator_type":  "deterministic",
+                           "primary_metric_id":  "METRIC-000002",
+                           "implementation_module":  "core.evaluation",
+                           "created_date":  "2026-07-25",
+                           "modified_date":  "2026-07-25"
+                       },
+                       {
+                           "evaluator_id":  "EVAL-000003",
+                           "title":  "Structured Response Validity Evaluator",
+                           "short_name":  "structured_response_validity",
+                           "version":  "0.1.0",
+                           "status":  "Active",
+                           "evaluator_type":  "deterministic",
+                           "primary_metric_id":  "METRIC-000004",
+                           "implementation_module":  "core.evaluation",
+                           "created_date":  "2026-07-25",
+                           "modified_date":  "2026-07-25"
+                       }
+                   ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "0.7.2",
+  "primeaiexplorer_version": "0.7.2",
+  "created_utc": "2026-07-27T19:36:29.700865+00:00",
+  "analysis_count": 3,
+  "analysis_sources": [
+    "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_001",
+    "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v023\\pilot_002_partial",
+    "C:\\PrimeAIExplorer\\experiments\\exp000001\\analysis_v060\\pilot_002"
+  ],
+  "comparison_summary_sha256": "2d1abc82723fb10db92236f9dd6e0cab1b018279ea33d5014598f5e75620d9cc",
+  "command": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\.venv\\Scripts\\paiexp compare --experiment-root C:\\PrimeAIExplorer\\experiments\\exp000001 --output C:\\PrimeAIExplorer\\experiments\\exp000001\\comparison_v073"
+}

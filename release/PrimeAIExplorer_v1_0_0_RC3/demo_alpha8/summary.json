@@ -1,0 +1,19 @@
+{
+  "context": {
+    "experiment_id": "EXP-000001",
+    "model": "GPT-5.6 Thinking",
+    "pilot_id": "pilot_008"
+  },
+  "metric_count": 87,
+  "observatories": [
+    "performance",
+    "behavior",
+    "calibration",
+    "distribution",
+    "surprise"
+  ],
+  "observatory_count": 5,
+  "schema_version": "1.0.0",
+  "table_count": 20,
+  "warning_count": 0
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "kind": "release-check",
+  "created_utc": "2026-07-29T01:07:46.319542+00:00",
+  "passed": true,
+  "checks": [
+    {
+      "name": "Release root",
+      "passed": true,
+      "detail": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v1_0_0_RC3",
+      "required": true
+    },
+    {
+      "name": "README.md",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "CHANGELOG.md",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "ROADMAP.md",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "LICENSE",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "CITATION.cff",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "pyproject.toml",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "install.ps1",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "run_tests.ps1",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "run_demo.ps1",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/__init__.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/observatories/manager.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/exporters/unified.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/dashboards/html.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/visualizations/svg.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "src/primeaiexplorer/publication.py",
+      "passed": true,
+      "detail": "present",
+      "required": true
+    },
+    {
+      "name": "RC3 version metadata",
+      "passed": true,
+      "detail": "1.0.0rc3",
+      "required": true
+    },
+    {
+      "name": "Regression test modules",
+      "passed": true,
+      "detail": "19",
+      "required": true
+    }
+  ]
+}

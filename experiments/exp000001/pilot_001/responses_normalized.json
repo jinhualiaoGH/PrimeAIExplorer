@@ -1,0 +1,37 @@
+{
+  "format": "PrimeAIExplorer.aggregate_responses",
+  "format_version": "1.0.0",
+  "source_file": "responses.json",
+  "responses": [
+    {
+      "case_id": "CASE-W004-0001",
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small gap and a reasonable low-confidence guess after 4."
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is a common small even gap and a plausible continuation after 4."
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is selected as a common small even gap following the observed sequence."
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "prediction": 6,
+      "confidence": 100,
+      "explanation": "The observed sequence matches consecutive prime gaps beginning at 1697; the next prime gap is 6."
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "prediction": 6,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 6 is chosen as a common small gap following the observed terminal gap of 4."
+    }
+  ]
+}

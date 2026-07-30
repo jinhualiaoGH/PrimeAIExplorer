@@ -1,0 +1,225 @@
+{
+  "schema_version": "0.2.2",
+  "record_count": 5,
+  "dataset_case_count": 5,
+  "dataset_coverage": 1.0,
+  "correct_count": 3,
+  "incorrect_count": 2,
+  "accuracy": 0.6,
+  "mean_confidence": 68.4,
+  "median_confidence": 72,
+  "brier_score": 0.17212,
+  "ece": 0.38,
+  "prediction_entropy_bits": 1.3709505944546687,
+  "normalized_prediction_entropy": 0.8649735207179273,
+  "distinct_predictions": 3,
+  "prediction_distribution": [
+    {
+      "prediction": 4,
+      "count": 1
+    },
+    {
+      "prediction": 6,
+      "count": 3
+    },
+    {
+      "prediction": 8,
+      "count": 1
+    }
+  ],
+  "calibration_bins": [
+    {
+      "bin_low": 0.5,
+      "bin_high": 0.6,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.55,
+      "absolute_gap": 0.55
+    },
+    {
+      "bin_low": 0.6,
+      "bin_high": 0.7,
+      "count": 1,
+      "accuracy": 0.0,
+      "average_confidence": 0.61,
+      "absolute_gap": 0.61
+    },
+    {
+      "bin_low": 0.7,
+      "bin_high": 0.8,
+      "count": 2,
+      "accuracy": 1.0,
+      "average_confidence": 0.73,
+      "absolute_gap": 0.27
+    },
+    {
+      "bin_low": 0.8,
+      "bin_high": 0.9,
+      "count": 1,
+      "accuracy": 1.0,
+      "average_confidence": 0.8,
+      "absolute_gap": 0.19999999999999996
+    }
+  ],
+  "by_window": {
+    "4": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 80,
+      "brier_score": 0.03999999999999998
+    },
+    "8": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 72,
+      "brier_score": 0.07840000000000001
+    },
+    "16": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 61,
+      "brier_score": 0.3721
+    },
+    "32": {
+      "count": 1,
+      "accuracy": 1.0,
+      "mean_confidence": 74,
+      "brier_score": 0.06760000000000001
+    },
+    "64": {
+      "count": 1,
+      "accuracy": 0.0,
+      "mean_confidence": 55,
+      "brier_score": 0.30250000000000005
+    }
+  },
+  "explanations": {
+    "unique_explanation_ratio": 1.0,
+    "average_words": 5,
+    "top_content_words": [
+      {
+        "word": "gap",
+        "count": 3
+      },
+      {
+        "word": "local",
+        "count": 2
+      },
+      {
+        "word": "six",
+        "count": 2
+      },
+      {
+        "word": "sequence",
+        "count": 1
+      },
+      {
+        "word": "repeats",
+        "count": 1
+      },
+      {
+        "word": "common",
+        "count": 1
+      },
+      {
+        "word": "frequent",
+        "count": 1
+      },
+      {
+        "word": "prime",
+        "count": 1
+      },
+      {
+        "word": "continuation",
+        "count": 1
+      },
+      {
+        "word": "uncertain",
+        "count": 1
+      },
+      {
+        "word": "recent",
+        "count": 1
+      },
+      {
+        "word": "values",
+        "count": 1
+      },
+      {
+        "word": "favor",
+        "count": 1
+      },
+      {
+        "word": "small",
+        "count": 1
+      },
+      {
+        "word": "even",
+        "count": 1
+      }
+    ],
+    "reasoning_categories": {
+      "pattern_continuation": 2,
+      "frequency_prior": 3,
+      "local_context": 2,
+      "uncertainty": 1
+    }
+  },
+  "records": [
+    {
+      "case_id": "CASE-W004-0001",
+      "window": 4,
+      "prediction": 6,
+      "confidence": 80,
+      "explanation": "The local sequence repeats a common gap.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_2\\demo\\exp000001\\pilot_001\\responses.json#entry-1",
+      "response_sha256": "10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W008-0001",
+      "window": 8,
+      "prediction": 6,
+      "confidence": 72,
+      "explanation": "Six is a frequent prime gap.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_2\\demo\\exp000001\\pilot_001\\responses.json#entry-2",
+      "response_sha256": "10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W016-0001",
+      "window": 16,
+      "prediction": 4,
+      "confidence": 61,
+      "explanation": "The continuation is uncertain.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_2\\demo\\exp000001\\pilot_001\\responses.json#entry-3",
+      "response_sha256": "10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387",
+      "correct": false
+    },
+    {
+      "case_id": "CASE-W032-0001",
+      "window": 32,
+      "prediction": 6,
+      "confidence": 74,
+      "explanation": "Recent local values favor six.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_2\\demo\\exp000001\\pilot_001\\responses.json#entry-4",
+      "response_sha256": "10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387",
+      "correct": true
+    },
+    {
+      "case_id": "CASE-W064-0001",
+      "window": 64,
+      "prediction": 8,
+      "confidence": 55,
+      "explanation": "A small even gap is likely.",
+      "actual_gap": 6,
+      "response_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_2_2\\demo\\exp000001\\pilot_001\\responses.json#entry-5",
+      "response_sha256": "10b7ea42a81e8997701081db50aeec7440a3d0ba582efed7745f667987324387",
+      "correct": false
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "case_id": "CASE-W004-0002",
+    "pair_id": "PAIR-0002",
+    "window_size": 4,
+    "collection_mode": "manual_chat",
+    "response": {
+      "prediction": 4,
+      "confidence": 18,
+      "explanation": "Prime gaps are irregular; 4 is a common small gap after this short pattern."
+    }
+  },
+  {
+    "case_id": "CASE-W008-0002",
+    "pair_id": "PAIR-0002",
+    "window_size": 8,
+    "collection_mode": "manual_chat",
+    "response": {
+      "prediction": 6,
+      "confidence": 60,
+      "explanation": "A valid response committed by the Collection Assistant."
+    },
+    "collected_at": "2026-07-27T19:08:37.809938Z",
+    "model": "GPT-5.6 Thinking"
+  },
+  {
+    "case_id": "CASE-W016-0002",
+    "pair_id": "PAIR-0002",
+    "window_size": 16,
+    "collection_mode": "manual_chat",
+    "response": null
+  },
+  {
+    "case_id": "CASE-W032-0002",
+    "pair_id": "PAIR-0002",
+    "window_size": 32,
+    "collection_mode": "manual_chat",
+    "response": null
+  },
+  {
+    "case_id": "CASE-W064-0002",
+    "pair_id": "PAIR-0002",
+    "window_size": 64,
+    "collection_mode": "manual_chat",
+    "response": null
+  }
+]

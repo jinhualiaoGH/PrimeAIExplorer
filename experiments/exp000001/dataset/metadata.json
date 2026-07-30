@@ -1,0 +1,36 @@
+{
+  "dataset_id": "DS-EXP000001-001",
+  "dataset_version": "0.1.0",
+  "design": {
+    "cases_per_window": 20,
+    "paired_targets": true,
+    "random_seed": 20260725,
+    "shared_target_count": 20,
+    "total_cases": 100,
+    "window_sizes": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ]
+  },
+  "experiment_id": "EXP-000001",
+  "generated_at_utc": "2026-07-26T19:40:15.684211Z",
+  "generator": "experiments.exp000001.generate_dataset",
+  "generator_version": "0.1.0",
+  "integrity": {
+    "algorithm": "SHA-256",
+    "cases_sha256": "6217bdec8a931c03d5b5cace9712b203f8480ce9ddbe1229d180deab229591e6"
+  },
+  "scientific_note": "Every pair uses the same prediction target across all window sizes. Only the visible observation history changes.",
+  "source": {
+    "gap_count": 17983,
+    "maximum_prime": 199999,
+    "minimum_prime": 2,
+    "prime_count": 17984,
+    "sieve_limit": 200000,
+    "type": "local_deterministic_sieve"
+  },
+  "title": "Memory-Limited Numerical Continuation: Consecutive Prime Gaps"
+}

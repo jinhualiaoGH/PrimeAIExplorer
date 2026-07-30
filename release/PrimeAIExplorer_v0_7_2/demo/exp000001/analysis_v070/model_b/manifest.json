@@ -1,0 +1,24 @@
+{
+  "schema_version": "0.7.2",
+  "primeaiexplorer_version": "0.7.2",
+  "created_utc": "2026-07-27T19:29:43.615805+00:00",
+  "experiment_id": "EXP-000001",
+  "pilot_id": "pilot_002_b",
+  "model": "Comparison Model",
+  "python": "3.14.5 (tags/v3.14.5:5607950, May 10 2026, 10:43:50) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "responses_source": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\demo\\exp000001\\pilot_002",
+  "prompts_source": null,
+  "dataset_path": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\demo\\exp000001\\dataset\\cases.csv",
+  "dataset_sha256": "34cd54f182249d803a4028d2882bd0fe1a6faf848a65801e5e3e67c7ed3b805e",
+  "dataset_case_count": 5,
+  "ledger_entry_count": 5,
+  "completed_entry_count": 2,
+  "pending_entry_count": 3,
+  "response_count": 2,
+  "collection_sha256_values": [
+    "1a59450ecc69fb9345e7807e884c341dac3ec0a0c016ddc10cb5e32b0322f7f0"
+  ],
+  "summary_sha256": "ebe625f34be5f3c9d091497f0c6e66887f2db5ad21eb59499ae41f6ccdacbf13",
+  "command": "C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\.venv\\Scripts\\paiexp analyze --responses C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\demo\\exp000001\\pilot_002 --dataset C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\demo\\exp000001\\dataset\\cases.csv --output C:\\PrimeAIExplorer\\release\\PrimeAIExplorer_v0_7_2\\demo\\exp000001\\analysis_v070\\model_b --model Comparison Model --experiment-id EXP-000001 --pilot-id pilot_002_b"
+}

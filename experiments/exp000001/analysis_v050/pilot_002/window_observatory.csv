@@ -1,0 +1,6 @@
+﻿window,count,accuracy,mean_confidence,brier_score,prediction_entropy_bits,mean_signed_error,mean_absolute_error
+4,1,0.0,18,0.0324,0.0,-8,8
+8,1,0.0,18,0.0324,0.0,-6,6
+16,1,0.0,22,0.0484,0.0,-6,6
+32,1,0.0,22,0.0484,0.0,-6,6
+64,1,0.0,22,0.0484,0.0,-6,6

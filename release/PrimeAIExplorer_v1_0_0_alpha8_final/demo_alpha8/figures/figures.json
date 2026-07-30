@@ -1,0 +1,34 @@
+[
+  {
+    "name": "performance_overview",
+    "file": "performance_overview.svg"
+  },
+  {
+    "name": "prediction_popularity",
+    "file": "prediction_popularity.svg"
+  },
+  {
+    "name": "run_lengths",
+    "file": "run_lengths.svg"
+  },
+  {
+    "name": "reliability_diagram",
+    "file": "reliability_diagram.svg"
+  },
+  {
+    "name": "prediction_distribution",
+    "file": "prediction_distribution.svg"
+  },
+  {
+    "name": "truth_distribution",
+    "file": "truth_distribution.svg"
+  },
+  {
+    "name": "confusion_heatmap",
+    "file": "confusion_heatmap.svg"
+  },
+  {
+    "name": "surprise_timeline",
+    "file": "surprise_timeline.svg"
+  }
+]

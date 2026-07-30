@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: primeaiexplorer
+Version: 0.6.0
+Summary: A reproducible observatory for prime-gap prediction responses
+Author: PrimeAIExplorer
+Requires-Python: >=3.10
+Provides-Extra: workspace
+Requires-Dist: prompt-toolkit>=3.0; extra == "workspace"

@@ -1,0 +1,6 @@
+﻿label,window,count,accuracy,mean_confidence,brier_score,prediction_entropy_bits,mean_signed_error,mean_absolute_error
+GPT-5.6 Thinking · pilot_002,4,1,0.0,18,0.0324,0.0,-8,8
+GPT-5.6 Thinking · pilot_002,8,1,0.0,18,0.0324,0.0,-6,6
+GPT-5.6 Thinking · pilot_002,16,1,0.0,22,0.0484,0.0,-6,6
+GPT-5.6 Thinking · pilot_002,32,1,0.0,22,0.0484,0.0,-6,6
+GPT-5.6 Thinking · pilot_002,64,1,0.0,22,0.0484,0.0,-6,6

@@ -1,0 +1,3 @@
+﻿case_id,confidence,absolute_error,signed_error,correct
+CASE-W004-0002,18,2,-2,False
+CASE-W008-0002,60,0,0,True

@@ -1,0 +1,4 @@
+﻿"evaluator_id","title","short_name","version","status","evaluator_type","primary_metric_id","implementation_module","created_date","modified_date"
+"EVAL-000001","Exact Match Evaluator","exact_match","0.1.0","Active","deterministic","METRIC-000001","core.evaluation","2026-07-25","2026-07-25"
+"EVAL-000002","Numeric Error Evaluator","numeric_error","0.1.0","Active","deterministic","METRIC-000002","core.evaluation","2026-07-25","2026-07-25"
+"EVAL-000003","Structured Response Validity Evaluator","structured_response_validity","0.1.0","Active","deterministic","METRIC-000004","core.evaluation","2026-07-25","2026-07-25"

@@ -1,0 +1,131 @@
+{
+  "artifacts": [
+    {
+      "bytes": 373,
+      "path": "summary.json",
+      "sha256": "e599f0fb41f481b43f99f28c9ff9c56b25c842b7df9e51691cf47188e24a44f4"
+    },
+    {
+      "bytes": 22512,
+      "path": "observatories.json",
+      "sha256": "0b7594ed2a240156345eaaf6ae0aa9301d5577a8c86ec9f825573b961d92dbe1"
+    },
+    {
+      "bytes": 3242,
+      "path": "metrics.csv",
+      "sha256": "8fcbee50c5f5f187e917d23952a2b3fe323408d7592d2de61e4fb056c1c88389"
+    },
+    {
+      "bytes": 181,
+      "path": "observatory_catalog.csv",
+      "sha256": "8cd2663c94db27f7bdaf9dd6002b1a20d21907bc11df5cf13f63775479ec54c5"
+    },
+    {
+      "bytes": 173,
+      "path": "tables/performance__calibration_bins.csv",
+      "sha256": "20ac7b19a187a43b7208064f48368e55d615310ea2b5e96da493e1e084baf513"
+    },
+    {
+      "bytes": 198,
+      "path": "tables/performance__window_performance.csv",
+      "sha256": "acee82dade5c0baad5e79babfce17f1aa406465be94bd6652be7442ce7278686"
+    },
+    {
+      "bytes": 71,
+      "path": "tables/behavior__prediction_popularity.csv",
+      "sha256": "51c95b1983f1dc902f8e1ebe79cd1195d51c7cc2c6a8174099a0ba0cdb8e984c"
+    },
+    {
+      "bytes": 189,
+      "path": "tables/behavior__persistence_runs.csv",
+      "sha256": "c348fabbb9914d33ab95662a587a59966751e9b15a4abfadc010beab18587d8b"
+    },
+    {
+      "bytes": 111,
+      "path": "tables/behavior__prediction_transitions.csv",
+      "sha256": "68d8dbf8ff202996cd1ce0f75ead8133b938fe2ef793c14e8bdbba197c418a3c"
+    },
+    {
+      "bytes": 195,
+      "path": "tables/behavior__window_behavior.csv",
+      "sha256": "6b959e5540fde249178a5c0b92bc9ec302361370644ff9ae5ea27624f20d1a52"
+    },
+    {
+      "bytes": 346,
+      "path": "tables/behavior__behavior_fingerprint.csv",
+      "sha256": "9f24cb9e2c3ffc4e9fd66eace0cdace0e9c8adbf9213ee2e90e26eedfd3c6b32"
+    },
+    {
+      "bytes": 354,
+      "path": "tables/calibration__reliability_bins.csv",
+      "sha256": "71b39076cd0db80d6c08e2194429fca13aa206b398f4142d728edc341146c800"
+    },
+    {
+      "bytes": 187,
+      "path": "tables/calibration__window_calibration.csv",
+      "sha256": "e04d99117e642d01291b211cd3b87330b6211610ddb39e045bc51a100b3663e8"
+    },
+    {
+      "bytes": 56,
+      "path": "tables/distribution__prediction_distribution.csv",
+      "sha256": "2974c35ffbcb0370007a25a10090a283ef422f3408dc2f63cff194f8fa575bb1"
+    },
+    {
+      "bytes": 51,
+      "path": "tables/distribution__truth_distribution.csv",
+      "sha256": "c9093b02dfde322ad3e347201889ccd3ab63a9219302e2d6418c35bcdee1680c"
+    },
+    {
+      "bytes": 58,
+      "path": "tables/distribution__error_distribution.csv",
+      "sha256": "d726105ea3aaac2d7d0733c62107f3bd3efa1062d8ae52086933ae6071376853"
+    },
+    {
+      "bytes": 89,
+      "path": "tables/distribution__confusion_matrix.csv",
+      "sha256": "47b2d54d0df0448c68059519ac529ee359dd64b50ed6e355771b95e54fa6a135"
+    },
+    {
+      "bytes": 177,
+      "path": "tables/distribution__window_distribution.csv",
+      "sha256": "b20e59001bce7edcfa56b45679b771fb79e0c7918f2a316ad337db58bb1a34db"
+    },
+    {
+      "bytes": 657,
+      "path": "tables/surprise__surprise_events.csv",
+      "sha256": "30102d2fe6efd897e1b792070ce22d17e93cec45971f6a4521a77a114b0e005c"
+    },
+    {
+      "bytes": 347,
+      "path": "tables/surprise__surprise_timeline.csv",
+      "sha256": "49f903dc8946187b9698ffa253aa5f690b70bdf3456f566040d88478f0853adf"
+    },
+    {
+      "bytes": 133,
+      "path": "tables/surprise__novel_predictions.csv",
+      "sha256": "2299430d01aded090e485e7dbb3c3c23cf92884cd294f0d75442eb40a0b52c96"
+    },
+    {
+      "bytes": 206,
+      "path": "tables/surprise__window_surprise.csv",
+      "sha256": "f374f59cbd5fb2b02d71ae1754371db94b93df33645974cbcd3e3383fd3366a3"
+    },
+    {
+      "bytes": 112,
+      "path": "tables/surprise__unexpected_transitions.csv",
+      "sha256": "5722f4a9bb13e053a5eb3831816c0ccc781f3f942e329b49254726f3fc3b0620"
+    },
+    {
+      "bytes": 657,
+      "path": "tables/surprise__top_surprises.csv",
+      "sha256": "e9835d239a6c24dd026b6d8cc0df07674632ef0446f43c19c61185603bd7b80b"
+    }
+  ],
+  "context": {
+    "experiment_id": "EXP-000001",
+    "model": "GPT-5.6 Thinking",
+    "pilot_id": "pilot_008"
+  },
+  "created_utc": "2026-07-28T03:04:42.787543+00:00",
+  "schema_version": "1.0.0"
+}

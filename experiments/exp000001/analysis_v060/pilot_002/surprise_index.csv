@@ -1,0 +1,6 @@
+﻿case_id,window,prediction,truth,confidence,absolute_error,relative_error,truth_frequency,rarity_bits,surprise_score,correct,rank
+CASE-W004-0002,4,4,12,18,8,0.6666666666666666,1.0,-0.0,0.8466666666666667,False,1
+CASE-W016-0002,16,6,12,22,6,0.5,1.0,-0.0,0.72,False,2
+CASE-W032-0002,32,6,12,22,6,0.5,1.0,-0.0,0.72,False,3
+CASE-W064-0002,64,6,12,22,6,0.5,1.0,-0.0,0.72,False,4
+CASE-W008-0002,8,6,12,18,6,0.5,1.0,-0.0,0.6799999999999999,False,5

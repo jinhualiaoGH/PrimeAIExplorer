@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://primenet.local/schemas/primeaiexplorer/experiment.schema.json",
+  "title": "PrimeAIExplorer Experiment",
+  "type": "object",
+  "required": [
+    "experiment",
+    "repository",
+    "sequence",
+    "sampling",
+    "prompt",
+    "execution",
+    "evaluation",
+    "paths"
+  ],
+  "properties": {
+    "experiment": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^EXP-[0-9]{6}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "repository": {
+      "type": "object"
+    },
+    "sequence": {
+      "type": "object",
+      "required": [
+        "plugin",
+        "target_count",
+        "dataset_file"
+      ],
+      "properties": {
+        "plugin": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target_count": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "dataset_file": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "sampling": {
+      "type": "object",
+      "required": [
+        "endpoints",
+        "window_sizes",
+        "representations",
+        "definition_conditions"
+      ]
+    },
+    "prompt": {
+      "type": "object"
+    },
+    "execution": {
+      "type": "object"
+    },
+    "evaluation": {
+      "type": "object"
+    },
+    "paths": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}
