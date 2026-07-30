@@ -158,3 +158,28 @@ Dry-run records must never claim that a model call occurred.
 - Corrected the synthetic EXP-000002 fixture.
 - Added permanent compatibility regression tests.
 - Made installer success contingent on all validations and tests passing.
+
+## 1.2.0 - Sequence Framework
+
+- Added the generic SequencePlugin contract.
+- Added declarative CSV and JSON plugin registries.
+- Added dynamic plugin loading.
+- Added a compatibility-preserving Left Twin adapter.
+- Added Integer Sequence, Prime Value, Prime Gap, and Prime Square plugins.
+- Added generic case, prompt, and prediction-evaluation support.
+- Added v1.2 validation and regression tests.
+
+## 1.2.1 - Sequence Framework Integration Fix
+
+- Corrected project-root imports for helper scripts.
+- Rebuilt the Left Twin adapter against the verified v1.1.1 class API.
+- Removed eager built-in plugin imports.
+- Added explicit native exit-code checks to the installer.
+- Added adapter integration regression tests.
+
+## 1.2.2 - Fixture Correction
+
+- Corrected the synthetic Left Twin source-validation expectation from 8 to 6.
+- Added an explicit assertion for the six selected synthetic Left Twin values.
+- Aligned the registry and adapter Left Twin versions at 1.2.2.
+- Retained strict installer exit-code handling.

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "plugins": [
+    {
+      "plugin_id": "integer_sequence",
+      "module": "sequence_plugins.builtin.integer_sequence",
+      "class_name": "IntegerSequencePlugin",
+      "version": "1.0.0",
+      "status": "Active",
+      "source_type": "numpy_file",
+      "description": "Generic strictly increasing integer sequence"
+    },
+    {
+      "plugin_id": "left_twin",
+      "module": "sequence_plugins.builtin.left_twin",
+      "class_name": "LeftTwinSequencePlugin",
+      "version": "1.2.0",
+      "status": "Active",
+      "source_type": "primenet_repository",
+      "description": "Canonical left twin primes derived from PrimeNet"
+    },
+    {
+      "plugin_id": "prime_value",
+      "module": "sequence_plugins.builtin.prime_value",
+      "class_name": "PrimeValueSequencePlugin",
+      "version": "1.0.0",
+      "status": "Active",
+      "source_type": "numpy_file",
+      "description": "Prime values from a canonical NumPy dataset"
+    },
+    {
+      "plugin_id": "prime_gap",
+      "module": "sequence_plugins.builtin.prime_gap",
+      "class_name": "PrimeGapSequencePlugin",
+      "version": "1.0.0",
+      "status": "Active",
+      "source_type": "numpy_file",
+      "description": "Prime gaps from a canonical NumPy dataset"
+    },
+    {
+      "plugin_id": "prime_square",
+      "module": "sequence_plugins.builtin.prime_square",
+      "class_name": "PrimeSquareSequencePlugin",
+      "version": "1.0.0",
+      "status": "Active",
+      "source_type": "numpy_file",
+      "description": "Squares of prime values"
+    },
+    {
+      "plugin_id": "prime_cube",
+      "module": "sequence_plugins.builtin.prime_square",
+      "class_name": "PrimeSquareSequencePlugin",
+      "version": "0.1.0",
+      "status": "Planned",
+      "source_type": "numpy_file",
+      "description": "Reserved for a future prime cube plugin"
+    },
+    {
+      "plugin_id": "oeis",
+      "module": "sequence_plugins.builtin.integer_sequence",
+      "class_name": "IntegerSequencePlugin",
+      "version": "0.1.0",
+      "status": "Planned",
+      "source_type": "external_dataset",
+      "description": "Reserved for a future imported OEIS sequence adapter"
+    },
+    {
+      "plugin_id": "custom",
+      "module": "sequence_plugins.builtin.integer_sequence",
+      "class_name": "IntegerSequencePlugin",
+      "version": "0.1.0",
+      "status": "Planned",
+      "source_type": "user_dataset",
+      "description": "Reserved for user-defined sequence plugins"
+    }
+  ]
+}
