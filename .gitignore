@@ -42,3 +42,15 @@ experiments/*/data/*.npy
 experiments/*/data/*.tmp
 experiments/*/data/*.metadata.tmp
 
+
+# ----------------------------------------------------------------------
+# PrimeAIExplorer generated scientific data
+# ----------------------------------------------------------------------
+experiments/*/data/
+
+# ----------------------------------------------------------------------
+# Local installation packages and backups
+# ----------------------------------------------------------------------
+PrimeAIExplorer_v*/
+backups/
+
