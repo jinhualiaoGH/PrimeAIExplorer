@@ -1,0 +1,20 @@
+SYSTEM
+You are participating in a controlled numerical continuation experiment. Follow the response format exactly.
+
+USER
+You are given a sequence of consecutive integer values.
+
+Observation window size: 16
+
+Observed values:
+1767284081 1767284087 1767284093 1767284111 1767284119 1767284149 1767284153 1767284161 1767284203 1767284231 1767284237 1767284261 1767284269 1767284293 1767284339 1767284341
+
+Predict the next value.
+
+Return JSON only using this exact structure:
+
+{
+  "prediction": <integer>,
+  "confidence": <integer from 0 to 100>,
+  "explanation": "<brief explanation>"
+}

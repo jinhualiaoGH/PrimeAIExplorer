@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "case_id": "CASE-W016-000011",
+  "experiment_id": "EXP-000003",
+  "plugin_id": "prime_value",
+  "representation": "absolute",
+  "window_size": 16,
+  "observation_start_index_1_based": 13004324,
+  "observation_end_index_1_based": 13004339,
+  "target_index_1_based": 13004340,
+  "observation": [
+    236969479,
+    236969489,
+    236969507,
+    236969521,
+    236969569,
+    236969591,
+    236969599,
+    236969609,
+    236969617,
+    236969639,
+    236969651,
+    236969659,
+    236969683,
+    236969737,
+    236969771,
+    236969773
+  ],
+  "dataset_sha256": "d5ac9489eff57f62cf5a67902a3932bf67627a3cb361b16b772bef24fd33667f",
+  "case_sha256": "7254a43c1ac51c33c8c1c8ceb919db3e45a906bb9877b86d52cd43eb0a55d619",
+  "target": 236969801,
+  "answer_key_sha256": "1002f016b8cc2b06c4d15108b5c7866237b608a70e7d20277bb7f0a7fef6bc65"
+}

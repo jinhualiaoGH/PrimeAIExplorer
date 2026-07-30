@@ -1,10 +1,11 @@
 {
   "schema_version": "1.0",
+  "_experiment_root": "experiments/EXP-000003",
   "experiment": {
     "id": "EXP-000003",
     "name": "Prime Value Observatory",
-    "version": "1.3.0-phase-b",
-    "status": "planned"
+    "version": "1.3.0-phase-d",
+    "status": "active"
   },
   "plugin": {
     "id": "prime_value",
@@ -32,7 +33,8 @@
     "case_count_per_window": 100,
     "sampling_seed": 130003,
     "minimum_target_index_1_based": 1000,
-    "maximum_target_index_1_based": 100000001
+    "maximum_target_index_1_based": 100000001,
+    "output_root": "benchmark"
   },
   "prompts": {
     "disclose_sequence_name": false,
@@ -40,17 +42,14 @@
   },
   "evaluation": {
     "require_integer": true,
-    "require_prime_for_structural_validity": true
+    "require_prime_for_structural_validity": true,
+    "responses_root": "responses",
+    "evaluations_root": "evaluations",
+    "leaderboard_root": "leaderboard"
   },
   "validation": {
     "full_partition_monotonic_check": false,
-    "phase": "source_validation_only",
-    "dataset_chunk_size": 5000000,
     "sampled_primality_count": 1000,
-    "primality_sampling_seed": 130003
-  },
-  "build": {
-    "overwrite": false,
-    "atomic": true
+    "phase": "response_evaluation"
   }
 }

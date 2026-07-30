@@ -191,3 +191,31 @@ Dry-run records must never claim that a model call occurred.
 - Added EXP-000003 configuration and synchronized registries.
 - Added EXP-000003 dry-run validation and focused tests.
 - Explicitly deferred dataset construction and validation to Phase B.
+
+## 1.3.0-phase-c - Prime Value Case and Prompt Engine
+
+- Added deterministic benchmark endpoint sampling.
+- Added public/private case separation.
+- Added blind prompt generation.
+- Added stable case, answer-key, prompt, and manifest hashes.
+- Added one-based scientific index metadata.
+- Added overwrite protection and atomic corpus generation.
+- Added complete corpus validation and leakage checks.
+
+## 1.3.0-phase-d - Prime Value Evaluation Engine
+
+- Added strict per-case response parsing.
+- Added exact and numerical scoring.
+- Added prime-validity, confidence, and latency metrics.
+- Added per-window aggregation.
+- Added deterministic JSON, CSV, and Markdown reports.
+- Added multi-model leaderboard generation.
+- Added evaluation overwrite protection and atomic outputs.
+
+## 1.3.0-rc1 - Release Hardening
+
+- Added end-to-end release acceptance validation.
+- Added dataset, benchmark, evaluation, and Git audits.
+- Added deterministic source manifest and ZIP packaging.
+- Added release archive validation.
+- Added CI workflow, release guide, notes, and checklist.

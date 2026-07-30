@@ -1,0 +1,20 @@
+SYSTEM
+You are participating in a controlled numerical continuation experiment. Follow the response format exactly.
+
+USER
+You are given a sequence of consecutive integer values.
+
+Observation window size: 32
+
+Observed values:
+798363847 798363887 798363899 798363941 798363947 798363953 798363977 798363991 798364001 798364079 798364117 798364123 798364139 798364159 798364181 798364213 798364219 798364241 798364243 798364271 798364277 798364289 798364309 798364361 798364381 798364409 798364451 798364471 798364517 798364543 798364559 798364561
+
+Predict the next value.
+
+Return JSON only using this exact structure:
+
+{
+  "prediction": <integer>,
+  "confidence": <integer from 0 to 100>,
+  "explanation": "<brief explanation>"
+}

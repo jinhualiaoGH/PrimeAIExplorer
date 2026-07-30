@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "release_version": "1.3.0",
+  "release_candidate": "1.3.0-rc1",
+  "version": {
+    "installed": "1.3.0-rc1",
+    "expected": "1.3.0-rc1",
+    "valid": true
+  },
+  "missing_required_files": [],
+  "dataset": {
+    "exists": true,
+    "count": 100000001,
+    "dataset_sha256": "d5ac9489eff57f62cf5a67902a3932bf67627a3cb361b16b772bef24fd33667f",
+    "valid": true
+  },
+  "benchmark": {
+    "exists": true,
+    "manifest_sha256": "327eedf10428de43d8df421583de34fb3c0a23bbe7a1a1a7efa5697f4d6094d0",
+    "total_case_count": 500,
+    "public": 500,
+    "private": 500,
+    "prompts": 500,
+    "valid": true
+  },
+  "evaluations": {
+    "evaluation_count": 1,
+    "entries": [
+      {
+        "model_id": "GPT-5.6 Thinking",
+        "summary_sha256": "fa602195fa0dd8202523b3a278d60fe4ebb3fb635461e98bddeb8ded77eb495c",
+        "hash_valid": true,
+        "case_count": 500
+      }
+    ],
+    "valid": true
+  },
+  "git": {
+    "available": true,
+    "clean": false,
+    "branch": "main",
+    "status_lines": [
+      " M CHANGELOG.md",
+      " M VERSION",
+      " M experiments/EXP-000003/config/experiment.json",
+      "?? .github/",
+      "?? core/prime_value_cases.py",
+      "?? core/prime_value_evaluation.py",
+      "?? core/release_hardening.py",
+      "?? docs/PrimeAIExplorer_v1.3.0_Release_Guide.md",
+      "?? docs/PrimeAIExplorer_v1.3.0_Release_Notes.md",
+      "?? docs/PrimeValue_Case_Prompt_Engine_Phase_C.md",
+      "?? docs/PrimeValue_Evaluation_Engine_Phase_D.md",
+      "?? experiments/EXP-000003/benchmark/",
+      "?? experiments/EXP-000003/evaluations/",
+      "?? release/RELEASE_CHECKLIST_v1.3.0.md",
+      "?? release/v1.3.0_acceptance_report.json",
+      "?? scripts/build_v130_release.py",
+      "?? scripts/evaluate_exp000003_responses.py",
+      "?? scripts/generate_exp000003_cases.py",
+      "?? scripts/generate_exp000003_leaderboard.py",
+      "?? scripts/prepare_exp000003_responses.py",
+      "?? scripts/validate_exp000003_cases.py",
+      "?? scripts/validate_exp000003_responses.py",
+      "?? scripts/validate_release_archive.py",
+      "?? scripts/validate_v130_phase_c.py",
+      "?? scripts/validate_v130_phase_d.py",
+      "?? scripts/validate_v130_phase_e.py",
+      "?? scripts/validate_v130_release.py",
+      "?? tests/test_prime_value_phase_c.py",
+      "?? tests/test_prime_value_phase_d.py",
+      "?? tests/test_release_hardening_phase_e.py"
+    ]
+  },
+  "compile": {
+    "passed": true,
+    "return_code": 0
+  },
+  "tests": {
+    "passed": true,
+    "return_code": 0,
+    "output_tail": [
+      "test_markdown_rendering (test_report.ScientificReportTests.test_markdown_rendering) ... ok",
+      "test_report_hash_is_stable_after_refinalize (test_report.ScientificReportTests.test_report_hash_is_stable_after_refinalize) ... ok",
+      "test_report_identity (test_report.ScientificReportTests.test_report_identity) ... ok",
+      "test_sections_required (test_report.ScientificReportTests.test_sections_required) ... ok",
+      "test_gap_representation (test_sequence_framework_v120.SequenceFrameworkTests.test_gap_representation) ... ok",
+      "test_inactive_plugin_is_rejected (test_sequence_framework_v120.SequenceFrameworkTests.test_inactive_plugin_is_rejected) ... ok",
+      "test_integer_case_generation (test_sequence_framework_v120.SequenceFrameworkTests.test_integer_case_generation) ... ok",
+      "test_prediction_evaluation (test_sequence_framework_v120.SequenceFrameworkTests.test_prediction_evaluation) ... ok",
+      "test_prime_gap_structural_validity (test_sequence_framework_v120.SequenceFrameworkTests.test_prime_gap_structural_validity) ... ok",
+      "test_prime_square_dataset (test_sequence_framework_v120.SequenceFrameworkTests.test_prime_square_dataset) ... ok",
+      "test_prompt_hides_definition_by_default (test_sequence_framework_v120.SequenceFrameworkTests.test_prompt_hides_definition_by_default) ... ok",
+      "test_registry_loads_active_plugins (test_sequence_framework_v120.SequenceFrameworkTests.test_registry_loads_active_plugins) ... ok",
+      "test_adapter_delegates_source_validation (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_adapter_delegates_source_validation) ... ok",
+      "test_adapter_requires_configuration_for_repository_work (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_adapter_requires_configuration_for_repository_work) ... ok",
+      "test_adapter_structural_validity (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_adapter_structural_validity) ... ok",
+      "test_adapter_uses_verified_legacy_class (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_adapter_uses_verified_legacy_class) ... ok",
+      "test_builtin_package_does_not_eagerly_import_plugins (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_builtin_package_does_not_eagerly_import_plugins) ... ok",
+      "test_registry_loads_left_twin_adapter (test_sequence_framework_v121.SequenceFrameworkV121Tests.test_registry_loads_left_twin_adapter) ... ok",
+      "test_legacy_alias_is_available (test_v111_compatibility.LeftTwinCompatibilityTests.test_legacy_alias_is_available) ... ok",
+      "test_legacy_alias_matches_current_function (test_v111_compatibility.LeftTwinCompatibilityTests.test_legacy_alias_matches_current_function) ... ok",
+      "",
+      "----------------------------------------------------------------------",
+      "Ran 135 tests in 1.332s",
+      "",
+      "OK"
+    ]
+  },
+  "accepted": false,
+  "acceptance_sha256": "bbfd48e1a51d6167827fd94726a623424f430aa917b776eb666c381d27f91cee"
+}
