@@ -23,10 +23,10 @@
       "plugin_id": "prime_value",
       "module": "sequence_plugins.builtin.prime_value",
       "class_name": "PrimeValueSequencePlugin",
-      "version": "1.3.0",
+      "version": "1.0.0",
       "status": "Active",
-      "source_type": "primenet_repository",
-      "description": "Consecutive canonical prime values from PrimeNet"
+      "source_type": "numpy_file",
+      "description": "Prime values from a canonical NumPy dataset"
     },
     {
       "plugin_id": "prime_gap",

@@ -183,3 +183,11 @@ Dry-run records must never claim that a model call occurred.
 - Added an explicit assertion for the six selected synthetic Left Twin values.
 - Aligned the registry and adapter Left Twin versions at 1.2.2.
 - Retained strict installer exit-code handling.
+
+## 1.3.0-phase-a - Prime Value Plugin Contract
+
+- Added production PrimeValueSequencePlugin configuration support.
+- Added read-only PrimeNet partition discovery and source validation.
+- Added EXP-000003 configuration and synchronized registries.
+- Added EXP-000003 dry-run validation and focused tests.
+- Explicitly deferred dataset construction and validation to Phase B.

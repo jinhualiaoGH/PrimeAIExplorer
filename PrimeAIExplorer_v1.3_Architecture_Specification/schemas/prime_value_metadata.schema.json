@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://primenetwork.local/schemas/prime-value-metadata.schema.json",
+  "title": "Prime Value Dataset Metadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment_id",
+    "plugin_id",
+    "plugin_version",
+    "representation",
+    "dataset_file",
+    "dataset_sha256",
+    "dtype",
+    "count",
+    "first_value",
+    "held_out_target_value",
+    "held_out_target_index_1_based",
+    "validation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "experiment_id": {
+      "const": "EXP-000003"
+    },
+    "plugin_id": {
+      "const": "prime_value"
+    },
+    "plugin_version": {
+      "type": "string"
+    },
+    "representation": {
+      "const": "absolute"
+    },
+    "dataset_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dataset_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "dtype": {
+      "enum": [
+        "uint64",
+        "<u8"
+      ]
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "first_value": {
+      "const": 2
+    },
+    "held_out_target_value": {
+      "type": "integer",
+      "minimum": 3
+    },
+    "held_out_target_index_1_based": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "validation": {
+      "type": "object",
+      "required": [
+        "strictly_increasing",
+        "sampled_primality_count",
+        "sampled_primality_passed"
+      ],
+      "properties": {
+        "strictly_increasing": {
+          "const": true
+        },
+        "sampled_primality_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sampled_primality_passed": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

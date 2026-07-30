@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://primenetwork.local/schemas/exp000003-experiment.schema.json",
+  "title": "PrimeAIExplorer EXP-000003 Configuration",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "experiment",
+    "plugin",
+    "repository",
+    "sequence",
+    "cases",
+    "prompts",
+    "evaluation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "experiment": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "const": "EXP-000003"
+        },
+        "name": {
+          "const": "Prime Value Observatory"
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "planned",
+            "pilot",
+            "active",
+            "completed"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "plugin": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "const": "prime_value"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "repository": {
+      "type": "object",
+      "required": [
+        "prime_root",
+        "read_only"
+      ],
+      "properties": {
+        "prime_root": {
+          "type": "string",
+          "minLength": 1
+        },
+        "manifest": {
+          "type": "string"
+        },
+        "read_only": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "sequence": {
+      "type": "object",
+      "required": [
+        "representation",
+        "target_count",
+        "dataset_file",
+        "metadata_file"
+      ],
+      "properties": {
+        "representation": {
+          "const": "absolute"
+        },
+        "target_count": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "dataset_file": {
+          "type": "string",
+          "minLength": 1
+        },
+        "metadata_file": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "cases": {
+      "type": "object",
+      "required": [
+        "window_sizes",
+        "case_count_per_window",
+        "sampling_seed"
+      ],
+      "properties": {
+        "window_sizes": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "case_count_per_window": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sampling_seed": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": true
+    },
+    "prompts": {
+      "type": "object",
+      "required": [
+        "disclose_sequence_name",
+        "response_format"
+      ],
+      "properties": {
+        "disclose_sequence_name": {
+          "type": "boolean"
+        },
+        "response_format": {
+          "const": "json_prediction_v1"
+        }
+      },
+      "additionalProperties": true
+    },
+    "evaluation": {
+      "type": "object",
+      "required": [
+        "require_integer",
+        "require_prime_for_structural_validity"
+      ],
+      "properties": {
+        "require_integer": {
+          "const": true
+        },
+        "require_prime_for_structural_validity": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

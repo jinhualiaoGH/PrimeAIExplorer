@@ -1,7 +1,7 @@
 plugin_id,module,class_name,version,status,source_type,description
 integer_sequence,sequence_plugins.builtin.integer_sequence,IntegerSequencePlugin,1.0.0,Active,numpy_file,Generic strictly increasing integer sequence
 left_twin,sequence_plugins.builtin.left_twin,LeftTwinSequencePlugin,1.2.2,Active,primenet_repository,Canonical left twin primes derived from PrimeNet
-prime_value,sequence_plugins.builtin.prime_value,PrimeValueSequencePlugin,1.3.0,Active,primenet_repository,Consecutive canonical prime values from PrimeNet
+prime_value,sequence_plugins.builtin.prime_value,PrimeValueSequencePlugin,1.0.0,Active,numpy_file,Prime values from a canonical NumPy dataset
 prime_gap,sequence_plugins.builtin.prime_gap,PrimeGapSequencePlugin,1.0.0,Active,numpy_file,Prime gaps from a canonical NumPy dataset
 prime_square,sequence_plugins.builtin.prime_square,PrimeSquareSequencePlugin,1.0.0,Active,numpy_file,Squares of prime values
 prime_cube,sequence_plugins.builtin.prime_square,PrimeSquareSequencePlugin,0.1.0,Planned,numpy_file,Reserved for a future prime cube plugin
