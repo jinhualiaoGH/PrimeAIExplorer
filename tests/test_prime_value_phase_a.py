@@ -35,8 +35,45 @@ class PrimeValuePhaseATests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             r=Path(t)/'ranges'; r.mkdir(); np.save(r/'primes_1_10.npy',np.array([2,3,5,7],dtype=np.int64))
             with self.assertRaisesRegex(ValueError,'unsigned integer dtype'): PrimeValueSequencePlugin(config(r,4)).validate_source(r)
-    def test_phase_b_disabled(self):
-        p=PrimeValueSequencePlugin({'repository':{'prime_root':'.'},'sequence':{'target_count':1}})
-        with self.assertRaisesRegex(NotImplementedError,'Phase B'): p.build_dataset(Path('.'),Path('x.npy'),count=1)
-        with self.assertRaisesRegex(NotImplementedError,'Phase B'): p.validate_dataset(Path('x.npy'))
-if __name__=='__main__': unittest.main()
+    def test_phase_b_requires_valid_repository(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            prime_root = root / "ranges"
+            prime_root.mkdir()
+
+            destination = root / "prime_values.npy"
+
+            plugin = PrimeValueSequencePlugin(
+                {
+                    "_experiment_root": str(root),
+                    "repository": {
+                        "prime_root": str(prime_root),
+                        "read_only": True,
+                    },
+                    "sequence": {
+                        "representation": "absolute",
+                        "target_count": 1,
+                    },
+                    "validation": {
+                        "full_partition_monotonic_check": True,
+                    },
+                }
+            )
+
+            with self.assertRaisesRegex(
+                ValueError,
+                "No canonical partitions found",
+            ):
+                plugin.build_dataset(
+                    prime_root,
+                    destination,
+                    count=1,
+                )
+
+            self.assertFalse(destination.exists())
+
+            metadata = destination.with_suffix(
+                ".metadata.json"
+            )
+            self.assertFalse(metadata.exists())
+

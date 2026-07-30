@@ -34,3 +34,11 @@ datasets/*.csv
 # Windows
 Thumbs.db
 Desktop.ini
+# ----------------------------------------------------------------------
+# PrimeAIExplorer generated datasets
+# ----------------------------------------------------------------------
+
+experiments/*/data/*.npy
+experiments/*/data/*.tmp
+experiments/*/data/*.metadata.tmp
+

@@ -3,10 +3,13 @@
   "experiment": {
     "id": "EXP-000003",
     "name": "Prime Value Observatory",
-    "version": "1.3.0-phase-a",
+    "version": "1.3.0-phase-b",
     "status": "planned"
   },
-  "plugin": {"id": "prime_value", "version": "1.3.0"},
+  "plugin": {
+    "id": "prime_value",
+    "version": "1.3.0"
+  },
   "repository": {
     "prime_root": "E:/PrimeNet/Repository/ranges",
     "manifest": "E:/PrimeNet/Repository/metadata/repository_manifest.csv",
@@ -19,13 +22,35 @@
     "metadata_file": "data/prime_values.metadata.json"
   },
   "cases": {
-    "window_sizes": [4, 8, 16, 32, 64],
+    "window_sizes": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
     "case_count_per_window": 100,
     "sampling_seed": 130003,
     "minimum_target_index_1_based": 1000,
     "maximum_target_index_1_based": 100000001
   },
-  "prompts": {"disclose_sequence_name": false, "response_format": "json_prediction_v1"},
-  "evaluation": {"require_integer": true, "require_prime_for_structural_validity": true},
-  "validation": {"full_partition_monotonic_check": false, "phase": "source_validation_only"}
+  "prompts": {
+    "disclose_sequence_name": false,
+    "response_format": "json_prediction_v1"
+  },
+  "evaluation": {
+    "require_integer": true,
+    "require_prime_for_structural_validity": true
+  },
+  "validation": {
+    "full_partition_monotonic_check": false,
+    "phase": "source_validation_only",
+    "dataset_chunk_size": 5000000,
+    "sampled_primality_count": 1000,
+    "primality_sampling_seed": 130003
+  },
+  "build": {
+    "overwrite": false,
+    "atomic": true
+  }
 }
