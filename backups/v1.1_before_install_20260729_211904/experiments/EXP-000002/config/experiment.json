@@ -1,21 +1,18 @@
 {
   "experiment": {
     "id": "EXP-000002",
-    "name": "Left Twin Prime Continuation",
-    "version": "1.1.0"
+    "name": "Left Twin Prime Continuation"
   },
   "paths": {
     "experiment_root": "experiments/EXP-000002"
   },
   "repository": {
     "prime_root": "E:/PrimeNet/Repository/ranges",
-    "gap_root": "E:/PrimeNet/Repository/gaps_u16",
-    "read_only": true
+    "gap_root": "E:/PrimeNet/Repository/gaps_u16"
   },
   "sequence": {
     "plugin": "left_twin",
     "dataset_file": "data/left_twin_primes.u64.npy",
-    "metadata_file": "data/left_twin_primes.metadata.json",
     "target_count": 100000001
   },
   "sampling": {
@@ -46,27 +43,6 @@
     ]
   },
   "prompt": {
-    "template_id": "numeric_continuation_json_v1",
     "target_label": "left twin prime"
-  },
-  "execution": {
-    "connectors": [
-      "CONNECTOR-000001"
-    ],
-    "temperature": 0,
-    "timeout_seconds": 120,
-    "retry_count": 0,
-    "free_mode": true
-  },
-  "evaluation": {
-    "metrics": [
-      "parse_success",
-      "exact_match",
-      "absolute_error",
-      "relative_error",
-      "absolute_gap_error",
-      "structural_validity",
-      "confidence"
-    ]
   }
 }

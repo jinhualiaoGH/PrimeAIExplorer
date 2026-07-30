@@ -141,3 +141,20 @@ Dry-run records must never claim that a model call occurred.
 - Canonical Dataset Specification.
 - Canonical Prompt Specification.
 - Experiment, dataset, and prompt registries.
+
+## 1.1.0 - EXP-000002 Left Twin Prime Benchmark
+
+- Hardened the `left_twin` sequence plugin.
+- Added atomic uint64 dataset generation and SHA-256 metadata.
+- Added dataset validation.
+- Added deterministic baseline generation.
+- Added score summary generation.
+- Added EXP-000002 synthetic end-to-end tests.
+- Added the v1.1 pipeline commands.
+
+## 1.1.1 - Maintenance Release
+
+- Restored `is_probable_prime_64` as a backward-compatible alias.
+- Corrected the synthetic EXP-000002 fixture.
+- Added permanent compatibility regression tests.
+- Made installer success contingent on all validations and tests passing.

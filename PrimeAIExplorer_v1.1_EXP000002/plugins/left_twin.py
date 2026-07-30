@@ -55,10 +55,6 @@ def is_prime_64(n: int) -> bool:
     return True
 
 
-
-# Backward-compatible public name retained from PrimeAIExplorer v0.2.
-is_probable_prime_64 = is_prime_64
-
 def _sha256(path: Path, chunk_size: int = 16 * 1024 * 1024) -> str:
     digest = hashlib.sha256()
     with path.open("rb") as stream:
