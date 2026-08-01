@@ -2,4 +2,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-backups/
+backups//experiments/
+/install_phase_*.ps1
+/experiments/
+/backups/
