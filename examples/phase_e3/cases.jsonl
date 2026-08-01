@@ -1,0 +1,2 @@
+{"actual_value":6,"case_id":"CASE-E3-0001","prompt":"Return JSON only: {\"prediction\": 6, \"confidence\": 90, \"explanation\": \"fixture\"}","sequence_index":100,"window_size":8}
+{"actual_value":10,"case_id":"CASE-E3-0002","prompt":"Return JSON only: {\"prediction\": 10, \"confidence\": 85, \"explanation\": \"fixture\"}","sequence_index":101,"window_size":8}

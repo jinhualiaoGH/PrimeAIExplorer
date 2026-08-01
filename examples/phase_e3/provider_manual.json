@@ -1,0 +1,9 @@
+{
+  "provider": "manual",
+  "model": "manual-e3",
+  "json_mode": true,
+  "temperature": 0.0,
+  "options": {
+    "response_store": "examples/phase_e3/manual_responses.jsonl"
+  }
+}

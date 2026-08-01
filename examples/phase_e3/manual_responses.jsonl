@@ -1,0 +1,2 @@
+{"case_id":"CASE-E3-0001","model":"manual-e3","text":"{\"prediction\":6,\"confidence\":90,\"explanation\":\"manual fixture\"}"}
+{"case_id":"CASE-E3-0002","model":"manual-e3","text":"{\"prediction\":10,\"confidence\":85,\"explanation\":\"manual fixture\"}"}

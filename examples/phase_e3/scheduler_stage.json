@@ -1,0 +1,14 @@
+{
+  "name": "invoke_models",
+  "command": [
+    "py", "-m", "model_invocation.cli", "run",
+    "--config", "examples/phase_e3/provider_manual.json",
+    "--input", "examples/phase_e3/cases.jsonl",
+    "--output", "pipeline_runs/phase_e3/responses.jsonl"
+  ],
+  "depends_on": [],
+  "metadata": {
+    "phase": "E3",
+    "provider_boundary": "model_providers"
+  }
+}
