@@ -1,0 +1,2 @@
+{"case_id": "CASE-1", "parsed_prediction": 6, "actual_value": 6, "is_correct": true, "confidence": 80, "latency_seconds": 0.12, "window_size": 8, "metadata": {"provider": "manual", "provider_model": "model-a"}}
+{"case_id": "CASE-2", "parsed_prediction": 8, "actual_value": 6, "is_correct": false, "confidence": 60, "latency_seconds": 0.11, "window_size": 8, "metadata": {"provider": "manual", "provider_model": "model-a"}}
