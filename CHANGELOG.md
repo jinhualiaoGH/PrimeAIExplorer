@@ -117,3 +117,12 @@
 - Added batch evaluation summaries with exact-match rate, MAE, and RMSE.
 - Added sequence-plugin operations for parsing and evaluation.
 - Added validator, focused tests, documentation, and upgrade guidance.
+
+## PrimeAIExplorer v2.0 Phase C1
+
+- Added deterministic experiment specifications and identifiers.
+- Added immutable experiment manifests.
+- Added atomic lifecycle and checkpoint persistence.
+- Added append-only JSONL result records.
+- Added duplicate case protection.
+- Added experiment lifecycle CLI, tests, examples, and documentation.

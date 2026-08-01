@@ -1,0 +1,16 @@
+﻿{
+  "case_id": "CASE-W008-000001",
+  "sequence_index": 1000000,
+  "window_size": 8,
+  "prompt_sha256": "1728e49b72728fdd6e9092c5b65aade34d9b8880e1af37bc434731c7c01d1f50",
+  "response_text": "{\"prediction\":6,\"confidence\":25,\"explanation\":\"Pilot response\"}",
+  "parsed_prediction": 6,
+  "actual_value": 6,
+  "is_correct": true,
+  "confidence": 25,
+  "latency_seconds": 0.1,
+  "provider_request_id": null,
+  "metadata": {
+    "source": "phase-c1-example"
+  }
+}

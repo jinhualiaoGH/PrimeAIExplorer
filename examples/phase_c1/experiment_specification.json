@@ -1,0 +1,24 @@
+﻿{
+  "name": "Prime-gap deterministic pilot",
+  "sequence_plugin": "primenet.gaps",
+  "sequence_parameters": {
+    "repository_root": "E:\\PrimeNet\\Repository",
+    "start_index": 1000000
+  },
+  "window_sizes": [
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "case_count": 100,
+  "prompt_template": "prime-gap-next-json-v1",
+  "model_provider": "manual",
+  "model_name": "controlled-pilot",
+  "model_parameters": {
+    "temperature": 0
+  },
+  "random_seed": 20260801,
+  "schema_version": "1.0"
+}
