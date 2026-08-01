@@ -1,0 +1,42 @@
+{
+  "campaign_id": "CMP-PLACEHOLDER",
+  "name": "Prime Gap Multi-Provider Pilot",
+  "description": "Deterministic Phase D3 benchmark campaign example.",
+  "schema_version": "1.0",
+  "dataset_ids": [
+    "DS-AAAAAAAAAAAAAAAA"
+  ],
+  "providers": [
+    "manual",
+    "openai"
+  ],
+  "models_by_provider": {
+    "manual": [
+      "manual-pilot"
+    ],
+    "openai": [
+      "model-a",
+      "model-b"
+    ]
+  },
+  "prompt_templates": [
+    "prime-gap-next-json-v1"
+  ],
+  "random_seeds": [
+    20260801
+  ],
+  "window_sizes": [
+    4,
+    8,
+    16
+  ],
+  "repeats": 1,
+  "model_parameters": {
+    "openai": {
+      "temperature": 0
+    }
+  },
+  "metadata": {
+    "purpose": "phase-d3-example"
+  }
+}
