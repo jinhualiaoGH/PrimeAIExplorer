@@ -107,3 +107,13 @@
 - Added normal ground-truth isolation and explicit audit exposure.
 - Added prompt list, describe, generate, and batch operations.
 - Added plugin-pipeline integration, validator, tests, and documentation.
+
+## 2.0.0-phase-b2.7 - Response Parsing and Evaluation Engine
+
+- Added strict JSON response parsing.
+- Added prediction, confidence, and explanation contract validation.
+- Added deterministic evaluation identities.
+- Added exact-match, absolute-error, squared-error, and confidence-error metrics.
+- Added batch evaluation summaries with exact-match rate, MAE, and RMSE.
+- Added sequence-plugin operations for parsing and evaluation.
+- Added validator, focused tests, documentation, and upgrade guidance.

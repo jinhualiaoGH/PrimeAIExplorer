@@ -181,4 +181,49 @@ class SequenceExecutionPlugin:
                 PromptRequest.from_mapping(item) for item in raw_requests
             )
             return self.prompt_generator.batch(requests, context).to_dict()
+
+        if operation == "response.parse":
+            from evaluation_engine import parse_prediction_response
+
+            response_text = payload.get("response_text")
+            return parse_prediction_response(response_text).to_dict()
+        if operation == "response.evaluate":
+            from evaluation_engine import RawModelResponse, ResponseEvaluationEngine
+            from prompt_engine import PromptRequest
+
+            prompt_request = PromptRequest(
+                dataset_id=payload["dataset_id"],
+                case_index=payload["case_index"],
+                template_id=payload["template_id"],
+                include_ground_truth=True,
+            )
+            prompt = self.prompt_generator.generate(prompt_request, context)
+            response = RawModelResponse.from_mapping(payload)
+            return ResponseEvaluationEngine().evaluate(prompt, response).to_dict()
+        if operation == "response.evaluate_batch":
+            from evaluation_engine import RawModelResponse, ResponseEvaluationEngine
+            from prompt_engine import PromptRequest
+
+            raw_items = payload.get("items")
+            if not isinstance(raw_items, list):
+                raise ValidationError(
+                    "response.evaluate_batch payload must contain an items list."
+                )
+            prompts = []
+            responses = []
+            for item in raw_items:
+                if not isinstance(item, Mapping):
+                    raise ValidationError("response batch item must be a mapping.")
+                prompt_request = PromptRequest(
+                    dataset_id=item["dataset_id"],
+                    case_index=item["case_index"],
+                    template_id=item["template_id"],
+                    include_ground_truth=True,
+                )
+                prompts.append(self.prompt_generator.generate(prompt_request, context))
+                responses.append(RawModelResponse.from_mapping(item))
+            return ResponseEvaluationEngine().evaluate_batch(
+                tuple(prompts),
+                tuple(responses),
+            ).to_dict()
         raise ValidationError(f"Unsupported sequence operation: {operation!r}")
