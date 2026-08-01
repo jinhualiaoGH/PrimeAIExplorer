@@ -31,3 +31,12 @@
 - Added execution metrics and engine snapshots.
 - Added synchronous success and failure execution paths.
 - Added Phase B1.3 validator, tests, and documentation.
+
+## 2.0.0-phase-b1.4 - Plugin Execution Pipeline
+
+- Added immutable plugin manifests and registry loading.
+- Added capability resolution with ambiguity protection.
+- Added explicit dynamic plugin loading and protocol checks.
+- Added plugin lifecycle, health checking, and cleanup.
+- Connected plugin manifests to the deterministic execution engine.
+- Added Phase B1.4 validator, focused tests, and documentation.
