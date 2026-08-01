@@ -79,3 +79,12 @@
 - Added bounded LRU memory-map cache.
 - Added optional partition SHA-256 verification.
 - Added plugin-pipeline integration, validation, tests, and documentation.
+
+## 2.0.0-phase-b2.4 - PrimeNet Repository Adapter
+
+- Added direct PrimeNet CSV gap-manifest translation.
+- Added automatic and configurable column mapping.
+- Added inferred partition ordinals and start indices.
+- Added deterministic adapter identity.
+- Reused the B2.3 zero-copy partitioned uint16 provider.
+- Added validation, focused tests, regression coverage, and documentation.

@@ -12,6 +12,7 @@ from sequence_api.models import (
     SequenceBatchRequest,
     SequenceWindowRequest,
 )
+from sequence_api.primenet_adapter import PrimeNetGapRepositoryAdapter
 from sequence_api.providers import InMemorySequenceProvider
 from sequence_api.registry import SequenceProviderRegistry
 
@@ -37,6 +38,10 @@ class SequenceExecutionPlugin:
                 )
             elif provider_type == "partitioned_gap_uint16":
                 provider = PartitionedGapSequenceProvider.from_configuration(
+                    provider_configuration
+                )
+            elif provider_type == "primenet_gap_repository":
+                provider = PrimeNetGapRepositoryAdapter.from_configuration(
                     provider_configuration
                 )
             else:

@@ -11,6 +11,11 @@ from sequence_api.models import (
     SequenceWindow,
     SequenceWindowRequest,
 )
+from sequence_api.primenet_adapter import (
+    PrimeNetColumnMapping,
+    PrimeNetGapRepositoryAdapter,
+    detect_primenet_columns,
+)
 from sequence_api.protocols import SequenceProvider
 from sequence_api.providers import InMemorySequenceProvider
 from sequence_api.registry import SequenceProviderRegistry
@@ -22,6 +27,8 @@ __all__ = [
     "NpyFileIdentity",
     "NpyMemmapSequenceProvider",
     "PartitionedGapSequenceProvider",
+    "PrimeNetColumnMapping",
+    "PrimeNetGapRepositoryAdapter",
     "SequenceBatch",
     "SequenceBatchRequest",
     "SequenceDescriptor",
@@ -31,5 +38,6 @@ __all__ = [
     "SequenceValueType",
     "SequenceWindow",
     "SequenceWindowRequest",
+    "detect_primenet_columns",
     "file_sha256",
 ]
