@@ -1,0 +1,74 @@
+{
+  "description": "Offline end-to-end metrics and report pipeline.",
+  "metadata": {
+    "mode": "offline-demo"
+  },
+  "name": "PrimeAIExplorer Phase E1 Demonstration",
+  "output_root": "C:\\PrimeAIExplorer_v2\\PrimeAIExplorer\\pipeline_runs",
+  "pipeline_id": "PIPE-0A25633175714E44",
+  "project_root": "C:\\PrimeAIExplorer_v2\\PrimeAIExplorer",
+  "schema_version": "1.0",
+  "stages": [
+    {
+      "command": [
+        "C:\\Users\\jinhu\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "C:\\PrimeAIExplorer_v2\\PrimeAIExplorer\\examples\\phase_e1\\write_fixture.py",
+        "{output_root}/responses.jsonl"
+      ],
+      "continue_on_error": false,
+      "environment_variables": [],
+      "expected_outputs": [
+        "{output_root}/responses.jsonl"
+      ],
+      "metadata": {},
+      "name": "fixture_responses",
+      "required_inputs": []
+    },
+    {
+      "command": [
+        "C:\\Users\\jinhu\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "metrics_engine.cli",
+        "analyze",
+        "{output_root}/responses.jsonl",
+        "--output",
+        "{output_root}/analysis"
+      ],
+      "continue_on_error": false,
+      "environment_variables": [],
+      "expected_outputs": [
+        "{output_root}/analysis/analysis.json"
+      ],
+      "metadata": {},
+      "name": "metrics",
+      "required_inputs": [
+        "{output_root}/responses.jsonl"
+      ]
+    },
+    {
+      "command": [
+        "C:\\Users\\jinhu\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+        "-m",
+        "report_engine.cli",
+        "{output_root}/analysis",
+        "--output",
+        "{output_root}/report",
+        "--experiment-label",
+        "phase-e1-demo",
+        "--title",
+        "PrimeAIExplorer Phase E1 Demonstration"
+      ],
+      "continue_on_error": false,
+      "environment_variables": [],
+      "expected_outputs": [
+        "{output_root}/report/report.html",
+        "{output_root}/report/report_manifest.json"
+      ],
+      "metadata": {},
+      "name": "report",
+      "required_inputs": [
+        "{output_root}/analysis/analysis.json"
+      ]
+    }
+  ]
+}
