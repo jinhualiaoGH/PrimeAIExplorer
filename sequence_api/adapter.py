@@ -5,6 +5,9 @@ from typing import Any, Mapping
 
 from kernel.context import ExecutionContext
 from kernel.exceptions import ValidationError
+from sequence_api.memmap_provider import (
+    NpyMemmapSequenceProvider,
+)
 from sequence_api.models import (
     SequenceBatch,
     SequenceBatchRequest,
@@ -24,16 +27,41 @@ class SequenceExecutionPlugin:
         configuration = dict(self.configuration or {})
         self.registry = SequenceProviderRegistry()
 
-        providers = configuration.get("providers", ())
-        for provider_configuration in providers:
-            self.registry.register(
-                InMemorySequenceProvider.from_configuration(
-                    provider_configuration
-                )
+        for provider_configuration in configuration.get(
+            "providers",
+            (),
+        ):
+            provider_type = provider_configuration.get(
+                "provider_type",
+                "in_memory",
             )
+            if provider_type == "in_memory":
+                provider = (
+                    InMemorySequenceProvider.from_configuration(
+                        provider_configuration
+                    )
+                )
+            elif provider_type == "numpy_npy_memmap":
+                provider = (
+                    NpyMemmapSequenceProvider.from_configuration(
+                        provider_configuration
+                    )
+                )
+            else:
+                raise ValidationError(
+                    f"Unsupported provider_type: {provider_type!r}"
+                )
+            self.registry.register(provider)
 
     def health_check(self, context: ExecutionContext) -> bool:
         return bool(context.session_id.strip())
+
+    def close(self) -> None:
+        for sequence_id in self.registry.registered_ids():
+            provider = self.registry.resolve(sequence_id)
+            closer = getattr(provider, "close", None)
+            if closer is not None:
+                closer()
 
     def execute(
         self,

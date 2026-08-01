@@ -50,3 +50,23 @@
 - Added sequence execution adapter for list, describe, window, and batch operations.
 - Integrated sequence providers with the B1.4 plugin execution pipeline.
 - Added Phase B2.1 validator, focused tests, and documentation.
+
+## 2.0.0-phase-b2.2 - Memory-Mapped Sequence Provider
+
+- Added read-only NumPy `.npy` memory-mapped sequence provider.
+- Added deterministic file identity and streaming SHA-256 calculation.
+- Added integer and finite-real dtype handling.
+- Added lazy mapping, boundary-safe windows, and explicit lifecycle cleanup.
+- Added relative and absolute source-path support.
+- Added optional expected source SHA-256 enforcement.
+- Integrated mapped providers with the B2.1 sequence execution adapter.
+- Added B2.2 validator, focused tests, documentation, and regression coverage.
+
+## 2.0.0-phase-b2.2-r3 - Windows Memmap Lifecycle Correction
+
+- Added context-manager support to NpyMemmapSequenceProvider.
+- Made close() explicitly detach state and close the underlying mmap.
+- Corrected focused tests so providers close before TemporaryDirectory cleanup.
+- Corrected pipeline test shutdown with close_plugin().
+- Added installer support for clean B2.1 and interrupted B2.2 destinations.
+- Added VERSION and CHANGELOG to automatic pre-install backups.

@@ -1,4 +1,8 @@
 from sequence_api.adapter import SequenceExecutionPlugin
+from sequence_api.file_identity import NpyFileIdentity, file_sha256
+from sequence_api.memmap_provider import (
+    NpyMemmapSequenceProvider,
+)
 from sequence_api.models import (
     SequenceBatch,
     SequenceBatchRequest,
@@ -13,6 +17,8 @@ from sequence_api.registry import SequenceProviderRegistry
 
 __all__ = [
     "InMemorySequenceProvider",
+    "NpyFileIdentity",
+    "NpyMemmapSequenceProvider",
     "SequenceBatch",
     "SequenceBatchRequest",
     "SequenceDescriptor",
@@ -22,4 +28,5 @@ __all__ = [
     "SequenceValueType",
     "SequenceWindow",
     "SequenceWindowRequest",
+    "file_sha256",
 ]
