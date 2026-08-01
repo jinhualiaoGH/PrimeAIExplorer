@@ -10,3 +10,5 @@ backups//experiments/
 /reports/
 /dataset_store/
 /examples/phase_d1/manifest.json
+/catalog_store/
+/catalog_exports/
