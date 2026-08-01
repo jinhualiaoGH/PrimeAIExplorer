@@ -8,3 +8,5 @@ backups//experiments/
 /backups/
 /analysis/
 /reports/
+/dataset_store/
+/examples/phase_d1/manifest.json
