@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "alias": "manual-demo",
+      "provider": "manual",
+      "model": "manual-f1",
+      "provider_options": {
+        "response_store": "examples/phase_f1/manual_responses.jsonl"
+      }
+    }
+  ],
+  "retry_policy": {
+    "max_attempts": 3,
+    "initial_backoff_seconds": 0.25,
+    "multiplier": 2.0,
+    "maximum_backoff_seconds": 4.0
+  },
+  "requests_per_second": 10,
+  "audit_path": "gateway_runs/phase_f1/audit.jsonl"
+}
