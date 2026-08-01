@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "routes": [
+    {
+      "alias": "openai-primary",
+      "provider": "openai",
+      "model": "SET_MODEL_NAME",
+      "api_key_env": "OPENAI_API_KEY"
+    },
+    {
+      "alias": "anthropic-primary",
+      "provider": "anthropic",
+      "model": "SET_MODEL_NAME",
+      "api_key_env": "ANTHROPIC_API_KEY"
+    },
+    {
+      "alias": "gemini-primary",
+      "provider": "google",
+      "model": "SET_MODEL_NAME",
+      "api_key_env": "GEMINI_API_KEY"
+    }
+  ]
+}
