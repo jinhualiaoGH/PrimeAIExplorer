@@ -15,3 +15,4 @@ backups//experiments/
 /campaign_store/
 /orchestrator_store/
 /worker_store/
+/pipeline_runs/

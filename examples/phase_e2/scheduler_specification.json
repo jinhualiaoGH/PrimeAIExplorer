@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "PrimeAIExplorer Phase E2 Demonstration",
+  "max_parallel": 2,
+  "stages": [
+    {
+      "name": "fixture_responses",
+      "command": ["py", "examples/phase_e1/write_fixture.py"],
+      "depends_on": []
+    },
+    {
+      "name": "metrics",
+      "command": ["py", "-m", "metrics_engine.cli", "analyze", "pipeline_runs/phase_e1/responses.jsonl", "--output", "pipeline_runs/phase_e1/analysis"],
+      "depends_on": ["fixture_responses"]
+    },
+    {
+      "name": "report",
+      "command": ["py", "-m", "report_engine.cli", "pipeline_runs/phase_e1/analysis", "--output", "pipeline_runs/phase_e1/report", "--experiment-label", "phase-e2-demo", "--title", "PrimeAIExplorer Phase E2 Demonstration"],
+      "depends_on": ["metrics"]
+    }
+  ]
+}
