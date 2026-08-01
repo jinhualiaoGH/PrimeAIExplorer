@@ -1,0 +1,11 @@
+{
+  "provider": "http",
+  "model": "local-model",
+  "system_prompt": "Return JSON only.",
+  "options": {
+    "endpoint": "http://127.0.0.1:8000/generate",
+    "text_path": [
+      "text"
+    ]
+  }
+}

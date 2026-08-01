@@ -1,0 +1,8 @@
+{
+  "provider": "gemini",
+  "model": "REPLACE_WITH_CURRENT_MODEL",
+  "system_prompt": "Return JSON only.",
+  "options": {
+    "timeout_seconds": 120.0
+  }
+}

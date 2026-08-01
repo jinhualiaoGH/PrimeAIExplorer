@@ -1,0 +1,8 @@
+{
+  "provider": "manual",
+  "model": "manual-pilot",
+  "system_prompt": "Return JSON only.",
+  "options": {
+    "response_store": "examples/phase_c3/manual_responses.jsonl"
+  }
+}

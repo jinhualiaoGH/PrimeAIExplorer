@@ -1,0 +1,27 @@
+{
+    "retry_policy":  {
+                         "delay_seconds":  0,
+                         "retry_unsuccessful_results":  false,
+                         "max_attempts":  2,
+                         "retry_exceptions":  true
+                     },
+    "schema_version":  "1.0",
+    "experiment_id":  "EXP-4E3029E0A3FE6918",
+    "cases":  [
+                  {
+                      "window_size":  8,
+                      "payload":  {
+                                      "temperature":  0,
+                                      "max_output_tokens":  100,
+                                      "json_mode":  true,
+                                      "prompt":  "Predict the next prime gap. Return JSON only.",
+                                      "actual_value":  6
+                                  },
+                      "case_number":  0,
+                      "sequence_index":  1000000,
+                      "case_id":  "CASE-C3-000000",
+                      "prompt_sha256":  "58cd71b20dee8664fbbb345d4bc5f652d0011aa93b5e2de4ca8f0ef504148731"
+                  }
+              ],
+    "stop_on_failure":  false
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Phase C3 manual provider pilot",
+  "sequence_plugin": "phase-c3-fixture",
+  "sequence_parameters": {
+    "start_index": 1000000
+  },
+  "window_sizes": [
+    8
+  ],
+  "case_count": 1,
+  "prompt_template": "prime-gap-next-json-v1",
+  "model_provider": "manual",
+  "model_name": "manual-pilot",
+  "model_parameters": {
+    "temperature": 0
+  },
+  "random_seed": 20260801,
+  "schema_version": "1.0"
+}
