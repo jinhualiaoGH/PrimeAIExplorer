@@ -16,3 +16,4 @@ backups//experiments/
 /orchestrator_store/
 /worker_store/
 /pipeline_runs/
+/reproducibility_bundles/
