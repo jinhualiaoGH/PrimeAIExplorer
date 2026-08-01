@@ -1,4 +1,14 @@
 from sequence_api.adapter import SequenceExecutionPlugin
+from sequence_api.dataset_engine import (
+    SequenceDatasetEngine,
+    SequenceDatasetRegistry,
+)
+from sequence_api.dataset_models import (
+    DatasetCase,
+    DatasetCaseBatch,
+    DatasetCaseRequest,
+    SequenceDatasetSpec,
+)
 from sequence_api.file_identity import NpyFileIdentity, file_sha256
 from sequence_api.gap_manifest import GapPartition, GapRepositoryManifest
 from sequence_api.gap_provider import PartitionedGapSequenceProvider
@@ -21,6 +31,9 @@ from sequence_api.providers import InMemorySequenceProvider
 from sequence_api.registry import SequenceProviderRegistry
 
 __all__ = [
+    "DatasetCase",
+    "DatasetCaseBatch",
+    "DatasetCaseRequest",
     "GapPartition",
     "GapRepositoryManifest",
     "InMemorySequenceProvider",
@@ -31,6 +44,9 @@ __all__ = [
     "PrimeNetGapRepositoryAdapter",
     "SequenceBatch",
     "SequenceBatchRequest",
+    "SequenceDatasetEngine",
+    "SequenceDatasetRegistry",
+    "SequenceDatasetSpec",
     "SequenceDescriptor",
     "SequenceExecutionPlugin",
     "SequenceProvider",

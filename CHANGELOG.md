@@ -88,3 +88,12 @@
 - Added deterministic adapter identity.
 - Reused the B2.3 zero-copy partitioned uint16 provider.
 - Added validation, focused tests, regression coverage, and documentation.
+
+## 2.0.0-phase-b2.5 - Deterministic Dataset Window Engine
+
+- Added immutable sequence dataset specifications.
+- Added deterministic observation/target case generation.
+- Added dataset and case SHA-256 identities.
+- Added dataset boundary validation against sequence descriptors.
+- Added dataset list, describe, case, and batch operations.
+- Added plugin-pipeline integration, validation, tests, and documentation.

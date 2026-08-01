@@ -5,6 +5,14 @@ from typing import Any, Mapping
 
 from kernel.context import ExecutionContext
 from kernel.exceptions import ValidationError
+from sequence_api.dataset_engine import (
+    SequenceDatasetEngine,
+    SequenceDatasetRegistry,
+)
+from sequence_api.dataset_models import (
+    DatasetCaseRequest,
+    SequenceDatasetSpec,
+)
 from sequence_api.gap_provider import PartitionedGapSequenceProvider
 from sequence_api.memmap_provider import NpyMemmapSequenceProvider
 from sequence_api.models import (
@@ -50,6 +58,16 @@ class SequenceExecutionPlugin:
                 )
             self.registry.register(provider)
 
+        self.dataset_registry = SequenceDatasetRegistry()
+        for dataset_configuration in configuration.get("datasets", ()):
+            self.dataset_registry.register(
+                SequenceDatasetSpec.from_mapping(dataset_configuration)
+            )
+        self.dataset_engine = SequenceDatasetEngine(
+            providers=self.registry,
+            datasets=self.dataset_registry,
+        )
+
     def health_check(self, context: ExecutionContext) -> bool:
         return bool(context.session_id.strip())
 
@@ -87,4 +105,27 @@ class SequenceExecutionPlugin:
                 "schema_version": "1.0",
                 "sequence_ids": list(self.registry.registered_ids()),
             }
+        if operation == "dataset.list":
+            return {
+                "schema_version": "1.0",
+                "dataset_ids": list(self.dataset_registry.registered_ids()),
+            }
+        if operation == "dataset.describe":
+            dataset_id = payload.get("dataset_id")
+            if not isinstance(dataset_id, str):
+                raise ValidationError("dataset.describe requires dataset_id.")
+            return self.dataset_engine.describe(dataset_id, context)
+        if operation == "dataset.case":
+            request = DatasetCaseRequest.from_mapping(payload)
+            return self.dataset_engine.case(request, context).to_dict()
+        if operation == "dataset.batch":
+            raw_requests = payload.get("requests")
+            if not isinstance(raw_requests, list):
+                raise ValidationError(
+                    "dataset.batch payload must contain a requests list."
+                )
+            requests = tuple(
+                DatasetCaseRequest.from_mapping(item) for item in raw_requests
+            )
+            return self.dataset_engine.batch(requests, context).to_dict()
         raise ValidationError(f"Unsupported sequence operation: {operation!r}")
