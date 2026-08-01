@@ -70,3 +70,12 @@
 - Corrected pipeline test shutdown with close_plugin().
 - Added installer support for clean B2.1 and interrupted B2.2 destinations.
 - Added VERSION and CHANGELOG to automatic pre-install backups.
+
+## 2.0.0-phase-b2.3 - Partitioned Gap Sequence Provider
+
+- Added neutral JSON gap repository manifest contract.
+- Added read-only partitioned uint16 gap provider.
+- Added cross-partition deterministic windows.
+- Added bounded LRU memory-map cache.
+- Added optional partition SHA-256 verification.
+- Added plugin-pipeline integration, validation, tests, and documentation.
