@@ -97,3 +97,13 @@
 - Added dataset boundary validation against sequence descriptors.
 - Added dataset list, describe, case, and batch operations.
 - Added plugin-pipeline integration, validation, tests, and documentation.
+
+## 2.0.0-phase-b2.6 - Deterministic Prompt Generation Engine
+
+- Added immutable, versioned prompt-template specifications.
+- Added deterministic prompt rendering from B2.5 dataset cases.
+- Added strict JSON response contracts.
+- Added prompt, template, and batch SHA-256 identities.
+- Added normal ground-truth isolation and explicit audit exposure.
+- Added prompt list, describe, generate, and batch operations.
+- Added plugin-pipeline integration, validator, tests, and documentation.

@@ -68,6 +68,25 @@ class SequenceExecutionPlugin:
             datasets=self.dataset_registry,
         )
 
+        # Lazy import preserves independent importability of prompt_engine and
+        # sequence_api while keeping the execution plugin as their integration
+        # boundary.
+        from prompt_engine import (
+            DeterministicPromptGenerator,
+            PromptTemplateRegistry,
+            PromptTemplateSpec,
+        )
+
+        self.prompt_template_registry = PromptTemplateRegistry()
+        for template_configuration in configuration.get("prompt_templates", ()):
+            self.prompt_template_registry.register(
+                PromptTemplateSpec.from_mapping(template_configuration)
+            )
+        self.prompt_generator = DeterministicPromptGenerator(
+            datasets=self.dataset_engine,
+            templates=self.prompt_template_registry,
+        )
+
     def health_check(self, context: ExecutionContext) -> bool:
         return bool(context.session_id.strip())
 
@@ -128,4 +147,38 @@ class SequenceExecutionPlugin:
                 DatasetCaseRequest.from_mapping(item) for item in raw_requests
             )
             return self.dataset_engine.batch(requests, context).to_dict()
+        if operation == "prompt.template.list":
+            return {
+                "schema_version": "1.0",
+                "template_ids": list(
+                    self.prompt_template_registry.registered_ids()
+                ),
+            }
+        if operation == "prompt.template.describe":
+            template_id = payload.get("template_id")
+            if not isinstance(template_id, str):
+                raise ValidationError(
+                    "prompt.template.describe requires template_id."
+                )
+            template = self.prompt_template_registry.resolve(template_id)
+            result = template.to_dict()
+            result["template_sha256"] = template.template_sha256
+            return result
+        if operation == "prompt.generate":
+            from prompt_engine import PromptRequest
+
+            request = PromptRequest.from_mapping(payload)
+            return self.prompt_generator.generate(request, context).to_dict()
+        if operation == "prompt.batch":
+            raw_requests = payload.get("requests")
+            if not isinstance(raw_requests, list):
+                raise ValidationError(
+                    "prompt.batch payload must contain a requests list."
+                )
+            from prompt_engine import PromptRequest
+
+            requests = tuple(
+                PromptRequest.from_mapping(item) for item in raw_requests
+            )
+            return self.prompt_generator.batch(requests, context).to_dict()
         raise ValidationError(f"Unsupported sequence operation: {operation!r}")
