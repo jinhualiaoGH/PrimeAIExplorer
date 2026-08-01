@@ -40,3 +40,13 @@
 - Added plugin lifecycle, health checking, and cleanup.
 - Connected plugin manifests to the deterministic execution engine.
 - Added Phase B1.4 validator, focused tests, and documentation.
+
+## 2.0.0-phase-b2.1 - Sequence Plugin API
+
+- Added deterministic sequence descriptors and window contracts.
+- Added integer and finite-real value validation.
+- Added SequenceProvider protocol and provider registry.
+- Added in-memory reference sequence provider.
+- Added sequence execution adapter for list, describe, window, and batch operations.
+- Integrated sequence providers with the B1.4 plugin execution pipeline.
+- Added Phase B2.1 validator, focused tests, and documentation.
