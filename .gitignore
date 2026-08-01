@@ -14,3 +14,4 @@ backups//experiments/
 /catalog_exports/
 /campaign_store/
 /orchestrator_store/
+/worker_store/
