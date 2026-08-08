@@ -1,4 +1,8 @@
-﻿from .runtime import (
+﻿from .provenance import ProvenanceLink, ScientificProvenance
+from .result_assembly import CampaignAssembly, CampaignResultAssembler
+from .result_manifest import CampaignResultManifest
+from .results import CampaignResultRecord, CampaignResultSet
+from .runtime import (
     AttemptOutcome,
     CampaignExecutionRun,
     CampaignExecutionRuntime,
@@ -42,7 +46,14 @@ from .identity import canonical_json, canonical_metadata, sha256_json
 from .manifests import CampaignManifest, ExperimentManifest
 
 __all__ = [
-                                                                                                                    "JobExecutor",
+                                                                                                                                                "ScientificProvenance",
+"ProvenanceLink",
+"CampaignResultSet",
+"CampaignResultRecord",
+"CampaignResultManifest",
+"CampaignResultAssembler",
+"CampaignAssembly",
+"JobExecutor",
 "JobExecutionStatus",
 "JobExecutionRecord",
 "ExecutionAttempt",
