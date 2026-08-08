@@ -1,4 +1,11 @@
-﻿from .reproducibility_contracts import (
+﻿from .release_builder import ScientificReleaseBundleBuilder
+from .release_contracts import (
+    ReleaseBuildResult,
+    ReleaseComponent,
+    ReleaseComponentKind,
+    ScientificReleaseManifest,
+)
+from .reproducibility_contracts import (
     EvidenceIdentity,
     ReproducibilityCertificate,
     VerificationCheck,
@@ -32,7 +39,12 @@ from .contracts import ArtifactDescriptor, CampaignRepositoryEntry, CampaignRepo
 from .repository import CampaignRepository, RepositoryWriteResult
 
 __all__ = [
-                                                                                        "VerificationStatus",
+                                                                                                            "ScientificReleaseManifest",
+"ScientificReleaseBundleBuilder",
+"ReleaseComponentKind",
+"ReleaseComponent",
+"ReleaseBuildResult",
+"VerificationStatus",
 "VerificationCheck",
 "ReproducibilityCertificateManifest",
 "ReproducibilityCertificate",
