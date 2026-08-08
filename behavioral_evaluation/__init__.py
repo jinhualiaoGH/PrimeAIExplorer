@@ -31,6 +31,23 @@ from .execution import (
     EvaluationOutcome,
     classify_provider_error,
 )
+from .fingerprint_builder import FingerprintBuilder
+from .fingerprint_distance import (
+    FingerprintComparison,
+    compare_fingerprints,
+    cosine_similarity,
+    euclidean_distance,
+    manhattan_distance,
+)
+from .fingerprints import (
+    DEFAULT_FINGERPRINT_SCHEMA,
+    BehavioralFingerprint,
+    FingerprintFeature,
+    FingerprintSchema,
+    canonical_json,
+    raw_metric_map,
+    sha256_json,
+)
 from .manifest import RepeatedTrialRunManifest
 from .metrics import (
     CaseBehaviorMetrics,
@@ -46,6 +63,12 @@ from .metrics import (
     stable_answer_key,
     token_statistics,
 )
+from .normalization import (
+    FingerprintNormalizer,
+    bounded_normalize,
+    clamp01,
+    orient_normalized_value,
+)
 from .observations import ObservationLedger, merge_ledgers
 from .registry import BehavioralEvaluationContractRegistry
 from .routing import SemanticEvaluatorRouter
@@ -55,15 +78,22 @@ __all__ = [
     "BehavioralEvaluationContract",
     "BehavioralEvaluationContractRegistry",
     "BehavioralEvaluationRecord",
+    "BehavioralFingerprint",
     "BehavioralMetricsReport",
     "BehavioralProviderExecutionBridge",
     "BehavioralRequestSpec",
     "CaseBehaviorMetrics",
     "CrossModelAgreement",
+    "DEFAULT_FINGERPRINT_SCHEMA",
     "EvaluationDisposition",
     "EvaluationOutcome",
     "ExactIntegerEvaluator",
     "ExactTextEvaluator",
+    "FingerprintBuilder",
+    "FingerprintComparison",
+    "FingerprintFeature",
+    "FingerprintNormalizer",
+    "FingerprintSchema",
     "ObservationLedger",
     "ProviderBehaviorMetrics",
     "ProviderExecutionStatus",
@@ -75,23 +105,33 @@ __all__ = [
     "TrialPlan",
     "TrialSpec",
     "answer_entropy_bits",
+    "bounded_normalize",
     "build_behavioral_metrics_report",
     "calibration_error_pct",
+    "canonical_json",
     "case_behavior_metrics",
+    "clamp01",
     "classify_provider_error",
+    "compare_fingerprints",
+    "cosine_similarity",
     "cross_model_agreement",
     "default_semantic_evaluator_registry",
+    "euclidean_distance",
     "extract_confidence",
     "latency_statistics",
+    "manhattan_distance",
     "merge_ledgers",
     "modal_consistency_pct",
     "normalized_answer_entropy",
+    "orient_normalized_value",
     "parse_first_integer",
     "parse_json_object",
     "pass_rate_pct",
     "percentile",
     "provider_behavior_metrics",
     "provider_error_rate_pct",
+    "raw_metric_map",
+    "sha256_json",
     "stable_answer_key",
     "token_statistics",
 ]
