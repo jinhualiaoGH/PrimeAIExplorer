@@ -1,4 +1,23 @@
-﻿from .aggregation import (
+from .baselines import (
+    FingerprintBaseline,
+    FingerprintBaselineRegistry,
+)
+from .comparison_matrix import (
+    FingerprintComparisonMatrix,
+    FingerprintMatrixEntry,
+    build_comparison_matrix,
+)
+from .drift import (
+    BehavioralDriftReport,
+    DriftThresholds,
+    FeatureDrift,
+    compare_drift,
+)
+from .drift_report import (
+    BehavioralDriftCampaignReport,
+    compare_to_baseline,
+)
+from .aggregation import (
     BehavioralMetricsReport,
     CrossModelAgreement,
     ProviderBehaviorMetrics,
@@ -75,7 +94,18 @@ from .routing import SemanticEvaluatorRouter
 from .trials import TrialPlan, TrialSpec
 
 __all__ = [
-    "BehavioralEvaluationContract",
+
+
+
+
+
+
+
+
+
+
+
+    "compare_to_baseline","compare_drift","build_comparison_matrix","FingerprintMatrixEntry","FingerprintComparisonMatrix","FingerprintBaselineRegistry","FingerprintBaseline","FeatureDrift","DriftThresholds","BehavioralDriftReport","BehavioralDriftCampaignReport","BehavioralEvaluationContract",
     "BehavioralEvaluationContractRegistry",
     "BehavioralEvaluationRecord",
     "BehavioralFingerprint",
