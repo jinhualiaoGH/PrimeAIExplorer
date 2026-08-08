@@ -1,4 +1,16 @@
-﻿from .analysis_contracts import (
+﻿from .integration import (
+    FrozenBehavioralEvaluator,
+    FrozenGBehavioralAdapter,
+    ScientificIntegrationRecord,
+    build_scientific_integration_record,
+)
+from .integration_manifest import ScientificIntegrationManifest
+from .publication import (
+    BehavioralObservatoryPublication,
+    CampaignObservatoryPublisher,
+    ObservatoryPublisher,
+)
+from .analysis_contracts import (
     AnalysisDisposition,
     BehavioralAnalysisOutcome,
     CampaignAnalysisRecord,
@@ -55,7 +67,15 @@ from .identity import canonical_json, canonical_metadata, sha256_json
 from .manifests import CampaignManifest, ExperimentManifest
 
 __all__ = [
-                                                                                                                                                                                "ProviderModelSummary",
+                                                                                                                                                                                                                "build_scientific_integration_record",
+"ScientificIntegrationRecord",
+"ScientificIntegrationManifest",
+"ObservatoryPublisher",
+"FrozenGBehavioralAdapter",
+"FrozenBehavioralEvaluator",
+"CampaignObservatoryPublisher",
+"BehavioralObservatoryPublication",
+"ProviderModelSummary",
 "CampaignAnalysisReport",
 "CampaignAnalysisRecord",
 "CampaignAnalysisManifest",
