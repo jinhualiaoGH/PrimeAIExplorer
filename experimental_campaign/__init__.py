@@ -1,4 +1,11 @@
-﻿from .datasets import DatasetDescriptor, DatasetRegistry
+﻿from .materialization import (
+    ExperimentMaterialization,
+    ExperimentMaterializer,
+    MaterializedCase,
+    SourceRecord,
+)
+from .materialization_manifest import MaterializationManifest
+from .datasets import DatasetDescriptor, DatasetRegistry
 from .prompts import PromptRegistry, PromptSuite, PromptTemplate
 from .suite_identity import content_sha256, registry_entry_identity
 from .suite_registry import ExperimentalInputRegistry, ResolvedInputSuite
@@ -18,7 +25,12 @@ from .identity import canonical_json, canonical_metadata, sha256_json
 from .manifests import CampaignManifest, ExperimentManifest
 
 __all__ = [
-                                        "registry_entry_identity",
+                                                            "SourceRecord",
+"MaterializedCase",
+"MaterializationManifest",
+"ExperimentMaterializer",
+"ExperimentMaterialization",
+"registry_entry_identity",
 "content_sha256",
 "ResolvedInputSuite",
 "PromptTemplate",
