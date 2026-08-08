@@ -20,3 +20,6 @@ backups//experiments/
 
 gateway_runs/
 gateway_runs/
+
+# Behavioral Observatory generated artifacts
+observatory_output/

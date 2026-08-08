@@ -1,3 +1,9 @@
+from .observatory import (
+    BehavioralObservatorySnapshot,
+    build_observatory_snapshot,
+)
+from .observatory_export import export_observatory_bundle
+
 from .baselines import (
     FingerprintBaseline,
     FingerprintBaselineRegistry,
@@ -94,6 +100,9 @@ from .routing import SemanticEvaluatorRouter
 from .trials import TrialPlan, TrialSpec
 
 __all__ = [
+    "export_observatory_bundle",
+    "build_observatory_snapshot",
+    "BehavioralObservatorySnapshot",
 
 
 
