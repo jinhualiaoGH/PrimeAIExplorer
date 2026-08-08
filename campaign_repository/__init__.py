@@ -1,4 +1,16 @@
-﻿from .artifact_manifest import (
+﻿from .checkpoint_audit import (
+    CheckpointLineageAudit,
+    audit_checkpoint_lineage,
+)
+from .checkpoint_contracts import (
+    CampaignCheckpoint,
+    CheckpointStatus,
+    JobCheckpoint,
+    ResumeDecision,
+)
+from .checkpoint_store import CampaignCheckpointStore
+from .resume_engine import ResumePlanner, next_checkpoint
+from .artifact_manifest import (
     ArtifactIntegrityAudit,
     ArtifactStoreManifest,
     audit_artifact_manifest,
@@ -12,7 +24,16 @@ from .contracts import ArtifactDescriptor, CampaignRepositoryEntry, CampaignRepo
 from .repository import CampaignRepository, RepositoryWriteResult
 
 __all__ = [
-                            "audit_artifact_manifest",
+                                                                "next_checkpoint",
+"audit_checkpoint_lineage",
+"ResumePlanner",
+"ResumeDecision",
+"JobCheckpoint",
+"CheckpointStatus",
+"CheckpointLineageAudit",
+"CampaignCheckpointStore",
+"CampaignCheckpoint",
+"audit_artifact_manifest",
 "StoredArtifact",
 "DurableArtifactStore",
 "ArtifactVerification",
