@@ -1,4 +1,13 @@
-﻿from .provenance import ProvenanceLink, ScientificProvenance
+﻿from .analysis_contracts import (
+    AnalysisDisposition,
+    BehavioralAnalysisOutcome,
+    CampaignAnalysisRecord,
+    CampaignAnalysisReport,
+    ProviderModelSummary,
+)
+from .analysis_engine import BehavioralAnalyzer, CampaignAnalysisEngine
+from .analysis_manifest import CampaignAnalysisManifest
+from .provenance import ProvenanceLink, ScientificProvenance
 from .result_assembly import CampaignAssembly, CampaignResultAssembler
 from .result_manifest import CampaignResultManifest
 from .results import CampaignResultRecord, CampaignResultSet
@@ -46,7 +55,15 @@ from .identity import canonical_json, canonical_metadata, sha256_json
 from .manifests import CampaignManifest, ExperimentManifest
 
 __all__ = [
-                                                                                                                                                "ScientificProvenance",
+                                                                                                                                                                                "ProviderModelSummary",
+"CampaignAnalysisReport",
+"CampaignAnalysisRecord",
+"CampaignAnalysisManifest",
+"CampaignAnalysisEngine",
+"BehavioralAnalyzer",
+"BehavioralAnalysisOutcome",
+"AnalysisDisposition",
+"ScientificProvenance",
 "ProvenanceLink",
 "CampaignResultSet",
 "CampaignResultRecord",
