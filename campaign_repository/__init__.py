@@ -1,4 +1,16 @@
-﻿from .catalog_contracts import (
+﻿from .phase_i_architecture import (
+    PhaseIArchitectureContract,
+    PhaseISelfAudit,
+    PhaseIStage,
+    PhaseIStageContract,
+    build_phase_i_architecture_contract,
+    phase_i_self_audit,
+)
+from .phase_i_workflow import (
+    PhaseIReferenceWorkflow,
+    PhaseIReferenceWorkflowResult,
+)
+from .catalog_contracts import (
     CatalogEvidenceRef,
     CatalogTrustStatus,
     ScientificReleaseCatalogRecord,
@@ -63,7 +75,15 @@ from .contracts import ArtifactDescriptor, CampaignRepositoryEntry, CampaignRepo
 from .repository import CampaignRepository, RepositoryWriteResult
 
 __all__ = [
-                                                                                                                                                                    "record_from_verified_import",
+                                                                                                                                                                                                    "phase_i_self_audit",
+"build_phase_i_architecture_contract",
+"PhaseIStageContract",
+"PhaseIStage",
+"PhaseISelfAudit",
+"PhaseIReferenceWorkflowResult",
+"PhaseIReferenceWorkflow",
+"PhaseIArchitectureContract",
+"record_from_verified_import",
 "export_catalog_snapshot",
 "ScientificReleaseCatalogRecord",
 "ScientificReleaseCatalogQueryService",
