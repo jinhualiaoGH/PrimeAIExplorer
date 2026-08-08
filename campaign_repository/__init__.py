@@ -1,4 +1,12 @@
-﻿from .checkpoint_audit import (
+﻿from .reproducibility_contracts import (
+    EvidenceIdentity,
+    ReproducibilityCertificate,
+    VerificationCheck,
+    VerificationStatus,
+)
+from .reproducibility_manifest import ReproducibilityCertificateManifest
+from .reproducibility_verifier import CampaignReproducibilityVerifier
+from .checkpoint_audit import (
     CheckpointLineageAudit,
     audit_checkpoint_lineage,
 )
@@ -24,7 +32,13 @@ from .contracts import ArtifactDescriptor, CampaignRepositoryEntry, CampaignRepo
 from .repository import CampaignRepository, RepositoryWriteResult
 
 __all__ = [
-                                                                "next_checkpoint",
+                                                                                        "VerificationStatus",
+"VerificationCheck",
+"ReproducibilityCertificateManifest",
+"ReproducibilityCertificate",
+"EvidenceIdentity",
+"CampaignReproducibilityVerifier",
+"next_checkpoint",
 "audit_checkpoint_lineage",
 "ResumePlanner",
 "ResumeDecision",
