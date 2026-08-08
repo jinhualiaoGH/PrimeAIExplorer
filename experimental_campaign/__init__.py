@@ -1,4 +1,11 @@
-﻿from .materialization import (
+﻿from .execution_plan import (
+    CampaignExecutionPlan,
+    ExecutionBatch,
+    ExecutionJob,
+)
+from .execution_plan_manifest import ExecutionPlanManifest
+from .execution_planner import CampaignExecutionPlanner, PlanningPolicy
+from .materialization import (
     ExperimentMaterialization,
     ExperimentMaterializer,
     MaterializedCase,
@@ -25,7 +32,13 @@ from .identity import canonical_json, canonical_metadata, sha256_json
 from .manifests import CampaignManifest, ExperimentManifest
 
 __all__ = [
-                                                            "SourceRecord",
+                                                                                    "PlanningPolicy",
+"ExecutionPlanManifest",
+"ExecutionJob",
+"ExecutionBatch",
+"CampaignExecutionPlanner",
+"CampaignExecutionPlan",
+"SourceRecord",
 "MaterializedCase",
 "MaterializationManifest",
 "ExperimentMaterializer",
