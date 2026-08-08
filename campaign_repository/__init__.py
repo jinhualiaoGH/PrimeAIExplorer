@@ -1,4 +1,16 @@
-﻿from .release_import import (
+﻿from .catalog_contracts import (
+    CatalogEvidenceRef,
+    CatalogTrustStatus,
+    ScientificReleaseCatalogRecord,
+)
+from .catalog_export import export_catalog_snapshot
+from .catalog_query import (
+    CatalogQuery,
+    ScientificReleaseCatalogQueryService,
+)
+from .catalog_registration import record_from_verified_import
+from .catalog_store import ScientificReleaseCatalog
+from .release_import import (
     ReleaseImportResult,
     ScientificReleaseImporter,
 )
@@ -51,7 +63,15 @@ from .contracts import ArtifactDescriptor, CampaignRepositoryEntry, CampaignRepo
 from .repository import CampaignRepository, RepositoryWriteResult
 
 __all__ = [
-                                                                                                                                    "inspect_release",
+                                                                                                                                                                    "record_from_verified_import",
+"export_catalog_snapshot",
+"ScientificReleaseCatalogRecord",
+"ScientificReleaseCatalogQueryService",
+"ScientificReleaseCatalog",
+"CatalogTrustStatus",
+"CatalogQuery",
+"CatalogEvidenceRef",
+"inspect_release",
 "ScientificReleaseVerifier",
 "ScientificReleaseImporter",
 "ReleaseVerificationResult",
