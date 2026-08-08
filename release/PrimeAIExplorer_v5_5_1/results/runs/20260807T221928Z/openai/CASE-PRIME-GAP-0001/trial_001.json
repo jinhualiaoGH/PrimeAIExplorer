@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 1,
+  "executed_at_utc": "2026-08-07T22:23:04.318371+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 93227,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 6512,
+    "total_tokens": 6608
+  },
+  "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 66,\n  \"explanation\": \"The gaps uniquely decompose against the 30-wheel base gaps [6,4,2,4,2,4,6,2], starting at index 3 and ending at index 0; the next base gap (index 1) is 4.\"\n}",
+  "parsed_output": {
+    "answer": 4,
+    "confidence": 66,
+    "explanation": "The gaps uniquely decompose against the 30-wheel base gaps [6,4,2,4,2,4,6,2], starting at index 3 and ending at index 0; the next base gap (index 1) is 4."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value matches.",
+    "details": {
+      "expected": 4,
+      "observed": 4
+    }
+  },
+  "evaluator": "numeric_exact"
+}

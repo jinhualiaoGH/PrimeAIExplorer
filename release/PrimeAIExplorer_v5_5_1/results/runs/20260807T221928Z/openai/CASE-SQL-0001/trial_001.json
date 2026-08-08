@@ -1,0 +1,45 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-SQL-0001",
+  "category": "SQL",
+  "title": "SQL Query Generation",
+  "trial": 1,
+  "executed_at_utc": "2026-08-07T22:29:53.684294+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 7327,
+  "usage": {
+    "input_tokens": 94,
+    "output_tokens": 605,
+    "total_tokens": 699
+  },
+  "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 94,\n  \"explanation\": \"Aggregates by customer_id, filters totals > 1000 via HAVING, orders highest to lowest.\"\n}",
+  "parsed_output": {
+    "answer": "SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;",
+    "confidence": 94,
+    "explanation": "Aggregates by customer_id, filters totals > 1000 via HAVING, orders highest to lowest."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "sql_semantic",
+    "reason": "SQL satisfies all required structural semantics.",
+    "details": {
+      "checks": {
+        "select_customer_id": true,
+        "sum_aggregate": true,
+        "from_sales": true,
+        "group_by_customer_id": true,
+        "having_total_gt_1000": true,
+        "descending_order": true
+      },
+      "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by total_amount desc"
+    }
+  },
+  "evaluator": "sql_semantic"
+}

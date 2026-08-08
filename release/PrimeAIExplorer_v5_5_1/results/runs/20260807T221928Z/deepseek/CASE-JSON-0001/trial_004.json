@@ -1,0 +1,49 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-JSON-0001",
+  "category": "Structured Output",
+  "title": "JSON Extraction",
+  "trial": 4,
+  "executed_at_utc": "2026-08-07T22:49:02.467500+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 2810,
+  "usage": {
+    "input_tokens": 124,
+    "output_tokens": 278,
+    "total_tokens": 402
+  },
+  "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"success\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"Extracted directly from the sentence\"\n}",
+  "parsed_output": {
+    "answer": {
+      "service": "Atlas",
+      "records": 1250,
+      "seconds": 3.8,
+      "status": "success"
+    },
+    "confidence": 100,
+    "explanation": "Extracted directly from the sentence"
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "json_semantic",
+    "reason": "All required JSON fields are semantically equivalent.",
+    "details": {
+      "field_results": {
+        "service": true,
+        "records": true,
+        "seconds": true,
+        "status": true
+      },
+      "missing_fields": [],
+      "extra_fields": []
+    }
+  },
+  "evaluator": "json_semantic"
+}

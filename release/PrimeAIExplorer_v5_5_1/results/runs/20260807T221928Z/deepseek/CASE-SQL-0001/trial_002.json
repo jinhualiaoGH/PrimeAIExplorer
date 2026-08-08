@@ -1,0 +1,45 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-SQL-0001",
+  "category": "SQL",
+  "title": "SQL Query Generation",
+  "trial": 2,
+  "executed_at_utc": "2026-08-07T22:49:14.236464+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 3206,
+  "usage": {
+    "input_tokens": 110,
+    "output_tokens": 277,
+    "total_tokens": 387
+  },
+  "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 100,\n  \"explanation\": \"The query sums amount for each customer, filters groups with total > 1000, and orders descending.\"\n}",
+  "parsed_output": {
+    "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+    "confidence": 100,
+    "explanation": "The query sums amount for each customer, filters groups with total > 1000, and orders descending."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "sql_semantic",
+    "reason": "SQL satisfies all required structural semantics.",
+    "details": {
+      "checks": {
+        "select_customer_id": true,
+        "sum_aggregate": true,
+        "from_sales": true,
+        "group_by_customer_id": true,
+        "having_total_gt_1000": true,
+        "descending_order": true
+      },
+      "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+    }
+  },
+  "evaluator": "sql_semantic"
+}

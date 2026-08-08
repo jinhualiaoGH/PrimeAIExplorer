@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 2,
+  "executed_at_utc": "2026-08-07T22:24:45.666077+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 101341,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 8141,
+    "total_tokens": 8237
+  },
+  "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 78,\n  \"explanation\": \"Decomposing the gaps using the 30-wheel pattern [6,4,2,4,2,4,6,2] yields a unique fit: 6=(4+2) starting at index 3, 18=(4+6+2+6) at index 5, and the rest are forced, ending at index 1. The next step in the cycle is 4.\"\n}",
+  "parsed_output": {
+    "answer": 4,
+    "confidence": 78,
+    "explanation": "Decomposing the gaps using the 30-wheel pattern [6,4,2,4,2,4,6,2] yields a unique fit: 6=(4+2) starting at index 3, 18=(4+6+2+6) at index 5, and the rest are forced, ending at index 1. The next step in the cycle is 4."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value matches.",
+    "details": {
+      "expected": 4,
+      "observed": 4
+    }
+  },
+  "evaluator": "numeric_exact"
+}

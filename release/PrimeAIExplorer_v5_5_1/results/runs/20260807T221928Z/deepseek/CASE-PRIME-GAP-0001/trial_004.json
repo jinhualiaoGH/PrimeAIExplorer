@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 4,
+  "executed_at_utc": "2026-08-07T22:48:37.583035+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 250218,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 24882,
+    "total_tokens": 24994
+  },
+  "raw_output": "{\"answer\": 4, \"confidence\": 70, \"explanation\": \"The sequence matches a known pattern in prime gaps where a cluster of small gaps (6,6,6,2,6) is often followed by 4, as seen in runs like 251-281.\"}",
+  "parsed_output": {
+    "answer": 4,
+    "confidence": 70,
+    "explanation": "The sequence matches a known pattern in prime gaps where a cluster of small gaps (6,6,6,2,6) is often followed by 4, as seen in runs like 251-281."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value matches.",
+    "details": {
+      "expected": 4,
+      "observed": 4
+    }
+  },
+  "evaluator": "numeric_exact"
+}

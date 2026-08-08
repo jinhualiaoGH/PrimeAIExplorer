@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-LOGIC-0001",
+  "category": "Logical Reasoning",
+  "title": "Constraint Reasoning",
+  "trial": 5,
+  "executed_at_utc": "2026-08-07T22:49:39.424338+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 3341,
+  "usage": {
+    "input_tokens": 102,
+    "output_tokens": 304,
+    "total_tokens": 406
+  },
+  "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"The job runs every 15 minutes starting at 09:10, so runs are at 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10.\"\n}",
+  "parsed_output": {
+    "answer": "10:10",
+    "confidence": 100,
+    "explanation": "The job runs every 15 minutes starting at 09:10, so runs are at 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "time_exact",
+    "reason": "Normalized time matches.",
+    "details": {
+      "expected": "10:10",
+      "observed": "10:10"
+    }
+  },
+  "evaluator": "time_exact"
+}

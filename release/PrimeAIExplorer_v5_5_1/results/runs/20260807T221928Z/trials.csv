@@ -1,0 +1,49 @@
+﻿run_id,provider,model,case_id,category,trial,job_status,passed,score,evaluator,latency_ms,total_tokens,confidence,answer,provider_error_category,provider_error_http_status
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-PRIME-GAP-0001,Numerical Reasoning,1,EVALUATED,True,100,numeric_exact,93227,6608,66,4,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-PRIME-GAP-0001,Numerical Reasoning,2,EVALUATED,True,100,numeric_exact,101341,8237,78,4,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-PRIME-GAP-0001,Numerical Reasoning,3,EVALUATED,True,100,numeric_exact,25328,2312,40,4,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-PRIME-GAP-0001,Numerical Reasoning,4,EVALUATED,False,0,numeric_exact,47694,2633,48,6,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-PRIME-GAP-0001,Numerical Reasoning,5,EVALUATED,True,100,numeric_exact,79314,5553,72,4,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-JSON-0001,Structured Output,1,EVALUATED,True,100,json_semantic,6952,510,99,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'completed successfully'}",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-JSON-0001,Structured Output,2,EVALUATED,True,100,json_semantic,3987,499,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'completed successfully'}",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-JSON-0001,Structured Output,3,EVALUATED,True,100,json_semantic,5461,653,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'completed successfully'}",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-JSON-0001,Structured Output,4,EVALUATED,True,100,json_semantic,5114,522,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'completed successfully'}",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-JSON-0001,Structured Output,5,EVALUATED,True,100,json_semantic,4662,518,99,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'completed successfully'}",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-SQL-0001,SQL,1,EVALUATED,True,100,sql_semantic,7327,699,94,"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-SQL-0001,SQL,2,EVALUATED,True,100,sql_semantic,23064,1188,94,"SELECT customer_id, SUM(total_amount) AS total_amount
+FROM Sales
+GROUP BY customer_id
+HAVING SUM(total_amount) > 1000
+ORDER BY total_amount DESC;",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-SQL-0001,SQL,3,EVALUATED,True,100,sql_semantic,11881,833,92,"SELECT customer_id, SUM(total_amount) AS total_amount
+FROM Sales
+GROUP BY customer_id
+HAVING SUM(total_amount) > 1000
+ORDER BY total_amount DESC;",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-SQL-0001,SQL,4,EVALUATED,True,100,sql_semantic,10728,865,93,"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY SUM(total_amount) DESC;",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-SQL-0001,SQL,5,EVALUATED,True,100,sql_semantic,6711,498,93,"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-LOGIC-0001,Logical Reasoning,1,EVALUATED,True,100,time_exact,5428,452,97,10:10,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-LOGIC-0001,Logical Reasoning,2,EVALUATED,True,100,time_exact,4318,485,98,10:10,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-LOGIC-0001,Logical Reasoning,3,EVALUATED,True,100,time_exact,2964,285,100,10:10,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-LOGIC-0001,Logical Reasoning,4,EVALUATED,True,100,time_exact,4351,432,100,10:10,,
+20260807T221928Z,openai,gpt-5-2025-08-07,CASE-LOGIC-0001,Logical Reasoning,5,EVALUATED,True,100,time_exact,6917,465,98,10:10,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-PRIME-GAP-0001,Numerical Reasoning,1,EVALUATED,True,100,numeric_exact,8843,939,100,4,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-PRIME-GAP-0001,Numerical Reasoning,2,EVALUATED,True,100,numeric_exact,10568,1115,95,4,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-PRIME-GAP-0001,Numerical Reasoning,3,EVALUATED,True,100,numeric_exact,413283,54847,40,4,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-PRIME-GAP-0001,Numerical Reasoning,4,EVALUATED,True,100,numeric_exact,250218,24994,70,4,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-PRIME-GAP-0001,Numerical Reasoning,5,EVALUATED,True,100,numeric_exact,13434,1360,99,4,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-JSON-0001,Structured Output,1,EVALUATED,True,100,json_semantic,3356,346,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'success'}",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-JSON-0001,Structured Output,2,EVALUATED,True,100,json_semantic,2549,282,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'successfully'}",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-JSON-0001,Structured Output,3,EVALUATED,True,100,json_semantic,2693,337,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'success'}",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-JSON-0001,Structured Output,4,EVALUATED,True,100,json_semantic,2810,402,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'success'}",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-JSON-0001,Structured Output,5,EVALUATED,True,100,json_semantic,3593,416,100,"{'service': 'Atlas', 'records': 1250, 'seconds': 3.8, 'status': 'success'}",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-SQL-0001,SQL,1,EVALUATED,True,100,sql_semantic,4944,542,100,"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-SQL-0001,SQL,2,EVALUATED,True,100,sql_semantic,3206,387,100,"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-SQL-0001,SQL,3,EVALUATED,True,100,sql_semantic,3351,317,99,"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-SQL-0001,SQL,4,EVALUATED,True,100,sql_semantic,2723,316,100,"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-SQL-0001,SQL,5,EVALUATED,True,100,sql_semantic,3511,331,95,"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-LOGIC-0001,Logical Reasoning,1,EVALUATED,True,100,time_exact,2238,305,100,10:10,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-LOGIC-0001,Logical Reasoning,2,EVALUATED,True,100,time_exact,3892,466,100,10:10,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-LOGIC-0001,Logical Reasoning,3,EVALUATED,True,100,time_exact,3261,354,100,10:10,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-LOGIC-0001,Logical Reasoning,4,EVALUATED,True,100,time_exact,2782,325,100,10:10,,
+20260807T221928Z,deepseek,deepseek-v4-pro,CASE-LOGIC-0001,Logical Reasoning,5,EVALUATED,True,100,time_exact,3341,406,100,10:10,,

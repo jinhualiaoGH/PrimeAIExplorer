@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-LOGIC-0001",
+  "category": "Logical Reasoning",
+  "title": "Constraint Reasoning",
+  "trial": 1,
+  "executed_at_utc": "2026-08-07T22:30:51.534619+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 5428,
+  "usage": {
+    "input_tokens": 86,
+    "output_tokens": 366,
+    "total_tokens": 452
+  },
+  "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 97,\n  \"explanation\": \"Starting at 09:10 and adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first time after 10:00 is 10:10.\"\n}",
+  "parsed_output": {
+    "answer": "10:10",
+    "confidence": 97,
+    "explanation": "Starting at 09:10 and adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first time after 10:00 is 10:10."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "time_exact",
+    "reason": "Normalized time matches.",
+    "details": {
+      "expected": "10:10",
+      "observed": "10:10"
+    }
+  },
+  "evaluator": "time_exact"
+}

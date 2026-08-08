@@ -1,0 +1,85 @@
+[
+  {
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "system": "You are participating in a controlled numerical continuation experiment. Follow the response format exactly.",
+    "user": "You are given a sequence of consecutive prime gaps.\n\nObserved gaps:\n6 18 4 6 6 6 2 6\n\nPredict the next prime gap.\n\nReturn JSON only:\n{\n  \"answer\": <integer>,\n  \"confidence\": <integer from 0 to 100>,\n  \"explanation\": \"<brief explanation>\"\n}",
+    "expected_answer": 4,
+    "mock_answer": 6,
+    "mock_confidence": 35,
+    "mock_explanation": "The deterministic mock selects 6 because it is frequent in the observed window.",
+    "evaluator": "numeric_exact",
+    "evaluation_contract": {
+      "type": "numeric_exact",
+      "description": "Compare predicted gap numerically."
+    }
+  },
+  {
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "system": "Extract the requested information and return valid JSON only.",
+    "user": "Read this sentence:\n\nThe Atlas service processed 1,250 records in 3.8 seconds and completed successfully.\n\nReturn JSON only:\n{\n  \"answer\": {\n    \"service\": \"<name>\",\n    \"records\": <integer>,\n    \"seconds\": <number>,\n    \"status\": \"<status>\"\n  },\n  \"confidence\": <integer from 0 to 100>,\n  \"explanation\": \"<brief explanation>\"\n}",
+    "expected_answer": {
+      "service": "Atlas",
+      "records": 1250,
+      "seconds": 3.8,
+      "status": "completed successfully"
+    },
+    "mock_answer": {
+      "service": "Atlas",
+      "records": 1250,
+      "seconds": 3.8,
+      "status": "completed successfully"
+    },
+    "mock_confidence": 99,
+    "mock_explanation": "All requested fields are stated directly in the sentence.",
+    "evaluator": "json_semantic",
+    "numeric_tolerance": 1e-09,
+    "evaluation_contract": {
+      "type": "json_semantic",
+      "description": "Compare required JSON fields semantically; success-status synonyms are equivalent."
+    }
+  },
+  {
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "system": "Return a concise SQL Server answer as valid JSON only.",
+    "user": "Write a SQL Server query that returns customer_id and total_amount\nfrom Sales, grouped by customer_id, keeping only totals greater than 1000,\nordered from highest total to lowest.\n\nReturn JSON only:\n{\n  \"answer\": \"<SQL query>\",\n  \"confidence\": <integer from 0 to 100>,\n  \"explanation\": \"<brief explanation>\"\n}",
+    "expected_contains": [
+      "GROUP BY customer_id",
+      "HAVING SUM",
+      "ORDER BY"
+    ],
+    "mock_answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+    "mock_confidence": 95,
+    "mock_explanation": "The query groups customers, filters aggregate totals, and sorts descending.",
+    "evaluator": "sql_semantic",
+    "evaluation_contract": {
+      "type": "sql_semantic",
+      "description": "Check SQL structure and required query semantics rather than literal text."
+    }
+  },
+  {
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "system": "Solve the logic question and return valid JSON only.",
+    "user": "A server job runs every 15 minutes. It started at 09:10.\nWhat is the first run time after 10:00?\n\nReturn JSON only:\n{\n  \"answer\": \"<HH:MM>\",\n  \"confidence\": <integer from 0 to 100>,\n  \"explanation\": \"<brief explanation>\"\n}",
+    "expected_answer": "10:10",
+    "mock_answer": "10:10",
+    "mock_confidence": 98,
+    "mock_explanation": "The runs are 09:10, 09:25, 09:40, 09:55, and 10:10.",
+    "evaluator": "time_exact",
+    "evaluation_contract": {
+      "type": "time_exact",
+      "description": "Normalize 12/24-hour time formatting before comparison."
+    }
+  }
+]

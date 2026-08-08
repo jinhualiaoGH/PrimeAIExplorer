@@ -1,0 +1,1702 @@
+[
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:48:54.387473+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3356,
+    "usage": {
+      "input_tokens": 124,
+      "output_tokens": 222,
+      "total_tokens": 346
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"success\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"All fields extracted directly from the sentence.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "success"
+      },
+      "confidence": 100,
+      "explanation": "All fields extracted directly from the sentence."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:48:56.947872+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2549,
+    "usage": {
+      "input_tokens": 124,
+      "output_tokens": 158,
+      "total_tokens": 282
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"successfully\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"All values extracted directly from the sentence.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "successfully"
+      },
+      "confidence": 100,
+      "explanation": "All values extracted directly from the sentence."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:48:59.649294+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2693,
+    "usage": {
+      "input_tokens": 124,
+      "output_tokens": 213,
+      "total_tokens": 337
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"success\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"Extracted service name, record count, duration, and status from the sentence.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "success"
+      },
+      "confidence": 100,
+      "explanation": "Extracted service name, record count, duration, and status from the sentence."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:49:02.467500+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2810,
+    "usage": {
+      "input_tokens": 124,
+      "output_tokens": 278,
+      "total_tokens": 402
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"success\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"Extracted directly from the sentence\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "success"
+      },
+      "confidence": 100,
+      "explanation": "Extracted directly from the sentence"
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:49:06.071966+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3593,
+    "usage": {
+      "input_tokens": 124,
+      "output_tokens": 292,
+      "total_tokens": 416
+    },
+    "raw_output": "{\"answer\": {\"service\": \"Atlas\", \"records\": 1250, \"seconds\": 3.8, \"status\": \"success\"}, \"confidence\": 100, \"explanation\": \"Information directly extracted from the sentence.\"}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "success"
+      },
+      "confidence": 100,
+      "explanation": "Information directly extracted from the sentence."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:49:26.096659+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2238,
+    "usage": {
+      "input_tokens": 102,
+      "output_tokens": 203,
+      "total_tokens": 305
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"Starting at 09:10, adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first run after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "Starting at 09:10, adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first run after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:49:30.001910+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3892,
+    "usage": {
+      "input_tokens": 102,
+      "output_tokens": 364,
+      "total_tokens": 466
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"Starting at 09:10, the job runs every 15 minutes, so the times are 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "Starting at 09:10, the job runs every 15 minutes, so the times are 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:49:33.276774+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3261,
+    "usage": {
+      "input_tokens": 102,
+      "output_tokens": 252,
+      "total_tokens": 354
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"Runs every 15 minutes starting at 09:10; next times: 09:25, 09:40, 09:55, 10:10, etc. First after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "Runs every 15 minutes starting at 09:10; next times: 09:25, 09:40, 09:55, 10:10, etc. First after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:49:36.071484+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2782,
+    "usage": {
+      "input_tokens": 102,
+      "output_tokens": 223,
+      "total_tokens": 325
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"The job runs every 15 minutes starting at 09:10. The sequence is 09:10, 09:25, 09:40, 09:55, 10:10. The first run after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "The job runs every 15 minutes starting at 09:10. The sequence is 09:10, 09:25, 09:40, 09:55, 10:10. The first run after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:49:39.424338+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3341,
+    "usage": {
+      "input_tokens": 102,
+      "output_tokens": 304,
+      "total_tokens": 406
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"The job runs every 15 minutes starting at 09:10, so runs are at 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "The job runs every 15 minutes starting at 09:10, so runs are at 09:10, 09:25, 09:40, 09:55, 10:10, etc. The first after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:31:18.975137+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 8843,
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 827,
+      "total_tokens": 939
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 100,\n  \"explanation\": \"The gaps correspond to primes 13, 19, 37, 41, 47, 53, 59, 61, 67; next prime is 71, so gap=4.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 100,
+      "explanation": "The gaps correspond to primes 13, 19, 37, 41, 47, 53, 59, 61, 67; next prime is 71, so gap=4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:31:29.550996+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 10568,
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 1003,
+      "total_tokens": 1115
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 95,\n  \"explanation\": \"The gaps correspond to primes starting at 13: 13, 19 (6), 37 (18), 41 (4), 47 (6), 53 (6), 59 (6), 61 (2), 67 (6). The next prime after 67 is 71, with a gap of 4.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 95,
+      "explanation": "The gaps correspond to primes starting at 13: 13, 19 (6), 37 (18), 41 (4), 47 (6), 53 (6), 59 (6), 61 (2), 67 (6). The next prime after 67 is 71, with a gap of 4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:44:27.355652+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 413283,
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 54735,
+      "total_tokens": 54847
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 40,\n  \"explanation\": \"After the sequence 6, 18, 4, 6, 6, 6, 2, 6, the next gap is often 4 in many prime gap clusters, such as around primes 71-73-79-83 (2,6,4).\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 40,
+      "explanation": "After the sequence 6, 18, 4, 6, 6, 6, 2, 6, the next gap is often 4 in many prime gap clusters, such as around primes 71-73-79-83 (2,6,4)."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:48:37.583035+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 250218,
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 24882,
+      "total_tokens": 24994
+    },
+    "raw_output": "{\"answer\": 4, \"confidence\": 70, \"explanation\": \"The sequence matches a known pattern in prime gaps where a cluster of small gaps (6,6,6,2,6) is often followed by 4, as seen in runs like 251-281.\"}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 70,
+      "explanation": "The sequence matches a known pattern in prime gaps where a cluster of small gaps (6,6,6,2,6) is often followed by 4, as seen in runs like 251-281."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:48:51.024687+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 13434,
+    "usage": {
+      "input_tokens": 112,
+      "output_tokens": 1248,
+      "total_tokens": 1360
+    },
+    "raw_output": "{\"answer\": 4, \"confidence\": 99, \"explanation\": \"The gaps correspond to primes 13, 19, 37, 41, 47, 53, 59, 61, 67. Next prime is 71, so gap = 4.\"}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 99,
+      "explanation": "The gaps correspond to primes 13, 19, 37, 41, 47, 53, 59, 61, 67. Next prime is 71, so gap = 4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:49:11.024599+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 4944,
+    "usage": {
+      "input_tokens": 110,
+      "output_tokens": 432,
+      "total_tokens": 542
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 100,\n  \"explanation\": \"Grouped by customer_id, filter aggregate > 1000, order descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 100,
+      "explanation": "Grouped by customer_id, filter aggregate > 1000, order descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:49:14.236464+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3206,
+    "usage": {
+      "input_tokens": 110,
+      "output_tokens": 277,
+      "total_tokens": 387
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 100,\n  \"explanation\": \"The query sums amount for each customer, filters groups with total > 1000, and orders descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 100,
+      "explanation": "The query sums amount for each customer, filters groups with total > 1000, and orders descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:49:17.596691+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3351,
+    "usage": {
+      "input_tokens": 110,
+      "output_tokens": 207,
+      "total_tokens": 317
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 99,\n  \"explanation\": \"Assumes Sales table has customer_id and amount columns. Groups by customer_id, sums amount, filters with HAVING, and orders descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 99,
+      "explanation": "Assumes Sales table has customer_id and amount columns. Groups by customer_id, sums amount, filters with HAVING, and orders descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:49:20.330697+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2723,
+    "usage": {
+      "input_tokens": 110,
+      "output_tokens": 206,
+      "total_tokens": 316
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 100,\n  \"explanation\": \"Groups by customer, sums amounts, filters totals over 1000, and orders from highest to lowest.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 100,
+      "explanation": "Groups by customer, sums amounts, filters totals over 1000, and orders from highest to lowest."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:49:23.849713+00:00",
+    "provider": "deepseek",
+    "model": "deepseek-v4-pro",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3511,
+    "usage": {
+      "input_tokens": 110,
+      "output_tokens": 221,
+      "total_tokens": 331
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 95,\n  \"explanation\": \"Standard SQL aggregation with grouping, filtering with HAVING, and sorting descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 95,
+      "explanation": "Standard SQL aggregation with grouping, filtering with HAVING, and sorting descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(amount) as total_amount from sales group by customer_id having sum(amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:29:27.095452+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 6952,
+    "usage": {
+      "input_tokens": 106,
+      "output_tokens": 404,
+      "total_tokens": 510
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"completed successfully\"\n  },\n  \"confidence\": 99,\n  \"explanation\": \"Parsed directly from the sentence; normalized 1,250 to 1250.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "completed successfully"
+      },
+      "confidence": 99,
+      "explanation": "Parsed directly from the sentence; normalized 1,250 to 1250."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:29:31.090553+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 3987,
+    "usage": {
+      "input_tokens": 106,
+      "output_tokens": 393,
+      "total_tokens": 499
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"completed successfully\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"All values are directly stated in the sentence.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "completed successfully"
+      },
+      "confidence": 100,
+      "explanation": "All values are directly stated in the sentence."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:29:36.558733+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 5461,
+    "usage": {
+      "input_tokens": 106,
+      "output_tokens": 547,
+      "total_tokens": 653
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"completed successfully\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"Extracted directly: Atlas processed 1,250 records in 3.8 seconds and completed successfully.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "completed successfully"
+      },
+      "confidence": 100,
+      "explanation": "Extracted directly: Atlas processed 1,250 records in 3.8 seconds and completed successfully."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:29:41.679837+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 5114,
+    "usage": {
+      "input_tokens": 106,
+      "output_tokens": 416,
+      "total_tokens": 522
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"completed successfully\"\n  },\n  \"confidence\": 100,\n  \"explanation\": \"Extracted directly from the sentence; normalized 1,250 to 1250.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "completed successfully"
+      },
+      "confidence": 100,
+      "explanation": "Extracted directly from the sentence; normalized 1,250 to 1250."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-JSON-0001",
+    "category": "Structured Output",
+    "title": "JSON Extraction",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:29:46.348964+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 4662,
+    "usage": {
+      "input_tokens": 106,
+      "output_tokens": 412,
+      "total_tokens": 518
+    },
+    "raw_output": "{\n  \"answer\": {\n    \"service\": \"Atlas\",\n    \"records\": 1250,\n    \"seconds\": 3.8,\n    \"status\": \"completed successfully\"\n  },\n  \"confidence\": 99,\n  \"explanation\": \"Parsed directly from the sentence and normalized '1,250' to 1250.\"\n}",
+    "parsed_output": {
+      "answer": {
+        "service": "Atlas",
+        "records": 1250,
+        "seconds": 3.8,
+        "status": "completed successfully"
+      },
+      "confidence": 99,
+      "explanation": "Parsed directly from the sentence and normalized '1,250' to 1250."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "json_semantic",
+      "reason": "All required JSON fields are semantically equivalent.",
+      "details": {
+        "field_results": {
+          "service": true,
+          "records": true,
+          "seconds": true,
+          "status": true
+        },
+        "missing_fields": [],
+        "extra_fields": []
+      }
+    },
+    "evaluator": "json_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:30:51.534619+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 5428,
+    "usage": {
+      "input_tokens": 86,
+      "output_tokens": 366,
+      "total_tokens": 452
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 97,\n  \"explanation\": \"Starting at 09:10 and adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first time after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 97,
+      "explanation": "Starting at 09:10 and adding 15-minute intervals gives 09:10, 09:25, 09:40, 09:55, 10:10. The first time after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:30:55.866693+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 4318,
+    "usage": {
+      "input_tokens": 86,
+      "output_tokens": 399,
+      "total_tokens": 485
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 98,\n  \"explanation\": \"Starting at 09:10 and running every 15 minutes yields 09:10, 09:25, 09:40, 09:55, then 10:10—the first time after 10:00.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 98,
+      "explanation": "Starting at 09:10 and running every 15 minutes yields 09:10, 09:25, 09:40, 09:55, then 10:10—the first time after 10:00."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:30:58.841468+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 2964,
+    "usage": {
+      "input_tokens": 86,
+      "output_tokens": 199,
+      "total_tokens": 285
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"Starting at 09:10 and running every 15 minutes gives times 09:10, 09:25, 09:40, 09:55, 10:10; thus the first after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "Starting at 09:10 and running every 15 minutes gives times 09:10, 09:25, 09:40, 09:55, 10:10; thus the first after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:31:03.200309+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 4351,
+    "usage": {
+      "input_tokens": 86,
+      "output_tokens": 346,
+      "total_tokens": 432
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 100,\n  \"explanation\": \"From 09:10 every 15 minutes: 09:10, 09:25, 09:40, 09:55, 10:10... The first run strictly after 10:00 is 10:10.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 100,
+      "explanation": "From 09:10 every 15 minutes: 09:10, 09:25, 09:40, 09:55, 10:10... The first run strictly after 10:00 is 10:10."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-LOGIC-0001",
+    "category": "Logical Reasoning",
+    "title": "Constraint Reasoning",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:31:10.121780+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 6917,
+    "usage": {
+      "input_tokens": 86,
+      "output_tokens": 379,
+      "total_tokens": 465
+    },
+    "raw_output": "{\n  \"answer\": \"10:10\",\n  \"confidence\": 98,\n  \"explanation\": \"From 09:10, adding 15-minute intervals yields 09:25, 09:40, 09:55, then 10:10—the first time after 10:00.\"\n}",
+    "parsed_output": {
+      "answer": "10:10",
+      "confidence": 98,
+      "explanation": "From 09:10, adding 15-minute intervals yields 09:25, 09:40, 09:55, then 10:10—the first time after 10:00."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "time_exact",
+      "reason": "Normalized time matches.",
+      "details": {
+        "expected": "10:10",
+        "observed": "10:10"
+      }
+    },
+    "evaluator": "time_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:23:04.318371+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 93227,
+    "usage": {
+      "input_tokens": 96,
+      "output_tokens": 6512,
+      "total_tokens": 6608
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 66,\n  \"explanation\": \"The gaps uniquely decompose against the 30-wheel base gaps [6,4,2,4,2,4,6,2], starting at index 3 and ending at index 0; the next base gap (index 1) is 4.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 66,
+      "explanation": "The gaps uniquely decompose against the 30-wheel base gaps [6,4,2,4,2,4,6,2], starting at index 3 and ending at index 0; the next base gap (index 1) is 4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:24:45.666077+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 101341,
+    "usage": {
+      "input_tokens": 96,
+      "output_tokens": 8141,
+      "total_tokens": 8237
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 78,\n  \"explanation\": \"Decomposing the gaps using the 30-wheel pattern [6,4,2,4,2,4,6,2] yields a unique fit: 6=(4+2) starting at index 3, 18=(4+6+2+6) at index 5, and the rest are forced, ending at index 1. The next step in the cycle is 4.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 78,
+      "explanation": "Decomposing the gaps using the 30-wheel pattern [6,4,2,4,2,4,6,2] yields a unique fit: 6=(4+2) starting at index 3, 18=(4+6+2+6) at index 5, and the rest are forced, ending at index 1. The next step in the cycle is 4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:25:11.003085+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 25328,
+    "usage": {
+      "input_tokens": 96,
+      "output_tokens": 2216,
+      "total_tokens": 2312
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 40,\n  \"explanation\": \"Based on the modulo-30 wheel, base candidate gaps repeat 6,4,2,4,2,4,6,2. The tail ...6,2,6 aligns with this cycle, where the next gap is typically 4, though composites can merge gaps.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 40,
+      "explanation": "Based on the modulo-30 wheel, base candidate gaps repeat 6,4,2,4,2,4,6,2. The tail ...6,2,6 aligns with this cycle, where the next gap is typically 4, though composites can merge gaps."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:28:00.816306+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 47694,
+    "usage": {
+      "input_tokens": 96,
+      "output_tokens": 2537,
+      "total_tokens": 2633
+    },
+    "raw_output": "{\n  \"answer\": 6,\n  \"confidence\": 48,\n  \"explanation\": \"Gap 6 is by far the most frequent in the given run and often follows another 6; absent clearer structure, 6 is the likeliest continuation.\"\n}",
+    "parsed_output": {
+      "answer": 6,
+      "confidence": 48,
+      "explanation": "Gap 6 is by far the most frequent in the given run and often follows another 6; absent clearer structure, 6 is the likeliest continuation."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": false,
+      "score": 0,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value differs.",
+      "details": {
+        "expected": 4,
+        "observed": 6
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-PRIME-GAP-0001",
+    "category": "Numerical Reasoning",
+    "title": "Prime Gap Prediction",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:29:20.134814+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 79314,
+    "usage": {
+      "input_tokens": 96,
+      "output_tokens": 5457,
+      "total_tokens": 5553
+    },
+    "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 72,\n  \"explanation\": \"These gaps align uniquely with the 30-wheel base cycle [6,4,2,4,2,4,6,2] when composites are merged. After the given eight gaps, the next wheel step is 4, so the next prime gap is most likely 4.\"\n}",
+    "parsed_output": {
+      "answer": 4,
+      "confidence": 72,
+      "explanation": "These gaps align uniquely with the 30-wheel base cycle [6,4,2,4,2,4,6,2] when composites are merged. After the given eight gaps, the next wheel step is 4, so the next prime gap is most likely 4."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "numeric_exact",
+      "reason": "Numerical value matches.",
+      "details": {
+        "expected": 4,
+        "observed": 4
+      }
+    },
+    "evaluator": "numeric_exact"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 1,
+    "executed_at_utc": "2026-08-07T22:29:53.684294+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 7327,
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 605,
+      "total_tokens": 699
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 94,\n  \"explanation\": \"Aggregates by customer_id, filters totals > 1000 via HAVING, orders highest to lowest.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 94,
+      "explanation": "Aggregates by customer_id, filters totals > 1000 via HAVING, orders highest to lowest."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 2,
+    "executed_at_utc": "2026-08-07T22:30:16.752401+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 23064,
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 1094,
+      "total_tokens": 1188
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount\\nFROM Sales\\nGROUP BY customer_id\\nHAVING SUM(total_amount) > 1000\\nORDER BY total_amount DESC;\",\n  \"confidence\": 94,\n  \"explanation\": \"Groups by customer_id, sums total_amount, filters > 1000, orders descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(total_amount) AS total_amount\nFROM Sales\nGROUP BY customer_id\nHAVING SUM(total_amount) > 1000\nORDER BY total_amount DESC;",
+      "confidence": 94,
+      "explanation": "Groups by customer_id, sums total_amount, filters > 1000, orders descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 3,
+    "executed_at_utc": "2026-08-07T22:30:28.639552+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 11881,
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 739,
+      "total_tokens": 833
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount\\nFROM Sales\\nGROUP BY customer_id\\nHAVING SUM(total_amount) > 1000\\nORDER BY total_amount DESC;\",\n  \"confidence\": 92,\n  \"explanation\": \"Groups by customer_id, sums total_amount, filters totals > 1000 with HAVING, and orders descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(total_amount) AS total_amount\nFROM Sales\nGROUP BY customer_id\nHAVING SUM(total_amount) > 1000\nORDER BY total_amount DESC;",
+      "confidence": 92,
+      "explanation": "Groups by customer_id, sums total_amount, filters totals > 1000 with HAVING, and orders descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 4,
+    "executed_at_utc": "2026-08-07T22:30:39.378299+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 10728,
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 771,
+      "total_tokens": 865
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY SUM(total_amount) DESC;\",\n  \"confidence\": 93,\n  \"explanation\": \"Groups by customer_id, sums total_amount, filters totals > 1000 via HAVING, and orders descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY SUM(total_amount) DESC;",
+      "confidence": 93,
+      "explanation": "Groups by customer_id, sums total_amount, filters totals > 1000 via HAVING, and orders descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by sum(total_amount) desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  },
+  {
+    "schema_version": "5.5",
+    "run_id": "20260807T221928Z",
+    "benchmark_id": "PrimeAIExplorer-v4",
+    "case_id": "CASE-SQL-0001",
+    "category": "SQL",
+    "title": "SQL Query Generation",
+    "trial": 5,
+    "executed_at_utc": "2026-08-07T22:30:46.097848+00:00",
+    "provider": "openai",
+    "model": "gpt-5-2025-08-07",
+    "job_status": "EVALUATED",
+    "provider_error": null,
+    "latency_ms": 6711,
+    "usage": {
+      "input_tokens": 94,
+      "output_tokens": 404,
+      "total_tokens": 498
+    },
+    "raw_output": "{\n  \"answer\": \"SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;\",\n  \"confidence\": 93,\n  \"explanation\": \"Groups by customer_id, filters totals over 1000 with HAVING, and orders by the summed total descending.\"\n}",
+    "parsed_output": {
+      "answer": "SELECT customer_id, SUM(total_amount) AS total_amount FROM Sales GROUP BY customer_id HAVING SUM(total_amount) > 1000 ORDER BY total_amount DESC;",
+      "confidence": 93,
+      "explanation": "Groups by customer_id, filters totals over 1000 with HAVING, and orders by the summed total descending."
+    },
+    "validation_errors": [],
+    "evaluation": {
+      "passed": true,
+      "score": 100,
+      "evaluator": "sql_semantic",
+      "reason": "SQL satisfies all required structural semantics.",
+      "details": {
+        "checks": {
+          "select_customer_id": true,
+          "sum_aggregate": true,
+          "from_sales": true,
+          "group_by_customer_id": true,
+          "having_total_gt_1000": true,
+          "descending_order": true
+        },
+        "normalized_sql": "select customer_id, sum(total_amount) as total_amount from sales group by customer_id having sum(total_amount) > 1000 order by total_amount desc"
+      }
+    },
+    "evaluator": "sql_semantic"
+  }
+]

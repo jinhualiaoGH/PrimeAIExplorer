@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 2,
+  "executed_at_utc": "2026-08-07T22:31:29.550996+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-v4-pro",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 10568,
+  "usage": {
+    "input_tokens": 112,
+    "output_tokens": 1003,
+    "total_tokens": 1115
+  },
+  "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 95,\n  \"explanation\": \"The gaps correspond to primes starting at 13: 13, 19 (6), 37 (18), 41 (4), 47 (6), 53 (6), 59 (6), 61 (2), 67 (6). The next prime after 67 is 71, with a gap of 4.\"\n}",
+  "parsed_output": {
+    "answer": 4,
+    "confidence": 95,
+    "explanation": "The gaps correspond to primes starting at 13: 13, 19 (6), 37 (18), 41 (4), 47 (6), 53 (6), 59 (6), 61 (2), 67 (6). The next prime after 67 is 71, with a gap of 4."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value matches.",
+    "details": {
+      "expected": 4,
+      "observed": 4
+    }
+  },
+  "evaluator": "numeric_exact"
+}

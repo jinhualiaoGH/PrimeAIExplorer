@@ -1,0 +1,63 @@
+{
+  "schema_version": "5.5.1",
+  "state": "complete",
+  "message": "Rebuilt v5.5.1 analysis from stored run 20260807T221928Z.",
+  "updated_at_utc": "2026-08-08T00:05:50.086923+00:00",
+  "providers": [
+    "deepseek",
+    "openai"
+  ],
+  "trials_per_case": 5,
+  "current_provider": null,
+  "current_case": null,
+  "current_trial": null,
+  "completed_jobs": 40,
+  "total_jobs": 40,
+  "pipeline": [
+    {
+      "name": "Benchmark Library",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Trial Scheduler",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Prompt Loader",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Provider Router",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "AI Provider",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "JSON Validator",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Evaluation",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Statistical Engine",
+      "state": "complete",
+      "detail": ""
+    },
+    {
+      "name": "Dashboard",
+      "state": "complete",
+      "detail": ""
+    }
+  ]
+}

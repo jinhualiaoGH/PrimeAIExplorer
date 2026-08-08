@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 5,
+  "executed_at_utc": "2026-08-07T22:29:20.134814+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 79314,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 5457,
+    "total_tokens": 5553
+  },
+  "raw_output": "{\n  \"answer\": 4,\n  \"confidence\": 72,\n  \"explanation\": \"These gaps align uniquely with the 30-wheel base cycle [6,4,2,4,2,4,6,2] when composites are merged. After the given eight gaps, the next wheel step is 4, so the next prime gap is most likely 4.\"\n}",
+  "parsed_output": {
+    "answer": 4,
+    "confidence": 72,
+    "explanation": "These gaps align uniquely with the 30-wheel base cycle [6,4,2,4,2,4,6,2] when composites are merged. After the given eight gaps, the next wheel step is 4, so the next prime gap is most likely 4."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": true,
+    "score": 100,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value matches.",
+    "details": {
+      "expected": 4,
+      "observed": 4
+    }
+  },
+  "evaluator": "numeric_exact"
+}

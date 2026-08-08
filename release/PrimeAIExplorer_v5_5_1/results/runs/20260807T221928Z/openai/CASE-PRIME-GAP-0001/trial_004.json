@@ -1,0 +1,38 @@
+{
+  "schema_version": "5.5",
+  "run_id": "20260807T221928Z",
+  "benchmark_id": "PrimeAIExplorer-v4",
+  "case_id": "CASE-PRIME-GAP-0001",
+  "category": "Numerical Reasoning",
+  "title": "Prime Gap Prediction",
+  "trial": 4,
+  "executed_at_utc": "2026-08-07T22:28:00.816306+00:00",
+  "provider": "openai",
+  "model": "gpt-5-2025-08-07",
+  "job_status": "EVALUATED",
+  "provider_error": null,
+  "latency_ms": 47694,
+  "usage": {
+    "input_tokens": 96,
+    "output_tokens": 2537,
+    "total_tokens": 2633
+  },
+  "raw_output": "{\n  \"answer\": 6,\n  \"confidence\": 48,\n  \"explanation\": \"Gap 6 is by far the most frequent in the given run and often follows another 6; absent clearer structure, 6 is the likeliest continuation.\"\n}",
+  "parsed_output": {
+    "answer": 6,
+    "confidence": 48,
+    "explanation": "Gap 6 is by far the most frequent in the given run and often follows another 6; absent clearer structure, 6 is the likeliest continuation."
+  },
+  "validation_errors": [],
+  "evaluation": {
+    "passed": false,
+    "score": 0,
+    "evaluator": "numeric_exact",
+    "reason": "Numerical value differs.",
+    "details": {
+      "expected": 4,
+      "observed": 6
+    }
+  },
+  "evaluator": "numeric_exact"
+}
